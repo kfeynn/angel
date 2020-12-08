@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.supplier.PNSubMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.supplier.PNSub">
+    <id column="ID" jdbcType="DECIMAL" property="id" />
+    <result column="PMM01" jdbcType="VARCHAR" property="pmm01" />
+    <result column="PMN02" jdbcType="DECIMAL" property="pmn02" />
+    <result column="PMN04" jdbcType="VARCHAR" property="pmn04" />
+    <result column="PMN041" jdbcType="VARCHAR" property="pmn041" />
+    <result column="IMA021" jdbcType="VARCHAR" property="ima021" />
+    <result column="PMN07" jdbcType="VARCHAR" property="pmn07" />
+    <result column="PMN20" jdbcType="FLOAT" property="pmn20" />
+    <result column="PMN86" jdbcType="VARCHAR" property="pmn86" />
+    <result column="PMN87" jdbcType="FLOAT" property="pmn87" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
+    <result column="SDNNUM" jdbcType="VARCHAR" property="sdnnum" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from SUPPLIER.PNSUB
+    where ID = #{id,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.supplier.PNSub">
+    insert into SUPPLIER.PNSUB (ID, PMM01, PMN02, 
+      PMN04, PMN041, IMA021, 
+      PMN07, PMN20, PMN86, 
+      PMN87, STATUS, SDNNUM
+      )
+    values (#{id,jdbcType=DECIMAL}, #{pmm01,jdbcType=VARCHAR}, #{pmn02,jdbcType=DECIMAL}, 
+      #{pmn04,jdbcType=VARCHAR}, #{pmn041,jdbcType=VARCHAR}, #{ima021,jdbcType=VARCHAR}, 
+      #{pmn07,jdbcType=VARCHAR}, #{pmn20,jdbcType=FLOAT}, #{pmn86,jdbcType=VARCHAR}, 
+      #{pmn87,jdbcType=FLOAT}, #{status,jdbcType=DECIMAL}, #{sdnnum,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.supplier.PNSub">
+    update SUPPLIER.PNSUB
+    set PMM01 = #{pmm01,jdbcType=VARCHAR},
+      PMN02 = #{pmn02,jdbcType=DECIMAL},
+      PMN04 = #{pmn04,jdbcType=VARCHAR},
+      PMN041 = #{pmn041,jdbcType=VARCHAR},
+      IMA021 = #{ima021,jdbcType=VARCHAR},
+      PMN07 = #{pmn07,jdbcType=VARCHAR},
+      PMN20 = #{pmn20,jdbcType=FLOAT},
+      PMN86 = #{pmn86,jdbcType=VARCHAR},
+      PMN87 = #{pmn87,jdbcType=FLOAT},
+      STATUS = #{status,jdbcType=DECIMAL},
+      SDNNUM = #{sdnnum,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=DECIMAL}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select ID, PMM01, PMN02, PMN04, PMN041, IMA021, PMN07, PMN20, PMN86, PMN87, STATUS, 
+    SDNNUM
+    from SUPPLIER.PNSUB
+    where ID = #{id,jdbcType=DECIMAL}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select ID, PMM01, PMN02, PMN04, PMN041, IMA021, PMN07, PMN20, PMN86, PMN87, STATUS, 
+    SDNNUM
+    from SUPPLIER.PNSUB
+  </select>
+</mapper>

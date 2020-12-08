@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.GEE_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.GEE_FILE">
+    <id column="GEE01" jdbcType="VARCHAR" property="gee01" />
+    <id column="GEE02" jdbcType="VARCHAR" property="gee02" />
+    <id column="GEE03" jdbcType="VARCHAR" property="gee03" />
+    <result column="GEE04" jdbcType="VARCHAR" property="gee04" />
+    <result column="GEE05" jdbcType="VARCHAR" property="gee05" />
+    <result column="GEE06" jdbcType="VARCHAR" property="gee06" />
+    <result column="GEE07" jdbcType="VARCHAR" property="gee07" />
+    <result column="GEE08" jdbcType="VARCHAR" property="gee08" />
+    <result column="GEEACTI" jdbcType="VARCHAR" property="geeacti" />
+    <result column="GEEDATE" jdbcType="DATE" property="geedate" />
+    <result column="GEEGRUP" jdbcType="VARCHAR" property="geegrup" />
+    <result column="GEEMODU" jdbcType="VARCHAR" property="geemodu" />
+    <result column="GEEORIG" jdbcType="VARCHAR" property="geeorig" />
+    <result column="GEEORIU" jdbcType="VARCHAR" property="geeoriu" />
+    <result column="GEEUSER" jdbcType="VARCHAR" property="geeuser" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from GEE_FILE
+    where GEE01 = #{gee01,jdbcType=VARCHAR}
+      and GEE02 = #{gee02,jdbcType=VARCHAR}
+      and GEE03 = #{gee03,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.GEE_FILE">
+    insert into GEE_FILE (GEE01, GEE02, GEE03, 
+      GEE04, GEE05, GEE06, 
+      GEE07, GEE08, GEEACTI, 
+      GEEDATE, GEEGRUP, GEEMODU, 
+      GEEORIG, GEEORIU, GEEUSER
+      )
+    values (#{gee01,jdbcType=VARCHAR}, #{gee02,jdbcType=VARCHAR}, #{gee03,jdbcType=VARCHAR}, 
+      #{gee04,jdbcType=VARCHAR}, #{gee05,jdbcType=VARCHAR}, #{gee06,jdbcType=VARCHAR}, 
+      #{gee07,jdbcType=VARCHAR}, #{gee08,jdbcType=VARCHAR}, #{geeacti,jdbcType=VARCHAR}, 
+      #{geedate,jdbcType=DATE}, #{geegrup,jdbcType=VARCHAR}, #{geemodu,jdbcType=VARCHAR}, 
+      #{geeorig,jdbcType=VARCHAR}, #{geeoriu,jdbcType=VARCHAR}, #{geeuser,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.GEE_FILE">
+    update GEE_FILE
+    set GEE04 = #{gee04,jdbcType=VARCHAR},
+      GEE05 = #{gee05,jdbcType=VARCHAR},
+      GEE06 = #{gee06,jdbcType=VARCHAR},
+      GEE07 = #{gee07,jdbcType=VARCHAR},
+      GEE08 = #{gee08,jdbcType=VARCHAR},
+      GEEACTI = #{geeacti,jdbcType=VARCHAR},
+      GEEDATE = #{geedate,jdbcType=DATE},
+      GEEGRUP = #{geegrup,jdbcType=VARCHAR},
+      GEEMODU = #{geemodu,jdbcType=VARCHAR},
+      GEEORIG = #{geeorig,jdbcType=VARCHAR},
+      GEEORIU = #{geeoriu,jdbcType=VARCHAR},
+      GEEUSER = #{geeuser,jdbcType=VARCHAR}
+    where GEE01 = #{gee01,jdbcType=VARCHAR}
+      and GEE02 = #{gee02,jdbcType=VARCHAR}
+      and GEE03 = #{gee03,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select GEE01, GEE02, GEE03, GEE04, GEE05, GEE06, GEE07, GEE08, GEEACTI, GEEDATE, 
+    GEEGRUP, GEEMODU, GEEORIG, GEEORIU, GEEUSER
+    from GEE_FILE
+    where GEE01 = #{gee01,jdbcType=VARCHAR}
+      and GEE02 = #{gee02,jdbcType=VARCHAR}
+      and GEE03 = #{gee03,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select GEE01, GEE02, GEE03, GEE04, GEE05, GEE06, GEE07, GEE08, GEEACTI, GEEDATE, 
+    GEEGRUP, GEEMODU, GEEORIG, GEEORIU, GEEUSER
+    from GEE_FILE
+  </select>
+
+</mapper>

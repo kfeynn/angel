@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.IMGS_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.IMGS_FILE">
+    <id column="IMGS01" jdbcType="VARCHAR" property="imgs01" />
+    <id column="IMGS02" jdbcType="VARCHAR" property="imgs02" />
+    <id column="IMGS03" jdbcType="VARCHAR" property="imgs03" />
+    <id column="IMGS04" jdbcType="VARCHAR" property="imgs04" />
+    <id column="IMGS05" jdbcType="VARCHAR" property="imgs05" />
+    <id column="IMGS06" jdbcType="VARCHAR" property="imgs06" />
+    <id column="IMGS11" jdbcType="VARCHAR" property="imgs11" />
+    <result column="IMGS07" jdbcType="VARCHAR" property="imgs07" />
+    <result column="IMGS08" jdbcType="DECIMAL" property="imgs08" />
+    <result column="IMGS09" jdbcType="DATE" property="imgs09" />
+    <result column="IMGS10" jdbcType="VARCHAR" property="imgs10" />
+    <result column="IMGSPLANT" jdbcType="VARCHAR" property="imgsplant" />
+    <result column="IMGSLEGAL" jdbcType="VARCHAR" property="imgslegal" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from S30.IMGS_FILE
+    where IMGS01 = #{imgs01,jdbcType=VARCHAR}
+      and IMGS02 = #{imgs02,jdbcType=VARCHAR}
+      and IMGS03 = #{imgs03,jdbcType=VARCHAR}
+      and IMGS04 = #{imgs04,jdbcType=VARCHAR}
+      and IMGS05 = #{imgs05,jdbcType=VARCHAR}
+      and IMGS06 = #{imgs06,jdbcType=VARCHAR}
+      and IMGS11 = #{imgs11,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.IMGS_FILE">
+    insert into S30.IMGS_FILE (IMGS01, IMGS02, IMGS03, 
+      IMGS04, IMGS05, IMGS06, 
+      IMGS11, IMGS07, IMGS08, 
+      IMGS09, IMGS10, IMGSPLANT, 
+      IMGSLEGAL)
+    values (#{imgs01,jdbcType=VARCHAR}, #{imgs02,jdbcType=VARCHAR}, #{imgs03,jdbcType=VARCHAR}, 
+      #{imgs04,jdbcType=VARCHAR}, #{imgs05,jdbcType=VARCHAR}, #{imgs06,jdbcType=VARCHAR}, 
+      #{imgs11,jdbcType=VARCHAR}, #{imgs07,jdbcType=VARCHAR}, #{imgs08,jdbcType=DECIMAL}, 
+      #{imgs09,jdbcType=DATE}, #{imgs10,jdbcType=VARCHAR}, #{imgsplant,jdbcType=VARCHAR}, 
+      #{imgslegal,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.IMGS_FILE">
+    update S30.IMGS_FILE
+    set IMGS07 = #{imgs07,jdbcType=VARCHAR},
+      IMGS08 = #{imgs08,jdbcType=DECIMAL},
+      IMGS09 = #{imgs09,jdbcType=DATE},
+      IMGS10 = #{imgs10,jdbcType=VARCHAR},
+      IMGSPLANT = #{imgsplant,jdbcType=VARCHAR},
+      IMGSLEGAL = #{imgslegal,jdbcType=VARCHAR}
+    where IMGS01 = #{imgs01,jdbcType=VARCHAR}
+      and IMGS02 = #{imgs02,jdbcType=VARCHAR}
+      and IMGS03 = #{imgs03,jdbcType=VARCHAR}
+      and IMGS04 = #{imgs04,jdbcType=VARCHAR}
+      and IMGS05 = #{imgs05,jdbcType=VARCHAR}
+      and IMGS06 = #{imgs06,jdbcType=VARCHAR}
+      and IMGS11 = #{imgs11,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select IMGS01, IMGS02, IMGS03, IMGS04, IMGS05, IMGS06, IMGS11, IMGS07, IMGS08, IMGS09, 
+    IMGS10, IMGSPLANT, IMGSLEGAL
+    from S30.IMGS_FILE
+    where IMGS01 = #{imgs01,jdbcType=VARCHAR}
+      and IMGS02 = #{imgs02,jdbcType=VARCHAR}
+      and IMGS03 = #{imgs03,jdbcType=VARCHAR}
+      and IMGS04 = #{imgs04,jdbcType=VARCHAR}
+      and IMGS05 = #{imgs05,jdbcType=VARCHAR}
+      and IMGS06 = #{imgs06,jdbcType=VARCHAR}
+      and IMGS11 = #{imgs11,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select IMGS01, IMGS02, IMGS03, IMGS04, IMGS05, IMGS06, IMGS11, IMGS07, IMGS08, IMGS09, 
+    IMGS10, IMGSPLANT, IMGSLEGAL
+    from S30.IMGS_FILE
+  </select>
+</mapper>

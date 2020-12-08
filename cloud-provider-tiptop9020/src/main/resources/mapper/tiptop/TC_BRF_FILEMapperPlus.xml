@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_BRF_FILEMapperPlus">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_BRF_FILE">
+    <id column="TC_BRF01" jdbcType="VARCHAR" property="tcBrf01" />
+    <id column="TC_BRF02" jdbcType="VARCHAR" property="tcBrf02" />
+    <id column="TC_BRF03" jdbcType="VARCHAR" property="tcBrf03" />
+    <result column="TC_BRF04" jdbcType="VARCHAR" property="tcBrf04" />
+    <result column="TC_BRF05" jdbcType="VARCHAR" property="tcBrf05" />
+    <result column="TC_BRF06" jdbcType="DECIMAL" property="tcBrf06" />
+    <result column="TC_BRFUD01" jdbcType="VARCHAR" property="tcBrfud01" />
+    <result column="TC_BRFUD02" jdbcType="VARCHAR" property="tcBrfud02" />
+    <result column="TC_BRFUD03" jdbcType="DECIMAL" property="tcBrfud03" />
+    <result column="TC_BRFUD04" jdbcType="DECIMAL" property="tcBrfud04" />
+    <result column="TC_BRFUD05" jdbcType="DATE" property="tcBrfud05" />
+    <result column="TC_BRFUD06" jdbcType="DATE" property="tcBrfud06" />
+    <result column="TC_BRFPLANT" jdbcType="VARCHAR" property="tcBrfplant" />
+    <result column="TC_BRFLEGAL" jdbcType="VARCHAR" property="tcBrflegal" />
+    <result column="TC_BRF07" jdbcType="VARCHAR" property="tcBrf07" />
+    <result column="TC_BRF08" jdbcType="VARCHAR" property="tcBrf08" />
+    <result column="TC_BRF09" jdbcType="DECIMAL" property="tcBrf09" />
+    <result column="TC_BRF10" jdbcType="DECIMAL" property="tcBrf10" />
+  </resultMap>
+
+
+
+  <select id="selectByBrf01" parameterType="map"  resultMap="BaseResultMap">
+    select TC_BRF01, TC_BRF02, TC_BRF03, TC_BRF04, TC_BRF05, TC_BRF06, TC_BRFUD01, TC_BRFUD02,
+    TC_BRFUD03, TC_BRFUD04, TC_BRFUD05, TC_BRFUD06, TC_BRFPLANT, TC_BRFLEGAL, TC_BRF07,
+    TC_BRF08, TC_BRF09, TC_BRF10
+    from S30.TC_BRF_FILE
+    where TC_BRF01 = #{tcBrf01,jdbcType=VARCHAR}
+  </select>
+
+</mapper>

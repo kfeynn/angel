@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.GEN_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.GEN_FILE">
+    <id column="GEN01" jdbcType="VARCHAR" property="gen01" />
+    <result column="GEN02" jdbcType="VARCHAR" property="gen02" />
+    <result column="GEN03" jdbcType="VARCHAR" property="gen03" />
+    <result column="GEN04" jdbcType="VARCHAR" property="gen04" />
+    <result column="GEN05" jdbcType="VARCHAR" property="gen05" />
+    <result column="GEN06" jdbcType="VARCHAR" property="gen06" />
+    <result column="GENACTI" jdbcType="VARCHAR" property="genacti" />
+    <result column="GENUSER" jdbcType="VARCHAR" property="genuser" />
+    <result column="GENGRUP" jdbcType="VARCHAR" property="gengrup" />
+    <result column="GENMODU" jdbcType="VARCHAR" property="genmodu" />
+    <result column="GENDATE" jdbcType="DATE" property="gendate" />
+    <result column="GENORIG" jdbcType="VARCHAR" property="genorig" />
+    <result column="GENORIU" jdbcType="VARCHAR" property="genoriu" />
+    <result column="GENPOS" jdbcType="VARCHAR" property="genpos" />
+    <result column="GEN07" jdbcType="VARCHAR" property="gen07" />
+    <result column="GEN08" jdbcType="VARCHAR" property="gen08" />
+    <result column="TA_GENDATE" jdbcType="DATE" property="taGendate" />
+    <result column="TA_GENCOMFIRE" jdbcType="VARCHAR" property="taGencomfire" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from S10.GEN_FILE
+    where GEN01 = #{gen01,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.GEN_FILE">
+    insert into S10.GEN_FILE (GEN01, GEN02, GEN03, 
+      GEN04, GEN05, GEN06, 
+      GENACTI, GENUSER, GENGRUP, 
+      GENMODU, GENDATE, GENORIG, 
+      GENORIU, GENPOS, GEN07, 
+      GEN08, TA_GENDATE, TA_GENCOMFIRE
+      )
+    values (#{gen01,jdbcType=VARCHAR}, #{gen02,jdbcType=VARCHAR}, #{gen03,jdbcType=VARCHAR}, 
+      #{gen04,jdbcType=VARCHAR}, #{gen05,jdbcType=VARCHAR}, #{gen06,jdbcType=VARCHAR}, 
+      #{genacti,jdbcType=VARCHAR}, #{genuser,jdbcType=VARCHAR}, #{gengrup,jdbcType=VARCHAR}, 
+      #{genmodu,jdbcType=VARCHAR}, #{gendate,jdbcType=DATE}, #{genorig,jdbcType=VARCHAR}, 
+      #{genoriu,jdbcType=VARCHAR}, #{genpos,jdbcType=VARCHAR}, #{gen07,jdbcType=VARCHAR}, 
+      #{gen08,jdbcType=VARCHAR}, #{taGendate,jdbcType=DATE}, #{taGencomfire,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.GEN_FILE">
+    update S10.GEN_FILE
+    set GEN02 = #{gen02,jdbcType=VARCHAR},
+      GEN03 = #{gen03,jdbcType=VARCHAR},
+      GEN04 = #{gen04,jdbcType=VARCHAR},
+      GEN05 = #{gen05,jdbcType=VARCHAR},
+      GEN06 = #{gen06,jdbcType=VARCHAR},
+      GENACTI = #{genacti,jdbcType=VARCHAR},
+      GENUSER = #{genuser,jdbcType=VARCHAR},
+      GENGRUP = #{gengrup,jdbcType=VARCHAR},
+      GENMODU = #{genmodu,jdbcType=VARCHAR},
+      GENDATE = #{gendate,jdbcType=DATE},
+      GENORIG = #{genorig,jdbcType=VARCHAR},
+      GENORIU = #{genoriu,jdbcType=VARCHAR},
+      GENPOS = #{genpos,jdbcType=VARCHAR},
+      GEN07 = #{gen07,jdbcType=VARCHAR},
+      GEN08 = #{gen08,jdbcType=VARCHAR},
+      TA_GENDATE = #{taGendate,jdbcType=DATE},
+      TA_GENCOMFIRE = #{taGencomfire,jdbcType=VARCHAR}
+    where GEN01 = #{gen01,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select GEN01, GEN02, GEN03, GEN04, GEN05, GEN06, GENACTI, GENUSER, GENGRUP, GENMODU, 
+    GENDATE, GENORIG, GENORIU, GENPOS, GEN07, GEN08, TA_GENDATE, TA_GENCOMFIRE
+    from S10.GEN_FILE
+    where GEN01 = #{gen01,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select GEN01, GEN02, GEN03, GEN04, GEN05, GEN06, GENACTI, GENUSER, GENGRUP, GENMODU, 
+    GENDATE, GENORIG, GENORIU, GENPOS, GEN07, GEN08, TA_GENDATE, TA_GENCOMFIRE
+    from S10.GEN_FILE
+  </select>
+</mapper>

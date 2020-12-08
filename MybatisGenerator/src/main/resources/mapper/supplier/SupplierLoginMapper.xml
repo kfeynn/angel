@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.supplier.SupplierLoginMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.supplier.SupplierLogin">
+    <id column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+    <result column="PERMISSION" jdbcType="VARCHAR" property="permission" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="TEL" jdbcType="VARCHAR" property="tel" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from SUPPLIER.SUPPLIERLOGIN
+    where ID = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.supplier.SupplierLogin">
+    insert into SUPPLIER.SUPPLIERLOGIN (ID, PASSWORD, PERMISSION, 
+      NAME, TEL, ADDRESS, 
+      STATUS)
+    values (#{id,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{permission,jdbcType=VARCHAR}, 
+      #{name,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
+      #{status,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.supplier.SupplierLogin">
+    update SUPPLIER.SUPPLIERLOGIN
+    set PASSWORD = #{password,jdbcType=VARCHAR},
+      PERMISSION = #{permission,jdbcType=VARCHAR},
+      NAME = #{name,jdbcType=VARCHAR},
+      TEL = #{tel,jdbcType=VARCHAR},
+      ADDRESS = #{address,jdbcType=VARCHAR},
+      STATUS = #{status,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select ID, PASSWORD, PERMISSION, NAME, TEL, ADDRESS, STATUS
+    from SUPPLIER.SUPPLIERLOGIN
+    where ID = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select ID, PASSWORD, PERMISSION, NAME, TEL, ADDRESS, STATUS
+    from SUPPLIER.SUPPLIERLOGIN
+  </select>
+</mapper>

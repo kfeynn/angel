@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_BRE_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_BRE_FILE">
+    <id column="TC_BRE01" jdbcType="VARCHAR" property="tcBre01" />
+    <result column="TC_BRE02" jdbcType="VARCHAR" property="tcBre02" />
+    <result column="TC_BRE03" jdbcType="VARCHAR" property="tcBre03" />
+    <result column="TC_BRE04" jdbcType="VARCHAR" property="tcBre04" />
+    <result column="TC_BRE05" jdbcType="VARCHAR" property="tcBre05" />
+    <result column="TC_BREUSER" jdbcType="VARCHAR" property="tcBreuser" />
+    <result column="TC_BREGRUP" jdbcType="VARCHAR" property="tcBregrup" />
+    <result column="TC_BREMODU" jdbcType="VARCHAR" property="tcBremodu" />
+    <result column="TC_BREDATE" jdbcType="DATE" property="tcBredate" />
+    <result column="TC_BREUD01" jdbcType="VARCHAR" property="tcBreud01" />
+    <result column="TC_BREUD02" jdbcType="VARCHAR" property="tcBreud02" />
+    <result column="TC_BREUD03" jdbcType="DECIMAL" property="tcBreud03" />
+    <result column="TC_BREUD04" jdbcType="DECIMAL" property="tcBreud04" />
+    <result column="TC_BREUD05" jdbcType="DATE" property="tcBreud05" />
+    <result column="TC_BREUD06" jdbcType="DATE" property="tcBreud06" />
+    <result column="TC_BREPLANT" jdbcType="VARCHAR" property="tcBreplant" />
+    <result column="TC_BRELEGAL" jdbcType="VARCHAR" property="tcBrelegal" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from TC_BRE_FILE
+    where TC_BRE01 = #{tcBre01,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.TC_BRE_FILE">
+    insert into TC_BRE_FILE (TC_BRE01, TC_BRE02, TC_BRE03, 
+      TC_BRE04, TC_BRE05, TC_BREUSER, 
+      TC_BREGRUP, TC_BREMODU, TC_BREDATE, 
+      TC_BREUD01, TC_BREUD02, TC_BREUD03, 
+      TC_BREUD04, TC_BREUD05, TC_BREUD06, 
+      TC_BREPLANT, TC_BRELEGAL)
+    values (#{tcBre01,jdbcType=VARCHAR}, #{tcBre02,jdbcType=VARCHAR}, #{tcBre03,jdbcType=VARCHAR}, 
+      #{tcBre04,jdbcType=VARCHAR}, #{tcBre05,jdbcType=VARCHAR}, #{tcBreuser,jdbcType=VARCHAR}, 
+      #{tcBregrup,jdbcType=VARCHAR}, #{tcBremodu,jdbcType=VARCHAR}, #{tcBredate,jdbcType=DATE}, 
+      #{tcBreud01,jdbcType=VARCHAR}, #{tcBreud02,jdbcType=VARCHAR}, #{tcBreud03,jdbcType=DECIMAL}, 
+      #{tcBreud04,jdbcType=DECIMAL}, #{tcBreud05,jdbcType=DATE}, #{tcBreud06,jdbcType=DATE}, 
+      #{tcBreplant,jdbcType=VARCHAR}, #{tcBrelegal,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.TC_BRE_FILE">
+    update TC_BRE_FILE
+    set TC_BRE02 = #{tcBre02,jdbcType=VARCHAR},
+      TC_BRE03 = #{tcBre03,jdbcType=VARCHAR},
+      TC_BRE04 = #{tcBre04,jdbcType=VARCHAR},
+      TC_BRE05 = #{tcBre05,jdbcType=VARCHAR},
+      TC_BREUSER = #{tcBreuser,jdbcType=VARCHAR},
+      TC_BREGRUP = #{tcBregrup,jdbcType=VARCHAR},
+      TC_BREMODU = #{tcBremodu,jdbcType=VARCHAR},
+      TC_BREDATE = #{tcBredate,jdbcType=DATE},
+      TC_BREUD01 = #{tcBreud01,jdbcType=VARCHAR},
+      TC_BREUD02 = #{tcBreud02,jdbcType=VARCHAR},
+      TC_BREUD03 = #{tcBreud03,jdbcType=DECIMAL},
+      TC_BREUD04 = #{tcBreud04,jdbcType=DECIMAL},
+      TC_BREUD05 = #{tcBreud05,jdbcType=DATE},
+      TC_BREUD06 = #{tcBreud06,jdbcType=DATE},
+      TC_BREPLANT = #{tcBreplant,jdbcType=VARCHAR},
+      TC_BRELEGAL = #{tcBrelegal,jdbcType=VARCHAR}
+    where TC_BRE01 = #{tcBre01,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select TC_BRE01, TC_BRE02, TC_BRE03, TC_BRE04, TC_BRE05, TC_BREUSER, TC_BREGRUP, 
+    TC_BREMODU, TC_BREDATE, TC_BREUD01, TC_BREUD02, TC_BREUD03, TC_BREUD04, TC_BREUD05, 
+    TC_BREUD06, TC_BREPLANT, TC_BRELEGAL
+    from TC_BRE_FILE
+    where TC_BRE01 = #{tcBre01,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select TC_BRE01, TC_BRE02, TC_BRE03, TC_BRE04, TC_BRE05, TC_BREUSER, TC_BREGRUP, 
+    TC_BREMODU, TC_BREDATE, TC_BREUD01, TC_BREUD02, TC_BREUD03, TC_BREUD04, TC_BREUD05, 
+    TC_BREUD06, TC_BREPLANT, TC_BRELEGAL
+    from TC_BRE_FILE
+  </select>
+</mapper>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.GEP_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.GEP_FILE">
+    <id column="GEP01" jdbcType="VARCHAR" property="gep01" />
+    <result column="GEP02" jdbcType="VARCHAR" property="gep02" />
+    <result column="GEP03" jdbcType="VARCHAR" property="gep03" />
+    <result column="GEP04" jdbcType="DATE" property="gep04" />
+    <result column="GEP05" jdbcType="VARCHAR" property="gep05" />
+    <result column="GEP06" jdbcType="VARCHAR" property="gep06" />
+    <result column="GEP07" jdbcType="VARCHAR" property="gep07" />
+    <result column="GEP08" jdbcType="VARCHAR" property="gep08" />
+    <result column="GEP09" jdbcType="VARCHAR" property="gep09" />
+    <result column="GEP10" jdbcType="VARCHAR" property="gep10" />
+    <result column="GEPACTI" jdbcType="VARCHAR" property="gepacti" />
+    <result column="GEPUSER" jdbcType="VARCHAR" property="gepuser" />
+    <result column="GEPGRUP" jdbcType="VARCHAR" property="gepgrup" />
+    <result column="GEPMODU" jdbcType="VARCHAR" property="gepmodu" />
+    <result column="GEPDATE" jdbcType="DATE" property="gepdate" />
+    <result column="GEP11" jdbcType="VARCHAR" property="gep11" />
+    <result column="GEPORIG" jdbcType="VARCHAR" property="geporig" />
+    <result column="GEPORIU" jdbcType="VARCHAR" property="geporiu" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from GEP_FILE
+    where GEP01 = #{gep01,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.GEP_FILE">
+    insert into GEP_FILE (GEP01, GEP02, GEP03, 
+      GEP04, GEP05, GEP06, GEP07, 
+      GEP08, GEP09, GEP10, 
+      GEPACTI, GEPUSER, GEPGRUP, 
+      GEPMODU, GEPDATE, GEP11, 
+      GEPORIG, GEPORIU)
+    values (#{gep01,jdbcType=VARCHAR}, #{gep02,jdbcType=VARCHAR}, #{gep03,jdbcType=VARCHAR}, 
+      #{gep04,jdbcType=DATE}, #{gep05,jdbcType=VARCHAR}, #{gep06,jdbcType=VARCHAR}, #{gep07,jdbcType=VARCHAR}, 
+      #{gep08,jdbcType=VARCHAR}, #{gep09,jdbcType=VARCHAR}, #{gep10,jdbcType=VARCHAR}, 
+      #{gepacti,jdbcType=VARCHAR}, #{gepuser,jdbcType=VARCHAR}, #{gepgrup,jdbcType=VARCHAR}, 
+      #{gepmodu,jdbcType=VARCHAR}, #{gepdate,jdbcType=DATE}, #{gep11,jdbcType=VARCHAR}, 
+      #{geporig,jdbcType=VARCHAR}, #{geporiu,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.GEP_FILE">
+    update GEP_FILE
+    set GEP02 = #{gep02,jdbcType=VARCHAR},
+      GEP03 = #{gep03,jdbcType=VARCHAR},
+      GEP04 = #{gep04,jdbcType=DATE},
+      GEP05 = #{gep05,jdbcType=VARCHAR},
+      GEP06 = #{gep06,jdbcType=VARCHAR},
+      GEP07 = #{gep07,jdbcType=VARCHAR},
+      GEP08 = #{gep08,jdbcType=VARCHAR},
+      GEP09 = #{gep09,jdbcType=VARCHAR},
+      GEP10 = #{gep10,jdbcType=VARCHAR},
+      GEPACTI = #{gepacti,jdbcType=VARCHAR},
+      GEPUSER = #{gepuser,jdbcType=VARCHAR},
+      GEPGRUP = #{gepgrup,jdbcType=VARCHAR},
+      GEPMODU = #{gepmodu,jdbcType=VARCHAR},
+      GEPDATE = #{gepdate,jdbcType=DATE},
+      GEP11 = #{gep11,jdbcType=VARCHAR},
+      GEPORIG = #{geporig,jdbcType=VARCHAR},
+      GEPORIU = #{geporiu,jdbcType=VARCHAR}
+    where GEP01 = #{gep01,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select GEP01, GEP02, GEP03, GEP04, GEP05, GEP06, GEP07, GEP08, GEP09, GEP10, GEPACTI, 
+    GEPUSER, GEPGRUP, GEPMODU, GEPDATE, GEP11, GEPORIG, GEPORIU
+    from GEP_FILE
+    where GEP01 = #{gep01,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select GEP01, GEP02, GEP03, GEP04, GEP05, GEP06, GEP07, GEP08, GEP09, GEP10, GEPACTI, 
+    GEPUSER, GEPGRUP, GEPMODU, GEPDATE, GEP11, GEPORIG, GEPORIU
+    from GEP_FILE
+  </select>
+</mapper>

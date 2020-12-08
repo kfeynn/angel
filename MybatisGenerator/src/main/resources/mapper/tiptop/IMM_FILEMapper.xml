@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.IMM_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.IMM_FILE">
+    <id column="IMM01" jdbcType="VARCHAR" property="imm01" />
+    <result column="IMM02" jdbcType="DATE" property="imm02" />
+    <result column="IMM03" jdbcType="VARCHAR" property="imm03" />
+    <result column="IMM04" jdbcType="VARCHAR" property="imm04" />
+    <result column="IMMDAYS" jdbcType="DECIMAL" property="immdays" />
+    <result column="IMMPRIT" jdbcType="DECIMAL" property="immprit" />
+    <result column="IMM05" jdbcType="DECIMAL" property="imm05" />
+    <result column="IMM06" jdbcType="DECIMAL" property="imm06" />
+    <result column="IMM07" jdbcType="DECIMAL" property="imm07" />
+    <result column="IMM08" jdbcType="VARCHAR" property="imm08" />
+    <result column="IMM09" jdbcType="VARCHAR" property="imm09" />
+    <result column="IMM10" jdbcType="VARCHAR" property="imm10" />
+    <result column="IMM11" jdbcType="VARCHAR" property="imm11" />
+    <result column="IMM12" jdbcType="DATE" property="imm12" />
+    <result column="IMM13" jdbcType="VARCHAR" property="imm13" />
+    <result column="IMMACTI" jdbcType="VARCHAR" property="immacti" />
+    <result column="IMMUSER" jdbcType="VARCHAR" property="immuser" />
+    <result column="IMMGRUP" jdbcType="VARCHAR" property="immgrup" />
+    <result column="IMMMODU" jdbcType="VARCHAR" property="immmodu" />
+    <result column="IMMDATE" jdbcType="DATE" property="immdate" />
+    <result column="IMMCONF" jdbcType="VARCHAR" property="immconf" />
+    <result column="IMM14" jdbcType="VARCHAR" property="imm14" />
+    <result column="IMMSPC" jdbcType="VARCHAR" property="immspc" />
+    <result column="IMMUD01" jdbcType="VARCHAR" property="immud01" />
+    <result column="IMMUD02" jdbcType="VARCHAR" property="immud02" />
+    <result column="IMMUD03" jdbcType="VARCHAR" property="immud03" />
+    <result column="IMMUD04" jdbcType="VARCHAR" property="immud04" />
+    <result column="IMMUD05" jdbcType="VARCHAR" property="immud05" />
+    <result column="IMMUD06" jdbcType="VARCHAR" property="immud06" />
+    <result column="IMMUD07" jdbcType="DECIMAL" property="immud07" />
+    <result column="IMMUD08" jdbcType="DECIMAL" property="immud08" />
+    <result column="IMMUD09" jdbcType="DECIMAL" property="immud09" />
+    <result column="IMMUD10" jdbcType="DECIMAL" property="immud10" />
+    <result column="IMMUD11" jdbcType="DECIMAL" property="immud11" />
+    <result column="IMMUD12" jdbcType="DECIMAL" property="immud12" />
+    <result column="IMMUD13" jdbcType="DATE" property="immud13" />
+    <result column="IMMUD14" jdbcType="DATE" property="immud14" />
+    <result column="IMMUD15" jdbcType="DATE" property="immud15" />
+    <result column="IMMPLANT" jdbcType="VARCHAR" property="immplant" />
+    <result column="IMMLEGAL" jdbcType="VARCHAR" property="immlegal" />
+    <result column="IMMORIU" jdbcType="VARCHAR" property="immoriu" />
+    <result column="IMMORIG" jdbcType="VARCHAR" property="immorig" />
+    <result column="IMM15" jdbcType="VARCHAR" property="imm15" />
+    <result column="IMM16" jdbcType="VARCHAR" property="imm16" />
+    <result column="IMMMKSG" jdbcType="VARCHAR" property="immmksg" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from S30.IMM_FILE
+    where IMM01 = #{imm01,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.IMM_FILE">
+    insert into S30.IMM_FILE (IMM01, IMM02, IMM03, 
+      IMM04, IMMDAYS, IMMPRIT, 
+      IMM05, IMM06, IMM07, 
+      IMM08, IMM09, IMM10, 
+      IMM11, IMM12, IMM13, IMMACTI, 
+      IMMUSER, IMMGRUP, IMMMODU, 
+      IMMDATE, IMMCONF, IMM14, 
+      IMMSPC, IMMUD01, IMMUD02, 
+      IMMUD03, IMMUD04, IMMUD05, 
+      IMMUD06, IMMUD07, IMMUD08, 
+      IMMUD09, IMMUD10, IMMUD11, 
+      IMMUD12, IMMUD13, IMMUD14, 
+      IMMUD15, IMMPLANT, IMMLEGAL, 
+      IMMORIU, IMMORIG, IMM15, 
+      IMM16, IMMMKSG)
+    values (#{imm01,jdbcType=VARCHAR}, #{imm02,jdbcType=DATE}, #{imm03,jdbcType=VARCHAR}, 
+      #{imm04,jdbcType=VARCHAR}, #{immdays,jdbcType=DECIMAL}, #{immprit,jdbcType=DECIMAL}, 
+      #{imm05,jdbcType=DECIMAL}, #{imm06,jdbcType=DECIMAL}, #{imm07,jdbcType=DECIMAL}, 
+      #{imm08,jdbcType=VARCHAR}, #{imm09,jdbcType=VARCHAR}, #{imm10,jdbcType=VARCHAR}, 
+      #{imm11,jdbcType=VARCHAR}, #{imm12,jdbcType=DATE}, #{imm13,jdbcType=VARCHAR}, #{immacti,jdbcType=VARCHAR}, 
+      #{immuser,jdbcType=VARCHAR}, #{immgrup,jdbcType=VARCHAR}, #{immmodu,jdbcType=VARCHAR}, 
+      #{immdate,jdbcType=DATE}, #{immconf,jdbcType=VARCHAR}, #{imm14,jdbcType=VARCHAR}, 
+      #{immspc,jdbcType=VARCHAR}, #{immud01,jdbcType=VARCHAR}, #{immud02,jdbcType=VARCHAR}, 
+      #{immud03,jdbcType=VARCHAR}, #{immud04,jdbcType=VARCHAR}, #{immud05,jdbcType=VARCHAR}, 
+      #{immud06,jdbcType=VARCHAR}, #{immud07,jdbcType=DECIMAL}, #{immud08,jdbcType=DECIMAL}, 
+      #{immud09,jdbcType=DECIMAL}, #{immud10,jdbcType=DECIMAL}, #{immud11,jdbcType=DECIMAL}, 
+      #{immud12,jdbcType=DECIMAL}, #{immud13,jdbcType=DATE}, #{immud14,jdbcType=DATE}, 
+      #{immud15,jdbcType=DATE}, #{immplant,jdbcType=VARCHAR}, #{immlegal,jdbcType=VARCHAR}, 
+      #{immoriu,jdbcType=VARCHAR}, #{immorig,jdbcType=VARCHAR}, #{imm15,jdbcType=VARCHAR}, 
+      #{imm16,jdbcType=VARCHAR}, #{immmksg,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.IMM_FILE">
+    update S30.IMM_FILE
+    set IMM02 = #{imm02,jdbcType=DATE},
+      IMM03 = #{imm03,jdbcType=VARCHAR},
+      IMM04 = #{imm04,jdbcType=VARCHAR},
+      IMMDAYS = #{immdays,jdbcType=DECIMAL},
+      IMMPRIT = #{immprit,jdbcType=DECIMAL},
+      IMM05 = #{imm05,jdbcType=DECIMAL},
+      IMM06 = #{imm06,jdbcType=DECIMAL},
+      IMM07 = #{imm07,jdbcType=DECIMAL},
+      IMM08 = #{imm08,jdbcType=VARCHAR},
+      IMM09 = #{imm09,jdbcType=VARCHAR},
+      IMM10 = #{imm10,jdbcType=VARCHAR},
+      IMM11 = #{imm11,jdbcType=VARCHAR},
+      IMM12 = #{imm12,jdbcType=DATE},
+      IMM13 = #{imm13,jdbcType=VARCHAR},
+      IMMACTI = #{immacti,jdbcType=VARCHAR},
+      IMMUSER = #{immuser,jdbcType=VARCHAR},
+      IMMGRUP = #{immgrup,jdbcType=VARCHAR},
+      IMMMODU = #{immmodu,jdbcType=VARCHAR},
+      IMMDATE = #{immdate,jdbcType=DATE},
+      IMMCONF = #{immconf,jdbcType=VARCHAR},
+      IMM14 = #{imm14,jdbcType=VARCHAR},
+      IMMSPC = #{immspc,jdbcType=VARCHAR},
+      IMMUD01 = #{immud01,jdbcType=VARCHAR},
+      IMMUD02 = #{immud02,jdbcType=VARCHAR},
+      IMMUD03 = #{immud03,jdbcType=VARCHAR},
+      IMMUD04 = #{immud04,jdbcType=VARCHAR},
+      IMMUD05 = #{immud05,jdbcType=VARCHAR},
+      IMMUD06 = #{immud06,jdbcType=VARCHAR},
+      IMMUD07 = #{immud07,jdbcType=DECIMAL},
+      IMMUD08 = #{immud08,jdbcType=DECIMAL},
+      IMMUD09 = #{immud09,jdbcType=DECIMAL},
+      IMMUD10 = #{immud10,jdbcType=DECIMAL},
+      IMMUD11 = #{immud11,jdbcType=DECIMAL},
+      IMMUD12 = #{immud12,jdbcType=DECIMAL},
+      IMMUD13 = #{immud13,jdbcType=DATE},
+      IMMUD14 = #{immud14,jdbcType=DATE},
+      IMMUD15 = #{immud15,jdbcType=DATE},
+      IMMPLANT = #{immplant,jdbcType=VARCHAR},
+      IMMLEGAL = #{immlegal,jdbcType=VARCHAR},
+      IMMORIU = #{immoriu,jdbcType=VARCHAR},
+      IMMORIG = #{immorig,jdbcType=VARCHAR},
+      IMM15 = #{imm15,jdbcType=VARCHAR},
+      IMM16 = #{imm16,jdbcType=VARCHAR},
+      IMMMKSG = #{immmksg,jdbcType=VARCHAR}
+    where IMM01 = #{imm01,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select IMM01, IMM02, IMM03, IMM04, IMMDAYS, IMMPRIT, IMM05, IMM06, IMM07, IMM08, 
+    IMM09, IMM10, IMM11, IMM12, IMM13, IMMACTI, IMMUSER, IMMGRUP, IMMMODU, IMMDATE, IMMCONF, 
+    IMM14, IMMSPC, IMMUD01, IMMUD02, IMMUD03, IMMUD04, IMMUD05, IMMUD06, IMMUD07, IMMUD08, 
+    IMMUD09, IMMUD10, IMMUD11, IMMUD12, IMMUD13, IMMUD14, IMMUD15, IMMPLANT, IMMLEGAL, 
+    IMMORIU, IMMORIG, IMM15, IMM16, IMMMKSG
+    from S30.IMM_FILE
+    where IMM01 = #{imm01,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select IMM01, IMM02, IMM03, IMM04, IMMDAYS, IMMPRIT, IMM05, IMM06, IMM07, IMM08, 
+    IMM09, IMM10, IMM11, IMM12, IMM13, IMMACTI, IMMUSER, IMMGRUP, IMMMODU, IMMDATE, IMMCONF, 
+    IMM14, IMMSPC, IMMUD01, IMMUD02, IMMUD03, IMMUD04, IMMUD05, IMMUD06, IMMUD07, IMMUD08, 
+    IMMUD09, IMMUD10, IMMUD11, IMMUD12, IMMUD13, IMMUD14, IMMUD15, IMMPLANT, IMMLEGAL, 
+    IMMORIU, IMMORIG, IMM15, IMM16, IMMMKSG
+    from S30.IMM_FILE
+  </select>
+</mapper>

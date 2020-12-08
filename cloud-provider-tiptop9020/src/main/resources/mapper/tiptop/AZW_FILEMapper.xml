@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.AZW_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.AZW_FILE">
+    <result column="AZW01" jdbcType="VARCHAR" property="azw01" />
+    <result column="AZW02" jdbcType="VARCHAR" property="azw02" />
+    <result column="AZW03" jdbcType="VARCHAR" property="azw03" />
+    <result column="AZW04" jdbcType="VARCHAR" property="azw04" />
+    <result column="AZW05" jdbcType="VARCHAR" property="azw05" />
+    <result column="AZW06" jdbcType="VARCHAR" property="azw06" />
+    <result column="AZW07" jdbcType="VARCHAR" property="azw07" />
+    <result column="AZWACTI" jdbcType="VARCHAR" property="azwacti" />
+    <result column="AZWDATE" jdbcType="DATE" property="azwdate" />
+    <result column="AZWGRUP" jdbcType="VARCHAR" property="azwgrup" />
+    <result column="AZWMODU" jdbcType="VARCHAR" property="azwmodu" />
+    <result column="AZWUSER" jdbcType="VARCHAR" property="azwuser" />
+    <result column="AZWORIG" jdbcType="VARCHAR" property="azworig" />
+    <result column="AZWORIU" jdbcType="VARCHAR" property="azworiu" />
+    <result column="AZW08" jdbcType="VARCHAR" property="azw08" />
+    <result column="AZW09" jdbcType="VARCHAR" property="azw09" />
+    <result column="AZWUD01" jdbcType="VARCHAR" property="azwud01" />
+    <result column="AZWUD02" jdbcType="VARCHAR" property="azwud02" />
+    <result column="AZWUD03" jdbcType="VARCHAR" property="azwud03" />
+    <result column="AZWUD04" jdbcType="VARCHAR" property="azwud04" />
+    <result column="AZWUD05" jdbcType="VARCHAR" property="azwud05" />
+    <result column="AZWUD06" jdbcType="VARCHAR" property="azwud06" />
+    <result column="AZWUD07" jdbcType="DECIMAL" property="azwud07" />
+    <result column="AZWUD08" jdbcType="DECIMAL" property="azwud08" />
+    <result column="AZWUD09" jdbcType="DECIMAL" property="azwud09" />
+    <result column="AZWUD10" jdbcType="DECIMAL" property="azwud10" />
+    <result column="AZWUD11" jdbcType="DECIMAL" property="azwud11" />
+    <result column="AZWUD12" jdbcType="DECIMAL" property="azwud12" />
+    <result column="AZWUD13" jdbcType="DATE" property="azwud13" />
+    <result column="AZWUD14" jdbcType="DATE" property="azwud14" />
+    <result column="AZWUD15" jdbcType="DATE" property="azwud15" />
+  </resultMap>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.AZW_FILE">
+    insert into AZW_FILE (AZW01, AZW02, AZW03, 
+      AZW04, AZW05, AZW06, 
+      AZW07, AZWACTI, AZWDATE, 
+      AZWGRUP, AZWMODU, AZWUSER, 
+      AZWORIG, AZWORIU, AZW08, 
+      AZW09, AZWUD01, AZWUD02, 
+      AZWUD03, AZWUD04, AZWUD05, 
+      AZWUD06, AZWUD07, AZWUD08, 
+      AZWUD09, AZWUD10, AZWUD11, 
+      AZWUD12, AZWUD13, AZWUD14, 
+      AZWUD15)
+    values (#{azw01,jdbcType=VARCHAR}, #{azw02,jdbcType=VARCHAR}, #{azw03,jdbcType=VARCHAR}, 
+      #{azw04,jdbcType=VARCHAR}, #{azw05,jdbcType=VARCHAR}, #{azw06,jdbcType=VARCHAR}, 
+      #{azw07,jdbcType=VARCHAR}, #{azwacti,jdbcType=VARCHAR}, #{azwdate,jdbcType=DATE}, 
+      #{azwgrup,jdbcType=VARCHAR}, #{azwmodu,jdbcType=VARCHAR}, #{azwuser,jdbcType=VARCHAR}, 
+      #{azworig,jdbcType=VARCHAR}, #{azworiu,jdbcType=VARCHAR}, #{azw08,jdbcType=VARCHAR}, 
+      #{azw09,jdbcType=VARCHAR}, #{azwud01,jdbcType=VARCHAR}, #{azwud02,jdbcType=VARCHAR}, 
+      #{azwud03,jdbcType=VARCHAR}, #{azwud04,jdbcType=VARCHAR}, #{azwud05,jdbcType=VARCHAR}, 
+      #{azwud06,jdbcType=VARCHAR}, #{azwud07,jdbcType=DECIMAL}, #{azwud08,jdbcType=DECIMAL}, 
+      #{azwud09,jdbcType=DECIMAL}, #{azwud10,jdbcType=DECIMAL}, #{azwud11,jdbcType=DECIMAL}, 
+      #{azwud12,jdbcType=DECIMAL}, #{azwud13,jdbcType=DATE}, #{azwud14,jdbcType=DATE}, 
+      #{azwud15,jdbcType=DATE})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select AZW01, AZW02, AZW03, AZW04, AZW05, AZW06, AZW07, AZWACTI, AZWDATE, AZWGRUP, 
+    AZWMODU, AZWUSER, AZWORIG, AZWORIU, AZW08, AZW09, AZWUD01, AZWUD02, AZWUD03, AZWUD04, 
+    AZWUD05, AZWUD06, AZWUD07, AZWUD08, AZWUD09, AZWUD10, AZWUD11, AZWUD12, AZWUD13, 
+    AZWUD14, AZWUD15
+    from AZW_FILE
+  </select>
+</mapper>

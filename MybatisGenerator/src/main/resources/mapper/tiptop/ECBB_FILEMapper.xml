@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.ECBB_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.ECBB_FILE">
+    <id column="ECBB01" jdbcType="VARCHAR" property="ecbb01" />
+    <id column="ECBB02" jdbcType="VARCHAR" property="ecbb02" />
+    <id column="ECBB03" jdbcType="DECIMAL" property="ecbb03" />
+    <id column="ECBB09" jdbcType="DECIMAL" property="ecbb09" />
+    <id column="ECBB012" jdbcType="VARCHAR" property="ecbb012" />
+    <result column="ECBB10" jdbcType="VARCHAR" property="ecbb10" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from ECBB_FILE
+    where ECBB01 = #{ecbb01,jdbcType=VARCHAR}
+      and ECBB02 = #{ecbb02,jdbcType=VARCHAR}
+      and ECBB03 = #{ecbb03,jdbcType=DECIMAL}
+      and ECBB09 = #{ecbb09,jdbcType=DECIMAL}
+      and ECBB012 = #{ecbb012,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.ECBB_FILE">
+    insert into ECBB_FILE (ECBB01, ECBB02, ECBB03, 
+      ECBB09, ECBB012, ECBB10
+      )
+    values (#{ecbb01,jdbcType=VARCHAR}, #{ecbb02,jdbcType=VARCHAR}, #{ecbb03,jdbcType=DECIMAL}, 
+      #{ecbb09,jdbcType=DECIMAL}, #{ecbb012,jdbcType=VARCHAR}, #{ecbb10,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.ECBB_FILE">
+    update ECBB_FILE
+    set ECBB10 = #{ecbb10,jdbcType=VARCHAR}
+    where ECBB01 = #{ecbb01,jdbcType=VARCHAR}
+      and ECBB02 = #{ecbb02,jdbcType=VARCHAR}
+      and ECBB03 = #{ecbb03,jdbcType=DECIMAL}
+      and ECBB09 = #{ecbb09,jdbcType=DECIMAL}
+      and ECBB012 = #{ecbb012,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select ECBB01, ECBB02, ECBB03, ECBB09, ECBB012, ECBB10
+    from ECBB_FILE
+    where ECBB01 = #{ecbb01,jdbcType=VARCHAR}
+      and ECBB02 = #{ecbb02,jdbcType=VARCHAR}
+      and ECBB03 = #{ecbb03,jdbcType=DECIMAL}
+      and ECBB09 = #{ecbb09,jdbcType=DECIMAL}
+      and ECBB012 = #{ecbb012,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select ECBB01, ECBB02, ECBB03, ECBB09, ECBB012, ECBB10
+    from ECBB_FILE
+  </select>
+</mapper>

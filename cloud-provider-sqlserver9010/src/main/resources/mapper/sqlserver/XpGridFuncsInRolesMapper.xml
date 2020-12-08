@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.sqlserver.XpGridFuncsInRolesMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.sqlserver.XpGridFuncsInRoles">
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="RoleId" jdbcType="INTEGER" property="roleid" />
+    <result column="FuncCode" jdbcType="VARCHAR" property="funccode" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from xpGrid_FuncsInRoles
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.sqlserver.XpGridFuncsInRoles">
+    insert into xpGrid_FuncsInRoles (ID, RoleId, FuncCode
+      )
+    values (#{id,jdbcType=INTEGER}, #{roleid,jdbcType=INTEGER}, #{funccode,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.sqlserver.XpGridFuncsInRoles">
+    update xpGrid_FuncsInRoles
+    set RoleId = #{roleid,jdbcType=INTEGER},
+      FuncCode = #{funccode,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select ID, RoleId, FuncCode
+    from xpGrid_FuncsInRoles
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select ID, RoleId, FuncCode
+    from xpGrid_FuncsInRoles
+  </select>
+</mapper>

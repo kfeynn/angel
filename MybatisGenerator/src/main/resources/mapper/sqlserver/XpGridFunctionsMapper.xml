@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.sqlserver.XpGridFunctionsMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.sqlserver.XpGridFunctions">
+    <id column="FuncCode" jdbcType="VARCHAR" property="funccode" />
+    <result column="FuncName" jdbcType="VARCHAR" property="funcname" />
+    <result column="FuncUrl" jdbcType="VARCHAR" property="funcurl" />
+    <result column="FuncParent" jdbcType="VARCHAR" property="funcparent" />
+    <result column="FuncImg" jdbcType="VARCHAR" property="funcimg" />
+    <result column="Enable" jdbcType="INTEGER" property="enable" />
+    <result column="DisplayOrder" jdbcType="INTEGER" property="displayorder" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from xpGrid_Functions
+    where FuncCode = #{funccode,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.sqlserver.XpGridFunctions">
+    insert into xpGrid_Functions (FuncCode, FuncName, FuncUrl, 
+      FuncParent, FuncImg, Enable, 
+      DisplayOrder)
+    values (#{funccode,jdbcType=VARCHAR}, #{funcname,jdbcType=VARCHAR}, #{funcurl,jdbcType=VARCHAR}, 
+      #{funcparent,jdbcType=VARCHAR}, #{funcimg,jdbcType=VARCHAR}, #{enable,jdbcType=INTEGER}, 
+      #{displayorder,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.sqlserver.XpGridFunctions">
+    update xpGrid_Functions
+    set FuncName = #{funcname,jdbcType=VARCHAR},
+      FuncUrl = #{funcurl,jdbcType=VARCHAR},
+      FuncParent = #{funcparent,jdbcType=VARCHAR},
+      FuncImg = #{funcimg,jdbcType=VARCHAR},
+      Enable = #{enable,jdbcType=INTEGER},
+      DisplayOrder = #{displayorder,jdbcType=INTEGER}
+    where FuncCode = #{funccode,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select FuncCode, FuncName, FuncUrl, FuncParent, FuncImg, Enable, DisplayOrder
+    from xpGrid_Functions
+    where FuncCode = #{funccode,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select FuncCode, FuncName, FuncUrl, FuncParent, FuncImg, Enable, DisplayOrder
+    from xpGrid_Functions
+  </select>
+</mapper>

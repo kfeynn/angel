@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.mysql.StorageTblMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.mysql.StorageTbl">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="commodity_code" jdbcType="VARCHAR" property="commodityCode" />
+    <result column="count" jdbcType="INTEGER" property="count" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from storage_tbl
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.mysql.StorageTbl">
+    insert into storage_tbl (id, commodity_code, count
+      )
+    values (#{id,jdbcType=INTEGER}, #{commodityCode,jdbcType=VARCHAR}, #{count,jdbcType=INTEGER}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.mysql.StorageTbl">
+    update storage_tbl
+    set commodity_code = #{commodityCode,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, commodity_code, count
+    from storage_tbl
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, commodity_code, count
+    from storage_tbl
+  </select>
+</mapper>

@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.IMA_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.IMA_FILE">
+    <id column="IMA01" jdbcType="VARCHAR" property="ima01" />
+    <result column="IMA02" jdbcType="VARCHAR" property="ima02" />
+    <result column="IMA021" jdbcType="VARCHAR" property="ima021" />
+    <result column="IMA03" jdbcType="VARCHAR" property="ima03" />
+    <result column="IMA04" jdbcType="VARCHAR" property="ima04" />
+    <result column="IMA05" jdbcType="VARCHAR" property="ima05" />
+    <result column="IMA06" jdbcType="VARCHAR" property="ima06" />
+    <result column="IMA07" jdbcType="VARCHAR" property="ima07" />
+    <result column="IMA08" jdbcType="VARCHAR" property="ima08" />
+    <result column="IMA09" jdbcType="VARCHAR" property="ima09" />
+    <result column="IMA10" jdbcType="VARCHAR" property="ima10" />
+    <result column="IMA11" jdbcType="VARCHAR" property="ima11" />
+    <result column="IMA12" jdbcType="VARCHAR" property="ima12" />
+    <result column="IMA13" jdbcType="VARCHAR" property="ima13" />
+    <result column="IMA14" jdbcType="VARCHAR" property="ima14" />
+    <result column="IMA15" jdbcType="VARCHAR" property="ima15" />
+    <result column="IMA16" jdbcType="DECIMAL" property="ima16" />
+    <result column="IMA17" jdbcType="VARCHAR" property="ima17" />
+    <result column="IMA17_FAC" jdbcType="DECIMAL" property="ima17Fac" />
+    <result column="IMA18" jdbcType="DECIMAL" property="ima18" />
+    <result column="IMA19" jdbcType="VARCHAR" property="ima19" />
+    <result column="IMA20" jdbcType="DECIMAL" property="ima20" />
+    <result column="IMA21" jdbcType="VARCHAR" property="ima21" />
+    <result column="IMA22" jdbcType="DECIMAL" property="ima22" />
+    <result column="IMA23" jdbcType="VARCHAR" property="ima23" />
+    <result column="IMA24" jdbcType="VARCHAR" property="ima24" />
+    <result column="IMA25" jdbcType="VARCHAR" property="ima25" />
+    <result column="IMA26" jdbcType="DECIMAL" property="ima26" />
+    <result column="IMA261" jdbcType="DECIMAL" property="ima261" />
+    <result column="IMA262" jdbcType="DECIMAL" property="ima262" />
+    <result column="IMA27" jdbcType="DECIMAL" property="ima27" />
+    <result column="IMA271" jdbcType="DECIMAL" property="ima271" />
+    <result column="IMA28" jdbcType="DECIMAL" property="ima28" />
+    <result column="IMA29" jdbcType="DATE" property="ima29" />
+    <result column="IMA30" jdbcType="DATE" property="ima30" />
+    <result column="IMA31" jdbcType="VARCHAR" property="ima31" />
+    <result column="IMA31_FAC" jdbcType="DECIMAL" property="ima31Fac" />
+    <result column="IMA32" jdbcType="DECIMAL" property="ima32" />
+    <result column="IMA33" jdbcType="DECIMAL" property="ima33" />
+    <result column="IMA34" jdbcType="VARCHAR" property="ima34" />
+    <result column="IMA35" jdbcType="VARCHAR" property="ima35" />
+    <result column="IMA36" jdbcType="VARCHAR" property="ima36" />
+    <result column="IMA37" jdbcType="VARCHAR" property="ima37" />
+    <result column="IMA38" jdbcType="DECIMAL" property="ima38" />
+    <result column="IMA39" jdbcType="VARCHAR" property="ima39" />
+    <result column="IMA40" jdbcType="DECIMAL" property="ima40" />
+    <result column="IMA41" jdbcType="DECIMAL" property="ima41" />
+    <result column="IMA42" jdbcType="VARCHAR" property="ima42" />
+    <result column="IMA43" jdbcType="VARCHAR" property="ima43" />
+    <result column="IMA44" jdbcType="VARCHAR" property="ima44" />
+    <result column="IMA44_FAC" jdbcType="DECIMAL" property="ima44Fac" />
+    <result column="IMA45" jdbcType="DECIMAL" property="ima45" />
+    <result column="IMA46" jdbcType="DECIMAL" property="ima46" />
+    <result column="IMA47" jdbcType="DECIMAL" property="ima47" />
+    <result column="IMA48" jdbcType="DECIMAL" property="ima48" />
+    <result column="IMA49" jdbcType="DECIMAL" property="ima49" />
+    <result column="IMA491" jdbcType="DECIMAL" property="ima491" />
+    <result column="IMA50" jdbcType="DECIMAL" property="ima50" />
+    <result column="IMA51" jdbcType="DECIMAL" property="ima51" />
+    <result column="IMA52" jdbcType="DECIMAL" property="ima52" />
+    <result column="IMA53" jdbcType="DECIMAL" property="ima53" />
+    <result column="IMA531" jdbcType="DECIMAL" property="ima531" />
+    <result column="IMA532" jdbcType="DATE" property="ima532" />
+    <result column="IMA54" jdbcType="VARCHAR" property="ima54" />
+    <result column="IMA55" jdbcType="VARCHAR" property="ima55" />
+    <result column="IMA55_FAC" jdbcType="DECIMAL" property="ima55Fac" />
+    <result column="IMA56" jdbcType="DECIMAL" property="ima56" />
+    <result column="IMA561" jdbcType="DECIMAL" property="ima561" />
+    <result column="IMA562" jdbcType="DECIMAL" property="ima562" />
+    <result column="IMA57" jdbcType="DECIMAL" property="ima57" />
+    <result column="IMA571" jdbcType="VARCHAR" property="ima571" />
+    <result column="IMA58" jdbcType="DECIMAL" property="ima58" />
+    <result column="IMA59" jdbcType="DECIMAL" property="ima59" />
+    <result column="IMA60" jdbcType="DECIMAL" property="ima60" />
+    <result column="IMA61" jdbcType="DECIMAL" property="ima61" />
+    <result column="IMA62" jdbcType="DECIMAL" property="ima62" />
+    <result column="IMA63" jdbcType="VARCHAR" property="ima63" />
+    <result column="IMA63_FAC" jdbcType="DECIMAL" property="ima63Fac" />
+    <result column="IMA64" jdbcType="DECIMAL" property="ima64" />
+    <result column="IMA641" jdbcType="DECIMAL" property="ima641" />
+    <result column="IMA65" jdbcType="DECIMAL" property="ima65" />
+    <result column="IMA66" jdbcType="DECIMAL" property="ima66" />
+    <result column="IMA67" jdbcType="VARCHAR" property="ima67" />
+    <result column="IMA68" jdbcType="DECIMAL" property="ima68" />
+    <result column="IMA69" jdbcType="DECIMAL" property="ima69" />
+    <result column="IMA70" jdbcType="VARCHAR" property="ima70" />
+    <result column="IMA71" jdbcType="DECIMAL" property="ima71" />
+    <result column="IMA72" jdbcType="DECIMAL" property="ima72" />
+    <result column="IMA73" jdbcType="DATE" property="ima73" />
+    <result column="IMA74" jdbcType="DATE" property="ima74" />
+    <result column="IMA86" jdbcType="VARCHAR" property="ima86" />
+    <result column="IMA86_FAC" jdbcType="DECIMAL" property="ima86Fac" />
+    <result column="IMA87" jdbcType="VARCHAR" property="ima87" />
+    <result column="IMA871" jdbcType="DECIMAL" property="ima871" />
+    <result column="IMA872" jdbcType="VARCHAR" property="ima872" />
+    <result column="IMA873" jdbcType="DECIMAL" property="ima873" />
+    <result column="IMA874" jdbcType="VARCHAR" property="ima874" />
+    <result column="IMA88" jdbcType="DECIMAL" property="ima88" />
+    <result column="IMA881" jdbcType="DATE" property="ima881" />
+    <result column="IMA89" jdbcType="DECIMAL" property="ima89" />
+    <result column="IMA90" jdbcType="DECIMAL" property="ima90" />
+    <result column="IMA91" jdbcType="DECIMAL" property="ima91" />
+    <result column="IMA92" jdbcType="VARCHAR" property="ima92" />
+    <result column="IMA93" jdbcType="VARCHAR" property="ima93" />
+    <result column="IMA94" jdbcType="VARCHAR" property="ima94" />
+    <result column="IMA95" jdbcType="DECIMAL" property="ima95" />
+    <result column="IMA75" jdbcType="VARCHAR" property="ima75" />
+    <result column="IMA76" jdbcType="VARCHAR" property="ima76" />
+    <result column="IMA77" jdbcType="DECIMAL" property="ima77" />
+    <result column="IMA78" jdbcType="DECIMAL" property="ima78" />
+    <result column="IMA79" jdbcType="DECIMAL" property="ima79" />
+    <result column="IMA80" jdbcType="DECIMAL" property="ima80" />
+    <result column="IMA81" jdbcType="DECIMAL" property="ima81" />
+    <result column="IMA82" jdbcType="DECIMAL" property="ima82" />
+    <result column="IMA83" jdbcType="DECIMAL" property="ima83" />
+    <result column="IMA84" jdbcType="DECIMAL" property="ima84" />
+    <result column="IMA85" jdbcType="DECIMAL" property="ima85" />
+    <result column="IMA851" jdbcType="VARCHAR" property="ima851" />
+    <result column="IMA852" jdbcType="VARCHAR" property="ima852" />
+    <result column="IMA853" jdbcType="VARCHAR" property="ima853" />
+    <result column="IMA96" jdbcType="DECIMAL" property="ima96" />
+    <result column="IMA97" jdbcType="DECIMAL" property="ima97" />
+    <result column="IMA98" jdbcType="DECIMAL" property="ima98" />
+    <result column="IMA99" jdbcType="DECIMAL" property="ima99" />
+    <result column="IMA100" jdbcType="VARCHAR" property="ima100" />
+    <result column="IMA101" jdbcType="VARCHAR" property="ima101" />
+    <result column="IMA102" jdbcType="VARCHAR" property="ima102" />
+    <result column="IMA103" jdbcType="VARCHAR" property="ima103" />
+    <result column="IMA104" jdbcType="DECIMAL" property="ima104" />
+    <result column="IMA105" jdbcType="VARCHAR" property="ima105" />
+    <result column="IMA106" jdbcType="VARCHAR" property="ima106" />
+    <result column="IMA107" jdbcType="VARCHAR" property="ima107" />
+    <result column="IMA108" jdbcType="VARCHAR" property="ima108" />
+    <result column="IMA109" jdbcType="VARCHAR" property="ima109" />
+    <result column="IMA110" jdbcType="VARCHAR" property="ima110" />
+    <result column="IMA111" jdbcType="VARCHAR" property="ima111" />
+    <result column="IMA121" jdbcType="DECIMAL" property="ima121" />
+    <result column="IMA122" jdbcType="DECIMAL" property="ima122" />
+    <result column="IMA123" jdbcType="DECIMAL" property="ima123" />
+    <result column="IMA124" jdbcType="DECIMAL" property="ima124" />
+    <result column="IMA125" jdbcType="DECIMAL" property="ima125" />
+    <result column="IMA126" jdbcType="DECIMAL" property="ima126" />
+    <result column="IMA127" jdbcType="DECIMAL" property="ima127" />
+    <result column="IMA128" jdbcType="DECIMAL" property="ima128" />
+    <result column="IMA129" jdbcType="DECIMAL" property="ima129" />
+    <result column="IMA130" jdbcType="VARCHAR" property="ima130" />
+    <result column="IMA131" jdbcType="VARCHAR" property="ima131" />
+    <result column="IMA132" jdbcType="VARCHAR" property="ima132" />
+    <result column="IMA133" jdbcType="VARCHAR" property="ima133" />
+    <result column="IMA134" jdbcType="VARCHAR" property="ima134" />
+    <result column="IMA135" jdbcType="VARCHAR" property="ima135" />
+    <result column="IMA136" jdbcType="VARCHAR" property="ima136" />
+    <result column="IMA137" jdbcType="VARCHAR" property="ima137" />
+    <result column="IMA138" jdbcType="VARCHAR" property="ima138" />
+    <result column="IMA139" jdbcType="VARCHAR" property="ima139" />
+    <result column="IMA140" jdbcType="VARCHAR" property="ima140" />
+    <result column="IMA141" jdbcType="VARCHAR" property="ima141" />
+    <result column="IMA142" jdbcType="DECIMAL" property="ima142" />
+    <result column="IMA143" jdbcType="DECIMAL" property="ima143" />
+    <result column="IMA144" jdbcType="VARCHAR" property="ima144" />
+    <result column="IMA145" jdbcType="VARCHAR" property="ima145" />
+    <result column="IMA146" jdbcType="VARCHAR" property="ima146" />
+    <result column="IMA147" jdbcType="VARCHAR" property="ima147" />
+    <result column="IMA148" jdbcType="DECIMAL" property="ima148" />
+    <result column="IMA901" jdbcType="DATE" property="ima901" />
+    <result column="IMA902" jdbcType="DATE" property="ima902" />
+    <result column="IMA903" jdbcType="VARCHAR" property="ima903" />
+    <result column="IMA904" jdbcType="VARCHAR" property="ima904" />
+    <result column="IMA905" jdbcType="VARCHAR" property="ima905" />
+    <result column="IMA906" jdbcType="VARCHAR" property="ima906" />
+    <result column="IMA907" jdbcType="VARCHAR" property="ima907" />
+    <result column="IMA908" jdbcType="VARCHAR" property="ima908" />
+    <result column="IMA909" jdbcType="DECIMAL" property="ima909" />
+    <result column="IMA910" jdbcType="VARCHAR" property="ima910" />
+    <result column="IMAACTI" jdbcType="VARCHAR" property="imaacti" />
+    <result column="IMAUSER" jdbcType="VARCHAR" property="imauser" />
+    <result column="IMAGRUP" jdbcType="VARCHAR" property="imagrup" />
+    <result column="IMAMODU" jdbcType="VARCHAR" property="imamodu" />
+    <result column="IMADATE" jdbcType="DATE" property="imadate" />
+    <result column="IMAAG" jdbcType="VARCHAR" property="imaag" />
+    <result column="IMAAG1" jdbcType="VARCHAR" property="imaag1" />
+    <result column="IMAUD01" jdbcType="VARCHAR" property="imaud01" />
+    <result column="IMAUD02" jdbcType="VARCHAR" property="imaud02" />
+    <result column="IMAUD03" jdbcType="VARCHAR" property="imaud03" />
+    <result column="IMAUD04" jdbcType="VARCHAR" property="imaud04" />
+    <result column="IMAUD05" jdbcType="VARCHAR" property="imaud05" />
+    <result column="IMAUD06" jdbcType="VARCHAR" property="imaud06" />
+    <result column="IMAUD07" jdbcType="DECIMAL" property="imaud07" />
+    <result column="IMAUD08" jdbcType="DECIMAL" property="imaud08" />
+    <result column="IMAUD09" jdbcType="DECIMAL" property="imaud09" />
+    <result column="IMAUD10" jdbcType="DECIMAL" property="imaud10" />
+    <result column="IMAUD11" jdbcType="DECIMAL" property="imaud11" />
+    <result column="IMAUD12" jdbcType="DECIMAL" property="imaud12" />
+    <result column="IMAUD13" jdbcType="DATE" property="imaud13" />
+    <result column="IMAUD14" jdbcType="DATE" property="imaud14" />
+    <result column="IMAUD15" jdbcType="DATE" property="imaud15" />
+    <result column="IMA1001" jdbcType="VARCHAR" property="ima1001" />
+    <result column="IMA1002" jdbcType="VARCHAR" property="ima1002" />
+    <result column="IMA1003" jdbcType="VARCHAR" property="ima1003" />
+    <result column="IMA1004" jdbcType="VARCHAR" property="ima1004" />
+    <result column="IMA1005" jdbcType="VARCHAR" property="ima1005" />
+    <result column="IMA1006" jdbcType="VARCHAR" property="ima1006" />
+    <result column="IMA1007" jdbcType="VARCHAR" property="ima1007" />
+    <result column="IMA1008" jdbcType="VARCHAR" property="ima1008" />
+    <result column="IMA1009" jdbcType="VARCHAR" property="ima1009" />
+    <result column="IMA1010" jdbcType="VARCHAR" property="ima1010" />
+    <result column="IMA1011" jdbcType="DECIMAL" property="ima1011" />
+    <result column="IMA1012" jdbcType="DATE" property="ima1012" />
+    <result column="IMA1013" jdbcType="DATE" property="ima1013" />
+    <result column="IMA1014" jdbcType="VARCHAR" property="ima1014" />
+    <result column="IMA1015" jdbcType="DATE" property="ima1015" />
+    <result column="IMA1016" jdbcType="VARCHAR" property="ima1016" />
+    <result column="IMA1017" jdbcType="DECIMAL" property="ima1017" />
+    <result column="IMA1018" jdbcType="DECIMAL" property="ima1018" />
+    <result column="IMA1019" jdbcType="DECIMAL" property="ima1019" />
+    <result column="IMA1020" jdbcType="DECIMAL" property="ima1020" />
+    <result column="IMA1021" jdbcType="DECIMAL" property="ima1021" />
+    <result column="IMA1022" jdbcType="DECIMAL" property="ima1022" />
+    <result column="IMA1023" jdbcType="DECIMAL" property="ima1023" />
+    <result column="IMA1024" jdbcType="DECIMAL" property="ima1024" />
+    <result column="IMA1025" jdbcType="DECIMAL" property="ima1025" />
+    <result column="IMA1026" jdbcType="DECIMAL" property="ima1026" />
+    <result column="IMA1027" jdbcType="DECIMAL" property="ima1027" />
+    <result column="IMA1028" jdbcType="DECIMAL" property="ima1028" />
+    <result column="IMA1029" jdbcType="VARCHAR" property="ima1029" />
+    <result column="IMA911" jdbcType="VARCHAR" property="ima911" />
+    <result column="IMA912" jdbcType="DECIMAL" property="ima912" />
+    <result column="IMA913" jdbcType="VARCHAR" property="ima913" />
+    <result column="IMA914" jdbcType="VARCHAR" property="ima914" />
+    <result column="IMA391" jdbcType="VARCHAR" property="ima391" />
+    <result column="IMA1321" jdbcType="VARCHAR" property="ima1321" />
+    <result column="IMA1911" jdbcType="VARCHAR" property="ima1911" />
+    <result column="IMA1912" jdbcType="VARCHAR" property="ima1912" />
+    <result column="IMA1913" jdbcType="DECIMAL" property="ima1913" />
+    <result column="IMA1914" jdbcType="VARCHAR" property="ima1914" />
+    <result column="IMA1915" jdbcType="VARCHAR" property="ima1915" />
+    <result column="IMA1916" jdbcType="VARCHAR" property="ima1916" />
+    <result column="IMA1919" jdbcType="VARCHAR" property="ima1919" />
+    <result column="IMA1401" jdbcType="DATE" property="ima1401" />
+    <result column="IMA915" jdbcType="VARCHAR" property="ima915" />
+    <result column="IMA916" jdbcType="VARCHAR" property="ima916" />
+    <result column="IMA917" jdbcType="DECIMAL" property="ima917" />
+    <result column="IMA150" jdbcType="VARCHAR" property="ima150" />
+    <result column="IMA151" jdbcType="VARCHAR" property="ima151" />
+    <result column="IMA152" jdbcType="VARCHAR" property="ima152" />
+    <result column="IMA918" jdbcType="VARCHAR" property="ima918" />
+    <result column="IMA919" jdbcType="VARCHAR" property="ima919" />
+    <result column="IMA920" jdbcType="VARCHAR" property="ima920" />
+    <result column="IMA921" jdbcType="VARCHAR" property="ima921" />
+    <result column="IMA922" jdbcType="VARCHAR" property="ima922" />
+    <result column="IMA923" jdbcType="VARCHAR" property="ima923" />
+    <result column="IMA924" jdbcType="VARCHAR" property="ima924" />
+    <result column="IMA925" jdbcType="VARCHAR" property="ima925" />
+    <result column="IMA601" jdbcType="DECIMAL" property="ima601" />
+    <result column="IMA153" jdbcType="DECIMAL" property="ima153" />
+    <result column="IMA926" jdbcType="VARCHAR" property="ima926" />
+    <result column="IMA154" jdbcType="VARCHAR" property="ima154" />
+    <result column="IMA155" jdbcType="VARCHAR" property="ima155" />
+    <result column="IMA149" jdbcType="VARCHAR" property="ima149" />
+    <result column="IMA1491" jdbcType="VARCHAR" property="ima1491" />
+    <result column="IMAORIU" jdbcType="VARCHAR" property="imaoriu" />
+    <result column="IMAORIG" jdbcType="VARCHAR" property="imaorig" />
+    <result column="IMA9021" jdbcType="DATE" property="ima9021" />
+    <result column="IMA022" jdbcType="DECIMAL" property="ima022" />
+    <result column="IMA251" jdbcType="VARCHAR" property="ima251" />
+    <result column="IMA940" jdbcType="VARCHAR" property="ima940" />
+    <result column="IMA941" jdbcType="VARCHAR" property="ima941" />
+    <result column="IMA156" jdbcType="VARCHAR" property="ima156" />
+    <result column="IMA157" jdbcType="VARCHAR" property="ima157" />
+    <result column="IMA158" jdbcType="VARCHAR" property="ima158" />
+    <result column="IMA927" jdbcType="VARCHAR" property="ima927" />
+    <result column="IMA120" jdbcType="VARCHAR" property="ima120" />
+    <result column="IMA159" jdbcType="VARCHAR" property="ima159" />
+    <result column="IMA930" jdbcType="VARCHAR" property="ima930" />
+    <result column="IMA931" jdbcType="VARCHAR" property="ima931" />
+    <result column="IMA932" jdbcType="VARCHAR" property="ima932" />
+    <result column="IMA933" jdbcType="VARCHAR" property="ima933" />
+    <result column="IMA934" jdbcType="VARCHAR" property="ima934" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from S30.IMA_FILE
+    where IMA01 = #{ima01,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.IMA_FILE">
+    insert into S30.IMA_FILE (IMA01, IMA02, IMA021, 
+      IMA03, IMA04, IMA05, 
+      IMA06, IMA07, IMA08, 
+      IMA09, IMA10, IMA11, 
+      IMA12, IMA13, IMA14, 
+      IMA15, IMA16, IMA17, 
+      IMA17_FAC, IMA18, IMA19, 
+      IMA20, IMA21, IMA22, 
+      IMA23, IMA24, IMA25, 
+      IMA26, IMA261, IMA262, 
+      IMA27, IMA271, IMA28, 
+      IMA29, IMA30, IMA31, IMA31_FAC, 
+      IMA32, IMA33, IMA34, 
+      IMA35, IMA36, IMA37, 
+      IMA38, IMA39, IMA40, 
+      IMA41, IMA42, IMA43, 
+      IMA44, IMA44_FAC, IMA45, 
+      IMA46, IMA47, IMA48, 
+      IMA49, IMA491, IMA50, 
+      IMA51, IMA52, IMA53, 
+      IMA531, IMA532, IMA54, 
+      IMA55, IMA55_FAC, IMA56, 
+      IMA561, IMA562, IMA57, 
+      IMA571, IMA58, IMA59, 
+      IMA60, IMA61, IMA62, 
+      IMA63, IMA63_FAC, IMA64, 
+      IMA641, IMA65, IMA66, 
+      IMA67, IMA68, IMA69, 
+      IMA70, IMA71, IMA72, 
+      IMA73, IMA74, IMA86, IMA86_FAC, 
+      IMA87, IMA871, IMA872, 
+      IMA873, IMA874, IMA88, 
+      IMA881, IMA89, IMA90, 
+      IMA91, IMA92, IMA93, 
+      IMA94, IMA95, IMA75, 
+      IMA76, IMA77, IMA78, 
+      IMA79, IMA80, IMA81, 
+      IMA82, IMA83, IMA84, 
+      IMA85, IMA851, IMA852, 
+      IMA853, IMA96, IMA97, 
+      IMA98, IMA99, IMA100, 
+      IMA101, IMA102, IMA103, 
+      IMA104, IMA105, IMA106, 
+      IMA107, IMA108, IMA109, 
+      IMA110, IMA111, IMA121, 
+      IMA122, IMA123, IMA124, 
+      IMA125, IMA126, IMA127, 
+      IMA128, IMA129, IMA130, 
+      IMA131, IMA132, IMA133, 
+      IMA134, IMA135, IMA136, 
+      IMA137, IMA138, IMA139, 
+      IMA140, IMA141, IMA142, 
+      IMA143, IMA144, IMA145, 
+      IMA146, IMA147, IMA148, 
+      IMA901, IMA902, IMA903, IMA904, 
+      IMA905, IMA906, IMA907, 
+      IMA908, IMA909, IMA910, 
+      IMAACTI, IMAUSER, IMAGRUP, 
+      IMAMODU, IMADATE, IMAAG, 
+      IMAAG1, IMAUD01, IMAUD02, 
+      IMAUD03, IMAUD04, IMAUD05, 
+      IMAUD06, IMAUD07, IMAUD08, 
+      IMAUD09, IMAUD10, IMAUD11, 
+      IMAUD12, IMAUD13, IMAUD14, 
+      IMAUD15, IMA1001, IMA1002, 
+      IMA1003, IMA1004, IMA1005, 
+      IMA1006, IMA1007, IMA1008, 
+      IMA1009, IMA1010, IMA1011, 
+      IMA1012, IMA1013, IMA1014, 
+      IMA1015, IMA1016, IMA1017, 
+      IMA1018, IMA1019, IMA1020, 
+      IMA1021, IMA1022, IMA1023, 
+      IMA1024, IMA1025, IMA1026, 
+      IMA1027, IMA1028, IMA1029, 
+      IMA911, IMA912, IMA913, 
+      IMA914, IMA391, IMA1321, 
+      IMA1911, IMA1912, IMA1913, 
+      IMA1914, IMA1915, IMA1916, 
+      IMA1919, IMA1401, IMA915, 
+      IMA916, IMA917, IMA150, 
+      IMA151, IMA152, IMA918, 
+      IMA919, IMA920, IMA921, 
+      IMA922, IMA923, IMA924, 
+      IMA925, IMA601, IMA153, 
+      IMA926, IMA154, IMA155, 
+      IMA149, IMA1491, IMAORIU, 
+      IMAORIG, IMA9021, IMA022, 
+      IMA251, IMA940, IMA941, 
+      IMA156, IMA157, IMA158, 
+      IMA927, IMA120, IMA159, 
+      IMA930, IMA931, IMA932, 
+      IMA933, IMA934)
+    values (#{ima01,jdbcType=VARCHAR}, #{ima02,jdbcType=VARCHAR}, #{ima021,jdbcType=VARCHAR}, 
+      #{ima03,jdbcType=VARCHAR}, #{ima04,jdbcType=VARCHAR}, #{ima05,jdbcType=VARCHAR}, 
+      #{ima06,jdbcType=VARCHAR}, #{ima07,jdbcType=VARCHAR}, #{ima08,jdbcType=VARCHAR}, 
+      #{ima09,jdbcType=VARCHAR}, #{ima10,jdbcType=VARCHAR}, #{ima11,jdbcType=VARCHAR}, 
+      #{ima12,jdbcType=VARCHAR}, #{ima13,jdbcType=VARCHAR}, #{ima14,jdbcType=VARCHAR}, 
+      #{ima15,jdbcType=VARCHAR}, #{ima16,jdbcType=DECIMAL}, #{ima17,jdbcType=VARCHAR}, 
+      #{ima17Fac,jdbcType=DECIMAL}, #{ima18,jdbcType=DECIMAL}, #{ima19,jdbcType=VARCHAR}, 
+      #{ima20,jdbcType=DECIMAL}, #{ima21,jdbcType=VARCHAR}, #{ima22,jdbcType=DECIMAL}, 
+      #{ima23,jdbcType=VARCHAR}, #{ima24,jdbcType=VARCHAR}, #{ima25,jdbcType=VARCHAR}, 
+      #{ima26,jdbcType=DECIMAL}, #{ima261,jdbcType=DECIMAL}, #{ima262,jdbcType=DECIMAL}, 
+      #{ima27,jdbcType=DECIMAL}, #{ima271,jdbcType=DECIMAL}, #{ima28,jdbcType=DECIMAL}, 
+      #{ima29,jdbcType=DATE}, #{ima30,jdbcType=DATE}, #{ima31,jdbcType=VARCHAR}, #{ima31Fac,jdbcType=DECIMAL}, 
+      #{ima32,jdbcType=DECIMAL}, #{ima33,jdbcType=DECIMAL}, #{ima34,jdbcType=VARCHAR}, 
+      #{ima35,jdbcType=VARCHAR}, #{ima36,jdbcType=VARCHAR}, #{ima37,jdbcType=VARCHAR}, 
+      #{ima38,jdbcType=DECIMAL}, #{ima39,jdbcType=VARCHAR}, #{ima40,jdbcType=DECIMAL}, 
+      #{ima41,jdbcType=DECIMAL}, #{ima42,jdbcType=VARCHAR}, #{ima43,jdbcType=VARCHAR}, 
+      #{ima44,jdbcType=VARCHAR}, #{ima44Fac,jdbcType=DECIMAL}, #{ima45,jdbcType=DECIMAL}, 
+      #{ima46,jdbcType=DECIMAL}, #{ima47,jdbcType=DECIMAL}, #{ima48,jdbcType=DECIMAL}, 
+      #{ima49,jdbcType=DECIMAL}, #{ima491,jdbcType=DECIMAL}, #{ima50,jdbcType=DECIMAL}, 
+      #{ima51,jdbcType=DECIMAL}, #{ima52,jdbcType=DECIMAL}, #{ima53,jdbcType=DECIMAL}, 
+      #{ima531,jdbcType=DECIMAL}, #{ima532,jdbcType=DATE}, #{ima54,jdbcType=VARCHAR}, 
+      #{ima55,jdbcType=VARCHAR}, #{ima55Fac,jdbcType=DECIMAL}, #{ima56,jdbcType=DECIMAL}, 
+      #{ima561,jdbcType=DECIMAL}, #{ima562,jdbcType=DECIMAL}, #{ima57,jdbcType=DECIMAL}, 
+      #{ima571,jdbcType=VARCHAR}, #{ima58,jdbcType=DECIMAL}, #{ima59,jdbcType=DECIMAL}, 
+      #{ima60,jdbcType=DECIMAL}, #{ima61,jdbcType=DECIMAL}, #{ima62,jdbcType=DECIMAL}, 
+      #{ima63,jdbcType=VARCHAR}, #{ima63Fac,jdbcType=DECIMAL}, #{ima64,jdbcType=DECIMAL}, 
+      #{ima641,jdbcType=DECIMAL}, #{ima65,jdbcType=DECIMAL}, #{ima66,jdbcType=DECIMAL}, 
+      #{ima67,jdbcType=VARCHAR}, #{ima68,jdbcType=DECIMAL}, #{ima69,jdbcType=DECIMAL}, 
+      #{ima70,jdbcType=VARCHAR}, #{ima71,jdbcType=DECIMAL}, #{ima72,jdbcType=DECIMAL}, 
+      #{ima73,jdbcType=DATE}, #{ima74,jdbcType=DATE}, #{ima86,jdbcType=VARCHAR}, #{ima86Fac,jdbcType=DECIMAL}, 
+      #{ima87,jdbcType=VARCHAR}, #{ima871,jdbcType=DECIMAL}, #{ima872,jdbcType=VARCHAR}, 
+      #{ima873,jdbcType=DECIMAL}, #{ima874,jdbcType=VARCHAR}, #{ima88,jdbcType=DECIMAL}, 
+      #{ima881,jdbcType=DATE}, #{ima89,jdbcType=DECIMAL}, #{ima90,jdbcType=DECIMAL}, 
+      #{ima91,jdbcType=DECIMAL}, #{ima92,jdbcType=VARCHAR}, #{ima93,jdbcType=VARCHAR}, 
+      #{ima94,jdbcType=VARCHAR}, #{ima95,jdbcType=DECIMAL}, #{ima75,jdbcType=VARCHAR}, 
+      #{ima76,jdbcType=VARCHAR}, #{ima77,jdbcType=DECIMAL}, #{ima78,jdbcType=DECIMAL}, 
+      #{ima79,jdbcType=DECIMAL}, #{ima80,jdbcType=DECIMAL}, #{ima81,jdbcType=DECIMAL}, 
+      #{ima82,jdbcType=DECIMAL}, #{ima83,jdbcType=DECIMAL}, #{ima84,jdbcType=DECIMAL}, 
+      #{ima85,jdbcType=DECIMAL}, #{ima851,jdbcType=VARCHAR}, #{ima852,jdbcType=VARCHAR}, 
+      #{ima853,jdbcType=VARCHAR}, #{ima96,jdbcType=DECIMAL}, #{ima97,jdbcType=DECIMAL}, 
+      #{ima98,jdbcType=DECIMAL}, #{ima99,jdbcType=DECIMAL}, #{ima100,jdbcType=VARCHAR}, 
+      #{ima101,jdbcType=VARCHAR}, #{ima102,jdbcType=VARCHAR}, #{ima103,jdbcType=VARCHAR}, 
+      #{ima104,jdbcType=DECIMAL}, #{ima105,jdbcType=VARCHAR}, #{ima106,jdbcType=VARCHAR}, 
+      #{ima107,jdbcType=VARCHAR}, #{ima108,jdbcType=VARCHAR}, #{ima109,jdbcType=VARCHAR}, 
+      #{ima110,jdbcType=VARCHAR}, #{ima111,jdbcType=VARCHAR}, #{ima121,jdbcType=DECIMAL}, 
+      #{ima122,jdbcType=DECIMAL}, #{ima123,jdbcType=DECIMAL}, #{ima124,jdbcType=DECIMAL}, 
+      #{ima125,jdbcType=DECIMAL}, #{ima126,jdbcType=DECIMAL}, #{ima127,jdbcType=DECIMAL}, 
+      #{ima128,jdbcType=DECIMAL}, #{ima129,jdbcType=DECIMAL}, #{ima130,jdbcType=VARCHAR}, 
+      #{ima131,jdbcType=VARCHAR}, #{ima132,jdbcType=VARCHAR}, #{ima133,jdbcType=VARCHAR}, 
+      #{ima134,jdbcType=VARCHAR}, #{ima135,jdbcType=VARCHAR}, #{ima136,jdbcType=VARCHAR}, 
+      #{ima137,jdbcType=VARCHAR}, #{ima138,jdbcType=VARCHAR}, #{ima139,jdbcType=VARCHAR}, 
+      #{ima140,jdbcType=VARCHAR}, #{ima141,jdbcType=VARCHAR}, #{ima142,jdbcType=DECIMAL}, 
+      #{ima143,jdbcType=DECIMAL}, #{ima144,jdbcType=VARCHAR}, #{ima145,jdbcType=VARCHAR}, 
+      #{ima146,jdbcType=VARCHAR}, #{ima147,jdbcType=VARCHAR}, #{ima148,jdbcType=DECIMAL}, 
+      #{ima901,jdbcType=DATE}, #{ima902,jdbcType=DATE}, #{ima903,jdbcType=VARCHAR}, #{ima904,jdbcType=VARCHAR}, 
+      #{ima905,jdbcType=VARCHAR}, #{ima906,jdbcType=VARCHAR}, #{ima907,jdbcType=VARCHAR}, 
+      #{ima908,jdbcType=VARCHAR}, #{ima909,jdbcType=DECIMAL}, #{ima910,jdbcType=VARCHAR}, 
+      #{imaacti,jdbcType=VARCHAR}, #{imauser,jdbcType=VARCHAR}, #{imagrup,jdbcType=VARCHAR}, 
+      #{imamodu,jdbcType=VARCHAR}, #{imadate,jdbcType=DATE}, #{imaag,jdbcType=VARCHAR}, 
+      #{imaag1,jdbcType=VARCHAR}, #{imaud01,jdbcType=VARCHAR}, #{imaud02,jdbcType=VARCHAR}, 
+      #{imaud03,jdbcType=VARCHAR}, #{imaud04,jdbcType=VARCHAR}, #{imaud05,jdbcType=VARCHAR}, 
+      #{imaud06,jdbcType=VARCHAR}, #{imaud07,jdbcType=DECIMAL}, #{imaud08,jdbcType=DECIMAL}, 
+      #{imaud09,jdbcType=DECIMAL}, #{imaud10,jdbcType=DECIMAL}, #{imaud11,jdbcType=DECIMAL}, 
+      #{imaud12,jdbcType=DECIMAL}, #{imaud13,jdbcType=DATE}, #{imaud14,jdbcType=DATE}, 
+      #{imaud15,jdbcType=DATE}, #{ima1001,jdbcType=VARCHAR}, #{ima1002,jdbcType=VARCHAR}, 
+      #{ima1003,jdbcType=VARCHAR}, #{ima1004,jdbcType=VARCHAR}, #{ima1005,jdbcType=VARCHAR}, 
+      #{ima1006,jdbcType=VARCHAR}, #{ima1007,jdbcType=VARCHAR}, #{ima1008,jdbcType=VARCHAR}, 
+      #{ima1009,jdbcType=VARCHAR}, #{ima1010,jdbcType=VARCHAR}, #{ima1011,jdbcType=DECIMAL}, 
+      #{ima1012,jdbcType=DATE}, #{ima1013,jdbcType=DATE}, #{ima1014,jdbcType=VARCHAR}, 
+      #{ima1015,jdbcType=DATE}, #{ima1016,jdbcType=VARCHAR}, #{ima1017,jdbcType=DECIMAL}, 
+      #{ima1018,jdbcType=DECIMAL}, #{ima1019,jdbcType=DECIMAL}, #{ima1020,jdbcType=DECIMAL}, 
+      #{ima1021,jdbcType=DECIMAL}, #{ima1022,jdbcType=DECIMAL}, #{ima1023,jdbcType=DECIMAL}, 
+      #{ima1024,jdbcType=DECIMAL}, #{ima1025,jdbcType=DECIMAL}, #{ima1026,jdbcType=DECIMAL}, 
+      #{ima1027,jdbcType=DECIMAL}, #{ima1028,jdbcType=DECIMAL}, #{ima1029,jdbcType=VARCHAR}, 
+      #{ima911,jdbcType=VARCHAR}, #{ima912,jdbcType=DECIMAL}, #{ima913,jdbcType=VARCHAR}, 
+      #{ima914,jdbcType=VARCHAR}, #{ima391,jdbcType=VARCHAR}, #{ima1321,jdbcType=VARCHAR}, 
+      #{ima1911,jdbcType=VARCHAR}, #{ima1912,jdbcType=VARCHAR}, #{ima1913,jdbcType=DECIMAL}, 
+      #{ima1914,jdbcType=VARCHAR}, #{ima1915,jdbcType=VARCHAR}, #{ima1916,jdbcType=VARCHAR}, 
+      #{ima1919,jdbcType=VARCHAR}, #{ima1401,jdbcType=DATE}, #{ima915,jdbcType=VARCHAR}, 
+      #{ima916,jdbcType=VARCHAR}, #{ima917,jdbcType=DECIMAL}, #{ima150,jdbcType=VARCHAR}, 
+      #{ima151,jdbcType=VARCHAR}, #{ima152,jdbcType=VARCHAR}, #{ima918,jdbcType=VARCHAR}, 
+      #{ima919,jdbcType=VARCHAR}, #{ima920,jdbcType=VARCHAR}, #{ima921,jdbcType=VARCHAR}, 
+      #{ima922,jdbcType=VARCHAR}, #{ima923,jdbcType=VARCHAR}, #{ima924,jdbcType=VARCHAR}, 
+      #{ima925,jdbcType=VARCHAR}, #{ima601,jdbcType=DECIMAL}, #{ima153,jdbcType=DECIMAL}, 
+      #{ima926,jdbcType=VARCHAR}, #{ima154,jdbcType=VARCHAR}, #{ima155,jdbcType=VARCHAR}, 
+      #{ima149,jdbcType=VARCHAR}, #{ima1491,jdbcType=VARCHAR}, #{imaoriu,jdbcType=VARCHAR}, 
+      #{imaorig,jdbcType=VARCHAR}, #{ima9021,jdbcType=DATE}, #{ima022,jdbcType=DECIMAL}, 
+      #{ima251,jdbcType=VARCHAR}, #{ima940,jdbcType=VARCHAR}, #{ima941,jdbcType=VARCHAR}, 
+      #{ima156,jdbcType=VARCHAR}, #{ima157,jdbcType=VARCHAR}, #{ima158,jdbcType=VARCHAR}, 
+      #{ima927,jdbcType=VARCHAR}, #{ima120,jdbcType=VARCHAR}, #{ima159,jdbcType=VARCHAR}, 
+      #{ima930,jdbcType=VARCHAR}, #{ima931,jdbcType=VARCHAR}, #{ima932,jdbcType=VARCHAR}, 
+      #{ima933,jdbcType=VARCHAR}, #{ima934,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.IMA_FILE">
+    update S30.IMA_FILE
+    set IMA02 = #{ima02,jdbcType=VARCHAR},
+      IMA021 = #{ima021,jdbcType=VARCHAR},
+      IMA03 = #{ima03,jdbcType=VARCHAR},
+      IMA04 = #{ima04,jdbcType=VARCHAR},
+      IMA05 = #{ima05,jdbcType=VARCHAR},
+      IMA06 = #{ima06,jdbcType=VARCHAR},
+      IMA07 = #{ima07,jdbcType=VARCHAR},
+      IMA08 = #{ima08,jdbcType=VARCHAR},
+      IMA09 = #{ima09,jdbcType=VARCHAR},
+      IMA10 = #{ima10,jdbcType=VARCHAR},
+      IMA11 = #{ima11,jdbcType=VARCHAR},
+      IMA12 = #{ima12,jdbcType=VARCHAR},
+      IMA13 = #{ima13,jdbcType=VARCHAR},
+      IMA14 = #{ima14,jdbcType=VARCHAR},
+      IMA15 = #{ima15,jdbcType=VARCHAR},
+      IMA16 = #{ima16,jdbcType=DECIMAL},
+      IMA17 = #{ima17,jdbcType=VARCHAR},
+      IMA17_FAC = #{ima17Fac,jdbcType=DECIMAL},
+      IMA18 = #{ima18,jdbcType=DECIMAL},
+      IMA19 = #{ima19,jdbcType=VARCHAR},
+      IMA20 = #{ima20,jdbcType=DECIMAL},
+      IMA21 = #{ima21,jdbcType=VARCHAR},
+      IMA22 = #{ima22,jdbcType=DECIMAL},
+      IMA23 = #{ima23,jdbcType=VARCHAR},
+      IMA24 = #{ima24,jdbcType=VARCHAR},
+      IMA25 = #{ima25,jdbcType=VARCHAR},
+      IMA26 = #{ima26,jdbcType=DECIMAL},
+      IMA261 = #{ima261,jdbcType=DECIMAL},
+      IMA262 = #{ima262,jdbcType=DECIMAL},
+      IMA27 = #{ima27,jdbcType=DECIMAL},
+      IMA271 = #{ima271,jdbcType=DECIMAL},
+      IMA28 = #{ima28,jdbcType=DECIMAL},
+      IMA29 = #{ima29,jdbcType=DATE},
+      IMA30 = #{ima30,jdbcType=DATE},
+      IMA31 = #{ima31,jdbcType=VARCHAR},
+      IMA31_FAC = #{ima31Fac,jdbcType=DECIMAL},
+      IMA32 = #{ima32,jdbcType=DECIMAL},
+      IMA33 = #{ima33,jdbcType=DECIMAL},
+      IMA34 = #{ima34,jdbcType=VARCHAR},
+      IMA35 = #{ima35,jdbcType=VARCHAR},
+      IMA36 = #{ima36,jdbcType=VARCHAR},
+      IMA37 = #{ima37,jdbcType=VARCHAR},
+      IMA38 = #{ima38,jdbcType=DECIMAL},
+      IMA39 = #{ima39,jdbcType=VARCHAR},
+      IMA40 = #{ima40,jdbcType=DECIMAL},
+      IMA41 = #{ima41,jdbcType=DECIMAL},
+      IMA42 = #{ima42,jdbcType=VARCHAR},
+      IMA43 = #{ima43,jdbcType=VARCHAR},
+      IMA44 = #{ima44,jdbcType=VARCHAR},
+      IMA44_FAC = #{ima44Fac,jdbcType=DECIMAL},
+      IMA45 = #{ima45,jdbcType=DECIMAL},
+      IMA46 = #{ima46,jdbcType=DECIMAL},
+      IMA47 = #{ima47,jdbcType=DECIMAL},
+      IMA48 = #{ima48,jdbcType=DECIMAL},
+      IMA49 = #{ima49,jdbcType=DECIMAL},
+      IMA491 = #{ima491,jdbcType=DECIMAL},
+      IMA50 = #{ima50,jdbcType=DECIMAL},
+      IMA51 = #{ima51,jdbcType=DECIMAL},
+      IMA52 = #{ima52,jdbcType=DECIMAL},
+      IMA53 = #{ima53,jdbcType=DECIMAL},
+      IMA531 = #{ima531,jdbcType=DECIMAL},
+      IMA532 = #{ima532,jdbcType=DATE},
+      IMA54 = #{ima54,jdbcType=VARCHAR},
+      IMA55 = #{ima55,jdbcType=VARCHAR},
+      IMA55_FAC = #{ima55Fac,jdbcType=DECIMAL},
+      IMA56 = #{ima56,jdbcType=DECIMAL},
+      IMA561 = #{ima561,jdbcType=DECIMAL},
+      IMA562 = #{ima562,jdbcType=DECIMAL},
+      IMA57 = #{ima57,jdbcType=DECIMAL},
+      IMA571 = #{ima571,jdbcType=VARCHAR},
+      IMA58 = #{ima58,jdbcType=DECIMAL},
+      IMA59 = #{ima59,jdbcType=DECIMAL},
+      IMA60 = #{ima60,jdbcType=DECIMAL},
+      IMA61 = #{ima61,jdbcType=DECIMAL},
+      IMA62 = #{ima62,jdbcType=DECIMAL},
+      IMA63 = #{ima63,jdbcType=VARCHAR},
+      IMA63_FAC = #{ima63Fac,jdbcType=DECIMAL},
+      IMA64 = #{ima64,jdbcType=DECIMAL},
+      IMA641 = #{ima641,jdbcType=DECIMAL},
+      IMA65 = #{ima65,jdbcType=DECIMAL},
+      IMA66 = #{ima66,jdbcType=DECIMAL},
+      IMA67 = #{ima67,jdbcType=VARCHAR},
+      IMA68 = #{ima68,jdbcType=DECIMAL},
+      IMA69 = #{ima69,jdbcType=DECIMAL},
+      IMA70 = #{ima70,jdbcType=VARCHAR},
+      IMA71 = #{ima71,jdbcType=DECIMAL},
+      IMA72 = #{ima72,jdbcType=DECIMAL},
+      IMA73 = #{ima73,jdbcType=DATE},
+      IMA74 = #{ima74,jdbcType=DATE},
+      IMA86 = #{ima86,jdbcType=VARCHAR},
+      IMA86_FAC = #{ima86Fac,jdbcType=DECIMAL},
+      IMA87 = #{ima87,jdbcType=VARCHAR},
+      IMA871 = #{ima871,jdbcType=DECIMAL},
+      IMA872 = #{ima872,jdbcType=VARCHAR},
+      IMA873 = #{ima873,jdbcType=DECIMAL},
+      IMA874 = #{ima874,jdbcType=VARCHAR},
+      IMA88 = #{ima88,jdbcType=DECIMAL},
+      IMA881 = #{ima881,jdbcType=DATE},
+      IMA89 = #{ima89,jdbcType=DECIMAL},
+      IMA90 = #{ima90,jdbcType=DECIMAL},
+      IMA91 = #{ima91,jdbcType=DECIMAL},
+      IMA92 = #{ima92,jdbcType=VARCHAR},
+      IMA93 = #{ima93,jdbcType=VARCHAR},
+      IMA94 = #{ima94,jdbcType=VARCHAR},
+      IMA95 = #{ima95,jdbcType=DECIMAL},
+      IMA75 = #{ima75,jdbcType=VARCHAR},
+      IMA76 = #{ima76,jdbcType=VARCHAR},
+      IMA77 = #{ima77,jdbcType=DECIMAL},
+      IMA78 = #{ima78,jdbcType=DECIMAL},
+      IMA79 = #{ima79,jdbcType=DECIMAL},
+      IMA80 = #{ima80,jdbcType=DECIMAL},
+      IMA81 = #{ima81,jdbcType=DECIMAL},
+      IMA82 = #{ima82,jdbcType=DECIMAL},
+      IMA83 = #{ima83,jdbcType=DECIMAL},
+      IMA84 = #{ima84,jdbcType=DECIMAL},
+      IMA85 = #{ima85,jdbcType=DECIMAL},
+      IMA851 = #{ima851,jdbcType=VARCHAR},
+      IMA852 = #{ima852,jdbcType=VARCHAR},
+      IMA853 = #{ima853,jdbcType=VARCHAR},
+      IMA96 = #{ima96,jdbcType=DECIMAL},
+      IMA97 = #{ima97,jdbcType=DECIMAL},
+      IMA98 = #{ima98,jdbcType=DECIMAL},
+      IMA99 = #{ima99,jdbcType=DECIMAL},
+      IMA100 = #{ima100,jdbcType=VARCHAR},
+      IMA101 = #{ima101,jdbcType=VARCHAR},
+      IMA102 = #{ima102,jdbcType=VARCHAR},
+      IMA103 = #{ima103,jdbcType=VARCHAR},
+      IMA104 = #{ima104,jdbcType=DECIMAL},
+      IMA105 = #{ima105,jdbcType=VARCHAR},
+      IMA106 = #{ima106,jdbcType=VARCHAR},
+      IMA107 = #{ima107,jdbcType=VARCHAR},
+      IMA108 = #{ima108,jdbcType=VARCHAR},
+      IMA109 = #{ima109,jdbcType=VARCHAR},
+      IMA110 = #{ima110,jdbcType=VARCHAR},
+      IMA111 = #{ima111,jdbcType=VARCHAR},
+      IMA121 = #{ima121,jdbcType=DECIMAL},
+      IMA122 = #{ima122,jdbcType=DECIMAL},
+      IMA123 = #{ima123,jdbcType=DECIMAL},
+      IMA124 = #{ima124,jdbcType=DECIMAL},
+      IMA125 = #{ima125,jdbcType=DECIMAL},
+      IMA126 = #{ima126,jdbcType=DECIMAL},
+      IMA127 = #{ima127,jdbcType=DECIMAL},
+      IMA128 = #{ima128,jdbcType=DECIMAL},
+      IMA129 = #{ima129,jdbcType=DECIMAL},
+      IMA130 = #{ima130,jdbcType=VARCHAR},
+      IMA131 = #{ima131,jdbcType=VARCHAR},
+      IMA132 = #{ima132,jdbcType=VARCHAR},
+      IMA133 = #{ima133,jdbcType=VARCHAR},
+      IMA134 = #{ima134,jdbcType=VARCHAR},
+      IMA135 = #{ima135,jdbcType=VARCHAR},
+      IMA136 = #{ima136,jdbcType=VARCHAR},
+      IMA137 = #{ima137,jdbcType=VARCHAR},
+      IMA138 = #{ima138,jdbcType=VARCHAR},
+      IMA139 = #{ima139,jdbcType=VARCHAR},
+      IMA140 = #{ima140,jdbcType=VARCHAR},
+      IMA141 = #{ima141,jdbcType=VARCHAR},
+      IMA142 = #{ima142,jdbcType=DECIMAL},
+      IMA143 = #{ima143,jdbcType=DECIMAL},
+      IMA144 = #{ima144,jdbcType=VARCHAR},
+      IMA145 = #{ima145,jdbcType=VARCHAR},
+      IMA146 = #{ima146,jdbcType=VARCHAR},
+      IMA147 = #{ima147,jdbcType=VARCHAR},
+      IMA148 = #{ima148,jdbcType=DECIMAL},
+      IMA901 = #{ima901,jdbcType=DATE},
+      IMA902 = #{ima902,jdbcType=DATE},
+      IMA903 = #{ima903,jdbcType=VARCHAR},
+      IMA904 = #{ima904,jdbcType=VARCHAR},
+      IMA905 = #{ima905,jdbcType=VARCHAR},
+      IMA906 = #{ima906,jdbcType=VARCHAR},
+      IMA907 = #{ima907,jdbcType=VARCHAR},
+      IMA908 = #{ima908,jdbcType=VARCHAR},
+      IMA909 = #{ima909,jdbcType=DECIMAL},
+      IMA910 = #{ima910,jdbcType=VARCHAR},
+      IMAACTI = #{imaacti,jdbcType=VARCHAR},
+      IMAUSER = #{imauser,jdbcType=VARCHAR},
+      IMAGRUP = #{imagrup,jdbcType=VARCHAR},
+      IMAMODU = #{imamodu,jdbcType=VARCHAR},
+      IMADATE = #{imadate,jdbcType=DATE},
+      IMAAG = #{imaag,jdbcType=VARCHAR},
+      IMAAG1 = #{imaag1,jdbcType=VARCHAR},
+      IMAUD01 = #{imaud01,jdbcType=VARCHAR},
+      IMAUD02 = #{imaud02,jdbcType=VARCHAR},
+      IMAUD03 = #{imaud03,jdbcType=VARCHAR},
+      IMAUD04 = #{imaud04,jdbcType=VARCHAR},
+      IMAUD05 = #{imaud05,jdbcType=VARCHAR},
+      IMAUD06 = #{imaud06,jdbcType=VARCHAR},
+      IMAUD07 = #{imaud07,jdbcType=DECIMAL},
+      IMAUD08 = #{imaud08,jdbcType=DECIMAL},
+      IMAUD09 = #{imaud09,jdbcType=DECIMAL},
+      IMAUD10 = #{imaud10,jdbcType=DECIMAL},
+      IMAUD11 = #{imaud11,jdbcType=DECIMAL},
+      IMAUD12 = #{imaud12,jdbcType=DECIMAL},
+      IMAUD13 = #{imaud13,jdbcType=DATE},
+      IMAUD14 = #{imaud14,jdbcType=DATE},
+      IMAUD15 = #{imaud15,jdbcType=DATE},
+      IMA1001 = #{ima1001,jdbcType=VARCHAR},
+      IMA1002 = #{ima1002,jdbcType=VARCHAR},
+      IMA1003 = #{ima1003,jdbcType=VARCHAR},
+      IMA1004 = #{ima1004,jdbcType=VARCHAR},
+      IMA1005 = #{ima1005,jdbcType=VARCHAR},
+      IMA1006 = #{ima1006,jdbcType=VARCHAR},
+      IMA1007 = #{ima1007,jdbcType=VARCHAR},
+      IMA1008 = #{ima1008,jdbcType=VARCHAR},
+      IMA1009 = #{ima1009,jdbcType=VARCHAR},
+      IMA1010 = #{ima1010,jdbcType=VARCHAR},
+      IMA1011 = #{ima1011,jdbcType=DECIMAL},
+      IMA1012 = #{ima1012,jdbcType=DATE},
+      IMA1013 = #{ima1013,jdbcType=DATE},
+      IMA1014 = #{ima1014,jdbcType=VARCHAR},
+      IMA1015 = #{ima1015,jdbcType=DATE},
+      IMA1016 = #{ima1016,jdbcType=VARCHAR},
+      IMA1017 = #{ima1017,jdbcType=DECIMAL},
+      IMA1018 = #{ima1018,jdbcType=DECIMAL},
+      IMA1019 = #{ima1019,jdbcType=DECIMAL},
+      IMA1020 = #{ima1020,jdbcType=DECIMAL},
+      IMA1021 = #{ima1021,jdbcType=DECIMAL},
+      IMA1022 = #{ima1022,jdbcType=DECIMAL},
+      IMA1023 = #{ima1023,jdbcType=DECIMAL},
+      IMA1024 = #{ima1024,jdbcType=DECIMAL},
+      IMA1025 = #{ima1025,jdbcType=DECIMAL},
+      IMA1026 = #{ima1026,jdbcType=DECIMAL},
+      IMA1027 = #{ima1027,jdbcType=DECIMAL},
+      IMA1028 = #{ima1028,jdbcType=DECIMAL},
+      IMA1029 = #{ima1029,jdbcType=VARCHAR},
+      IMA911 = #{ima911,jdbcType=VARCHAR},
+      IMA912 = #{ima912,jdbcType=DECIMAL},
+      IMA913 = #{ima913,jdbcType=VARCHAR},
+      IMA914 = #{ima914,jdbcType=VARCHAR},
+      IMA391 = #{ima391,jdbcType=VARCHAR},
+      IMA1321 = #{ima1321,jdbcType=VARCHAR},
+      IMA1911 = #{ima1911,jdbcType=VARCHAR},
+      IMA1912 = #{ima1912,jdbcType=VARCHAR},
+      IMA1913 = #{ima1913,jdbcType=DECIMAL},
+      IMA1914 = #{ima1914,jdbcType=VARCHAR},
+      IMA1915 = #{ima1915,jdbcType=VARCHAR},
+      IMA1916 = #{ima1916,jdbcType=VARCHAR},
+      IMA1919 = #{ima1919,jdbcType=VARCHAR},
+      IMA1401 = #{ima1401,jdbcType=DATE},
+      IMA915 = #{ima915,jdbcType=VARCHAR},
+      IMA916 = #{ima916,jdbcType=VARCHAR},
+      IMA917 = #{ima917,jdbcType=DECIMAL},
+      IMA150 = #{ima150,jdbcType=VARCHAR},
+      IMA151 = #{ima151,jdbcType=VARCHAR},
+      IMA152 = #{ima152,jdbcType=VARCHAR},
+      IMA918 = #{ima918,jdbcType=VARCHAR},
+      IMA919 = #{ima919,jdbcType=VARCHAR},
+      IMA920 = #{ima920,jdbcType=VARCHAR},
+      IMA921 = #{ima921,jdbcType=VARCHAR},
+      IMA922 = #{ima922,jdbcType=VARCHAR},
+      IMA923 = #{ima923,jdbcType=VARCHAR},
+      IMA924 = #{ima924,jdbcType=VARCHAR},
+      IMA925 = #{ima925,jdbcType=VARCHAR},
+      IMA601 = #{ima601,jdbcType=DECIMAL},
+      IMA153 = #{ima153,jdbcType=DECIMAL},
+      IMA926 = #{ima926,jdbcType=VARCHAR},
+      IMA154 = #{ima154,jdbcType=VARCHAR},
+      IMA155 = #{ima155,jdbcType=VARCHAR},
+      IMA149 = #{ima149,jdbcType=VARCHAR},
+      IMA1491 = #{ima1491,jdbcType=VARCHAR},
+      IMAORIU = #{imaoriu,jdbcType=VARCHAR},
+      IMAORIG = #{imaorig,jdbcType=VARCHAR},
+      IMA9021 = #{ima9021,jdbcType=DATE},
+      IMA022 = #{ima022,jdbcType=DECIMAL},
+      IMA251 = #{ima251,jdbcType=VARCHAR},
+      IMA940 = #{ima940,jdbcType=VARCHAR},
+      IMA941 = #{ima941,jdbcType=VARCHAR},
+      IMA156 = #{ima156,jdbcType=VARCHAR},
+      IMA157 = #{ima157,jdbcType=VARCHAR},
+      IMA158 = #{ima158,jdbcType=VARCHAR},
+      IMA927 = #{ima927,jdbcType=VARCHAR},
+      IMA120 = #{ima120,jdbcType=VARCHAR},
+      IMA159 = #{ima159,jdbcType=VARCHAR},
+      IMA930 = #{ima930,jdbcType=VARCHAR},
+      IMA931 = #{ima931,jdbcType=VARCHAR},
+      IMA932 = #{ima932,jdbcType=VARCHAR},
+      IMA933 = #{ima933,jdbcType=VARCHAR},
+      IMA934 = #{ima934,jdbcType=VARCHAR}
+    where IMA01 = #{ima01,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select IMA01, IMA02, IMA021, IMA03, IMA04, IMA05, IMA06, IMA07, IMA08, IMA09, IMA10, 
+    IMA11, IMA12, IMA13, IMA14, IMA15, IMA16, IMA17, IMA17_FAC, IMA18, IMA19, IMA20, 
+    IMA21, IMA22, IMA23, IMA24, IMA25, IMA26, IMA261, IMA262, IMA27, IMA271, IMA28, IMA29, 
+    IMA30, IMA31, IMA31_FAC, IMA32, IMA33, IMA34, IMA35, IMA36, IMA37, IMA38, IMA39, 
+    IMA40, IMA41, IMA42, IMA43, IMA44, IMA44_FAC, IMA45, IMA46, IMA47, IMA48, IMA49, 
+    IMA491, IMA50, IMA51, IMA52, IMA53, IMA531, IMA532, IMA54, IMA55, IMA55_FAC, IMA56, 
+    IMA561, IMA562, IMA57, IMA571, IMA58, IMA59, IMA60, IMA61, IMA62, IMA63, IMA63_FAC, 
+    IMA64, IMA641, IMA65, IMA66, IMA67, IMA68, IMA69, IMA70, IMA71, IMA72, IMA73, IMA74, 
+    IMA86, IMA86_FAC, IMA87, IMA871, IMA872, IMA873, IMA874, IMA88, IMA881, IMA89, IMA90, 
+    IMA91, IMA92, IMA93, IMA94, IMA95, IMA75, IMA76, IMA77, IMA78, IMA79, IMA80, IMA81, 
+    IMA82, IMA83, IMA84, IMA85, IMA851, IMA852, IMA853, IMA96, IMA97, IMA98, IMA99, IMA100, 
+    IMA101, IMA102, IMA103, IMA104, IMA105, IMA106, IMA107, IMA108, IMA109, IMA110, IMA111, 
+    IMA121, IMA122, IMA123, IMA124, IMA125, IMA126, IMA127, IMA128, IMA129, IMA130, IMA131, 
+    IMA132, IMA133, IMA134, IMA135, IMA136, IMA137, IMA138, IMA139, IMA140, IMA141, IMA142, 
+    IMA143, IMA144, IMA145, IMA146, IMA147, IMA148, IMA901, IMA902, IMA903, IMA904, IMA905, 
+    IMA906, IMA907, IMA908, IMA909, IMA910, IMAACTI, IMAUSER, IMAGRUP, IMAMODU, IMADATE, 
+    IMAAG, IMAAG1, IMAUD01, IMAUD02, IMAUD03, IMAUD04, IMAUD05, IMAUD06, IMAUD07, IMAUD08, 
+    IMAUD09, IMAUD10, IMAUD11, IMAUD12, IMAUD13, IMAUD14, IMAUD15, IMA1001, IMA1002, 
+    IMA1003, IMA1004, IMA1005, IMA1006, IMA1007, IMA1008, IMA1009, IMA1010, IMA1011, 
+    IMA1012, IMA1013, IMA1014, IMA1015, IMA1016, IMA1017, IMA1018, IMA1019, IMA1020, 
+    IMA1021, IMA1022, IMA1023, IMA1024, IMA1025, IMA1026, IMA1027, IMA1028, IMA1029, 
+    IMA911, IMA912, IMA913, IMA914, IMA391, IMA1321, IMA1911, IMA1912, IMA1913, IMA1914, 
+    IMA1915, IMA1916, IMA1919, IMA1401, IMA915, IMA916, IMA917, IMA150, IMA151, IMA152, 
+    IMA918, IMA919, IMA920, IMA921, IMA922, IMA923, IMA924, IMA925, IMA601, IMA153, IMA926, 
+    IMA154, IMA155, IMA149, IMA1491, IMAORIU, IMAORIG, IMA9021, IMA022, IMA251, IMA940, 
+    IMA941, IMA156, IMA157, IMA158, IMA927, IMA120, IMA159, IMA930, IMA931, IMA932, IMA933, 
+    IMA934
+    from S30.IMA_FILE
+    where IMA01 = #{ima01,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select IMA01, IMA02, IMA021, IMA03, IMA04, IMA05, IMA06, IMA07, IMA08, IMA09, IMA10, 
+    IMA11, IMA12, IMA13, IMA14, IMA15, IMA16, IMA17, IMA17_FAC, IMA18, IMA19, IMA20, 
+    IMA21, IMA22, IMA23, IMA24, IMA25, IMA26, IMA261, IMA262, IMA27, IMA271, IMA28, IMA29, 
+    IMA30, IMA31, IMA31_FAC, IMA32, IMA33, IMA34, IMA35, IMA36, IMA37, IMA38, IMA39, 
+    IMA40, IMA41, IMA42, IMA43, IMA44, IMA44_FAC, IMA45, IMA46, IMA47, IMA48, IMA49, 
+    IMA491, IMA50, IMA51, IMA52, IMA53, IMA531, IMA532, IMA54, IMA55, IMA55_FAC, IMA56, 
+    IMA561, IMA562, IMA57, IMA571, IMA58, IMA59, IMA60, IMA61, IMA62, IMA63, IMA63_FAC, 
+    IMA64, IMA641, IMA65, IMA66, IMA67, IMA68, IMA69, IMA70, IMA71, IMA72, IMA73, IMA74, 
+    IMA86, IMA86_FAC, IMA87, IMA871, IMA872, IMA873, IMA874, IMA88, IMA881, IMA89, IMA90, 
+    IMA91, IMA92, IMA93, IMA94, IMA95, IMA75, IMA76, IMA77, IMA78, IMA79, IMA80, IMA81, 
+    IMA82, IMA83, IMA84, IMA85, IMA851, IMA852, IMA853, IMA96, IMA97, IMA98, IMA99, IMA100, 
+    IMA101, IMA102, IMA103, IMA104, IMA105, IMA106, IMA107, IMA108, IMA109, IMA110, IMA111, 
+    IMA121, IMA122, IMA123, IMA124, IMA125, IMA126, IMA127, IMA128, IMA129, IMA130, IMA131, 
+    IMA132, IMA133, IMA134, IMA135, IMA136, IMA137, IMA138, IMA139, IMA140, IMA141, IMA142, 
+    IMA143, IMA144, IMA145, IMA146, IMA147, IMA148, IMA901, IMA902, IMA903, IMA904, IMA905, 
+    IMA906, IMA907, IMA908, IMA909, IMA910, IMAACTI, IMAUSER, IMAGRUP, IMAMODU, IMADATE, 
+    IMAAG, IMAAG1, IMAUD01, IMAUD02, IMAUD03, IMAUD04, IMAUD05, IMAUD06, IMAUD07, IMAUD08, 
+    IMAUD09, IMAUD10, IMAUD11, IMAUD12, IMAUD13, IMAUD14, IMAUD15, IMA1001, IMA1002, 
+    IMA1003, IMA1004, IMA1005, IMA1006, IMA1007, IMA1008, IMA1009, IMA1010, IMA1011, 
+    IMA1012, IMA1013, IMA1014, IMA1015, IMA1016, IMA1017, IMA1018, IMA1019, IMA1020, 
+    IMA1021, IMA1022, IMA1023, IMA1024, IMA1025, IMA1026, IMA1027, IMA1028, IMA1029, 
+    IMA911, IMA912, IMA913, IMA914, IMA391, IMA1321, IMA1911, IMA1912, IMA1913, IMA1914, 
+    IMA1915, IMA1916, IMA1919, IMA1401, IMA915, IMA916, IMA917, IMA150, IMA151, IMA152, 
+    IMA918, IMA919, IMA920, IMA921, IMA922, IMA923, IMA924, IMA925, IMA601, IMA153, IMA926, 
+    IMA154, IMA155, IMA149, IMA1491, IMAORIU, IMAORIG, IMA9021, IMA022, IMA251, IMA940, 
+    IMA941, IMA156, IMA157, IMA158, IMA927, IMA120, IMA159, IMA930, IMA931, IMA932, IMA933, 
+    IMA934
+    from S30.IMA_FILE
+  </select>
+</mapper>

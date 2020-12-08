@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-consumer-entrance8080" />
+        <module name="cloud-provider-mes9040" />
+        <module name="cloud-provider-mysql9030" />
+        <module name="cloud-provider-sqlserver9010" />
+        <module name="cloud-provider-supplier9001" />
+        <module name="cloud-provider-supplier9002" />
+        <module name="cloud-provider-tiptop9020" />
+        <module name="MybatisGenerator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-provider-mysql9031" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.IMG_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.IMG_FILE">
+    <result column="IMG01" jdbcType="VARCHAR" property="img01" />
+    <result column="IMG02" jdbcType="VARCHAR" property="img02" />
+    <result column="IMG03" jdbcType="VARCHAR" property="img03" />
+    <result column="IMG04" jdbcType="VARCHAR" property="img04" />
+    <result column="IMG05" jdbcType="VARCHAR" property="img05" />
+    <result column="IMG06" jdbcType="DECIMAL" property="img06" />
+    <result column="IMG07" jdbcType="VARCHAR" property="img07" />
+    <result column="IMG08" jdbcType="DECIMAL" property="img08" />
+    <result column="IMG09" jdbcType="VARCHAR" property="img09" />
+    <result column="IMG10" jdbcType="DECIMAL" property="img10" />
+    <result column="IMG11" jdbcType="DECIMAL" property="img11" />
+    <result column="IMG12" jdbcType="DECIMAL" property="img12" />
+    <result column="IMG13" jdbcType="DATE" property="img13" />
+    <result column="IMG14" jdbcType="DATE" property="img14" />
+    <result column="IMG15" jdbcType="DATE" property="img15" />
+    <result column="IMG16" jdbcType="DATE" property="img16" />
+    <result column="IMG17" jdbcType="DATE" property="img17" />
+    <result column="IMG18" jdbcType="DATE" property="img18" />
+    <result column="IMG19" jdbcType="VARCHAR" property="img19" />
+    <result column="IMG20" jdbcType="DECIMAL" property="img20" />
+    <result column="IMG21" jdbcType="DECIMAL" property="img21" />
+    <result column="IMG22" jdbcType="VARCHAR" property="img22" />
+    <result column="IMG23" jdbcType="VARCHAR" property="img23" />
+    <result column="IMG24" jdbcType="VARCHAR" property="img24" />
+    <result column="IMG25" jdbcType="VARCHAR" property="img25" />
+    <result column="IMG26" jdbcType="VARCHAR" property="img26" />
+    <result column="IMG27" jdbcType="DECIMAL" property="img27" />
+    <result column="IMG28" jdbcType="DECIMAL" property="img28" />
+    <result column="IMG30" jdbcType="DECIMAL" property="img30" />
+    <result column="IMG31" jdbcType="DECIMAL" property="img31" />
+    <result column="IMG32" jdbcType="DECIMAL" property="img32" />
+    <result column="IMG33" jdbcType="DECIMAL" property="img33" />
+    <result column="IMG34" jdbcType="DECIMAL" property="img34" />
+    <result column="IMG35" jdbcType="VARCHAR" property="img35" />
+    <result column="IMG36" jdbcType="VARCHAR" property="img36" />
+    <result column="IMG37" jdbcType="DATE" property="img37" />
+    <result column="IMG38" jdbcType="VARCHAR" property="img38" />
+    <result column="IMGPLANT" jdbcType="VARCHAR" property="imgplant" />
+    <result column="IMGLEGAL" jdbcType="VARCHAR" property="imglegal" />
+  </resultMap>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.IMG_FILE">
+    insert into S30.IMG_FILE (IMG01, IMG02, IMG03, 
+      IMG04, IMG05, IMG06, 
+      IMG07, IMG08, IMG09, 
+      IMG10, IMG11, IMG12, 
+      IMG13, IMG14, IMG15, IMG16, 
+      IMG17, IMG18, IMG19, IMG20, 
+      IMG21, IMG22, IMG23, 
+      IMG24, IMG25, IMG26, 
+      IMG27, IMG28, IMG30, 
+      IMG31, IMG32, IMG33, 
+      IMG34, IMG35, IMG36, 
+      IMG37, IMG38, IMGPLANT, 
+      IMGLEGAL)
+    values (#{img01,jdbcType=VARCHAR}, #{img02,jdbcType=VARCHAR}, #{img03,jdbcType=VARCHAR}, 
+      #{img04,jdbcType=VARCHAR}, #{img05,jdbcType=VARCHAR}, #{img06,jdbcType=DECIMAL}, 
+      #{img07,jdbcType=VARCHAR}, #{img08,jdbcType=DECIMAL}, #{img09,jdbcType=VARCHAR}, 
+      #{img10,jdbcType=DECIMAL}, #{img11,jdbcType=DECIMAL}, #{img12,jdbcType=DECIMAL}, 
+      #{img13,jdbcType=DATE}, #{img14,jdbcType=DATE}, #{img15,jdbcType=DATE}, #{img16,jdbcType=DATE}, 
+      #{img17,jdbcType=DATE}, #{img18,jdbcType=DATE}, #{img19,jdbcType=VARCHAR}, #{img20,jdbcType=DECIMAL}, 
+      #{img21,jdbcType=DECIMAL}, #{img22,jdbcType=VARCHAR}, #{img23,jdbcType=VARCHAR}, 
+      #{img24,jdbcType=VARCHAR}, #{img25,jdbcType=VARCHAR}, #{img26,jdbcType=VARCHAR}, 
+      #{img27,jdbcType=DECIMAL}, #{img28,jdbcType=DECIMAL}, #{img30,jdbcType=DECIMAL}, 
+      #{img31,jdbcType=DECIMAL}, #{img32,jdbcType=DECIMAL}, #{img33,jdbcType=DECIMAL}, 
+      #{img34,jdbcType=DECIMAL}, #{img35,jdbcType=VARCHAR}, #{img36,jdbcType=VARCHAR}, 
+      #{img37,jdbcType=DATE}, #{img38,jdbcType=VARCHAR}, #{imgplant,jdbcType=VARCHAR}, 
+      #{imglegal,jdbcType=VARCHAR})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select IMG01, IMG02, IMG03, IMG04, IMG05, IMG06, IMG07, IMG08, IMG09, IMG10, IMG11, 
+    IMG12, IMG13, IMG14, IMG15, IMG16, IMG17, IMG18, IMG19, IMG20, IMG21, IMG22, IMG23, 
+    IMG24, IMG25, IMG26, IMG27, IMG28, IMG30, IMG31, IMG32, IMG33, IMG34, IMG35, IMG36, 
+    IMG37, IMG38, IMGPLANT, IMGLEGAL
+    from S30.IMG_FILE
+  </select>
+</mapper>

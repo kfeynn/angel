@@ -1,0 +1,17 @@
+server:
+  port: 9040
+
+spring:
+  application:
+    name: nacos-mes-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848   #配置nacos 地址
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@192.168.0.79:1521:topprod
+    username: S30
+    password: S30
+    driver-class-name: oracle.jdbc.OracleDriver  #oracle.jdbc.OracleDriver oracle.jdbc.driver.OracleDriver
+

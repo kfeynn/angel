@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.AZA_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.AZA_FILE">
+    <id column="AZA01" jdbcType="VARCHAR" property="aza01" />
+    <result column="AZA02" jdbcType="VARCHAR" property="aza02" />
+    <result column="AZA03" jdbcType="VARCHAR" property="aza03" />
+    <result column="AZA04" jdbcType="VARCHAR" property="aza04" />
+    <result column="AZA05" jdbcType="VARCHAR" property="aza05" />
+    <result column="AZA06" jdbcType="VARCHAR" property="aza06" />
+    <result column="AZA07" jdbcType="VARCHAR" property="aza07" />
+    <result column="AZA08" jdbcType="VARCHAR" property="aza08" />
+    <result column="AZA09" jdbcType="VARCHAR" property="aza09" />
+    <result column="AZA10" jdbcType="VARCHAR" property="aza10" />
+    <result column="AZA11" jdbcType="VARCHAR" property="aza11" />
+    <result column="AZA12" jdbcType="VARCHAR" property="aza12" />
+    <result column="AZA13" jdbcType="VARCHAR" property="aza13" />
+    <result column="AZA14" jdbcType="VARCHAR" property="aza14" />
+    <result column="AZA15" jdbcType="VARCHAR" property="aza15" />
+    <result column="AZA16" jdbcType="VARCHAR" property="aza16" />
+    <result column="AZA17" jdbcType="VARCHAR" property="aza17" />
+    <result column="AZA18" jdbcType="VARCHAR" property="aza18" />
+    <result column="AZA19" jdbcType="VARCHAR" property="aza19" />
+    <result column="AZA20" jdbcType="VARCHAR" property="aza20" />
+    <result column="AZA21" jdbcType="VARCHAR" property="aza21" />
+    <result column="AZA22" jdbcType="VARCHAR" property="aza22" />
+    <result column="AZA23" jdbcType="VARCHAR" property="aza23" />
+    <result column="AZA24" jdbcType="VARCHAR" property="aza24" />
+    <result column="AZA25" jdbcType="VARCHAR" property="aza25" />
+    <result column="AZA26" jdbcType="VARCHAR" property="aza26" />
+    <result column="AZA27" jdbcType="VARCHAR" property="aza27" />
+    <result column="AZA28" jdbcType="VARCHAR" property="aza28" />
+    <result column="AZA29" jdbcType="VARCHAR" property="aza29" />
+    <result column="AZA30" jdbcType="VARCHAR" property="aza30" />
+    <result column="AZA31" jdbcType="VARCHAR" property="aza31" />
+    <result column="AZA32" jdbcType="VARCHAR" property="aza32" />
+    <result column="AZA33" jdbcType="DECIMAL" property="aza33" />
+    <result column="AZA34" jdbcType="DECIMAL" property="aza34" />
+    <result column="AZA35" jdbcType="VARCHAR" property="aza35" />
+    <result column="AZA36" jdbcType="VARCHAR" property="aza36" />
+    <result column="AZA37" jdbcType="DECIMAL" property="aza37" />
+    <result column="AZA38" jdbcType="DECIMAL" property="aza38" />
+    <result column="AZA39" jdbcType="VARCHAR" property="aza39" />
+    <result column="AZA40" jdbcType="VARCHAR" property="aza40" />
+    <result column="AZAUSER" jdbcType="VARCHAR" property="azauser" />
+    <result column="AZAGRUP" jdbcType="VARCHAR" property="azagrup" />
+    <result column="AZAMODU" jdbcType="VARCHAR" property="azamodu" />
+    <result column="AZADATE" jdbcType="DATE" property="azadate" />
+    <result column="AZA41" jdbcType="VARCHAR" property="aza41" />
+    <result column="AZA42" jdbcType="VARCHAR" property="aza42" />
+    <result column="AZA43" jdbcType="VARCHAR" property="aza43" />
+    <result column="AZA44" jdbcType="VARCHAR" property="aza44" />
+    <result column="AZA45" jdbcType="VARCHAR" property="aza45" />
+    <result column="AZA46" jdbcType="VARCHAR" property="aza46" />
+    <result column="AZA47" jdbcType="VARCHAR" property="aza47" />
+    <result column="AZA48" jdbcType="VARCHAR" property="aza48" />
+    <result column="AZA49" jdbcType="VARCHAR" property="aza49" />
+    <result column="AZA50" jdbcType="VARCHAR" property="aza50" />
+    <result column="AZA51" jdbcType="VARCHAR" property="aza51" />
+    <result column="AZA52" jdbcType="VARCHAR" property="aza52" />
+    <result column="AZA53" jdbcType="VARCHAR" property="aza53" />
+    <result column="AZA54" jdbcType="DECIMAL" property="aza54" />
+    <result column="AZA55" jdbcType="DECIMAL" property="aza55" />
+    <result column="AZA56" jdbcType="VARCHAR" property="aza56" />
+    <result column="AZA57" jdbcType="VARCHAR" property="aza57" />
+    <result column="AZA58" jdbcType="VARCHAR" property="aza58" />
+    <result column="AZA59" jdbcType="VARCHAR" property="aza59" />
+    <result column="AZA60" jdbcType="VARCHAR" property="aza60" />
+    <result column="AZA61" jdbcType="VARCHAR" property="aza61" />
+    <result column="AZA62" jdbcType="VARCHAR" property="aza62" />
+    <result column="AZA63" jdbcType="VARCHAR" property="aza63" />
+    <result column="AZA64" jdbcType="VARCHAR" property="aza64" />
+    <result column="AZA65" jdbcType="VARCHAR" property="aza65" />
+    <result column="AZA66" jdbcType="VARCHAR" property="aza66" />
+    <result column="AZA67" jdbcType="VARCHAR" property="aza67" />
+    <result column="AZA68" jdbcType="VARCHAR" property="aza68" />
+    <result column="AZA69" jdbcType="VARCHAR" property="aza69" />
+    <result column="AZA70" jdbcType="VARCHAR" property="aza70" />
+    <result column="AZA71" jdbcType="VARCHAR" property="aza71" />
+    <result column="AZA72" jdbcType="VARCHAR" property="aza72" />
+    <result column="AZA81" jdbcType="VARCHAR" property="aza81" />
+    <result column="AZA82" jdbcType="VARCHAR" property="aza82" />
+    <result column="AZA75" jdbcType="VARCHAR" property="aza75" />
+    <result column="AZA76" jdbcType="VARCHAR" property="aza76" />
+    <result column="AZA73" jdbcType="VARCHAR" property="aza73" />
+    <result column="AZA74" jdbcType="VARCHAR" property="aza74" />
+    <result column="AZA77" jdbcType="VARCHAR" property="aza77" />
+    <result column="AZA83" jdbcType="DECIMAL" property="aza83" />
+    <result column="AZA84" jdbcType="DECIMAL" property="aza84" />
+    <result column="AZA85" jdbcType="VARCHAR" property="aza85" />
+    <result column="AZA86" jdbcType="VARCHAR" property="aza86" />
+    <result column="AZA78" jdbcType="VARCHAR" property="aza78" />
+    <result column="AZA90" jdbcType="VARCHAR" property="aza90" />
+    <result column="AZA91" jdbcType="VARCHAR" property="aza91" />
+    <result column="AZA92" jdbcType="VARCHAR" property="aza92" />
+    <result column="AZA93" jdbcType="VARCHAR" property="aza93" />
+    <result column="AZA88" jdbcType="VARCHAR" property="aza88" />
+    <result column="AZA89" jdbcType="VARCHAR" property="aza89" />
+    <result column="AZA94" jdbcType="VARCHAR" property="aza94" />
+    <result column="AZAORIG" jdbcType="VARCHAR" property="azaorig" />
+    <result column="AZAORIU" jdbcType="VARCHAR" property="azaoriu" />
+    <result column="AZA95" jdbcType="VARCHAR" property="aza95" />
+    <result column="AZA96" jdbcType="VARCHAR" property="aza96" />
+    <result column="AZA100" jdbcType="DECIMAL" property="aza100" />
+    <result column="AZA101" jdbcType="VARCHAR" property="aza101" />
+    <result column="AZA102" jdbcType="VARCHAR" property="aza102" />
+    <result column="AZA103" jdbcType="VARCHAR" property="aza103" />
+    <result column="AZA104" jdbcType="VARCHAR" property="aza104" />
+    <result column="AZA97" jdbcType="VARCHAR" property="aza97" />
+    <result column="AZA98" jdbcType="DECIMAL" property="aza98" />
+    <result column="AZA99" jdbcType="VARCHAR" property="aza99" />
+    <result column="AZA107" jdbcType="VARCHAR" property="aza107" />
+    <result column="AZA108" jdbcType="VARCHAR" property="aza108" />
+    <result column="AZA123" jdbcType="VARCHAR" property="aza123" />
+    <result column="AZA109" jdbcType="VARCHAR" property="aza109" />
+    <result column="AZA121" jdbcType="VARCHAR" property="aza121" />
+    <result column="AZA122" jdbcType="VARCHAR" property="aza122" />
+    <result column="AZAUD01" jdbcType="VARCHAR" property="azaud01" />
+    <result column="AZAUD02" jdbcType="VARCHAR" property="azaud02" />
+    <result column="AZAUD03" jdbcType="VARCHAR" property="azaud03" />
+    <result column="AZAUD04" jdbcType="VARCHAR" property="azaud04" />
+    <result column="AZAUD05" jdbcType="VARCHAR" property="azaud05" />
+    <result column="AZAUD06" jdbcType="VARCHAR" property="azaud06" />
+    <result column="AZAUD07" jdbcType="DECIMAL" property="azaud07" />
+    <result column="AZAUD08" jdbcType="DECIMAL" property="azaud08" />
+    <result column="AZAUD09" jdbcType="DECIMAL" property="azaud09" />
+    <result column="AZAUD10" jdbcType="DECIMAL" property="azaud10" />
+    <result column="AZAUD11" jdbcType="DECIMAL" property="azaud11" />
+    <result column="AZAUD12" jdbcType="DECIMAL" property="azaud12" />
+    <result column="AZAUD13" jdbcType="DATE" property="azaud13" />
+    <result column="AZAUD14" jdbcType="DATE" property="azaud14" />
+    <result column="AZAUD15" jdbcType="DATE" property="azaud15" />
+    <result column="AZA124" jdbcType="VARCHAR" property="aza124" />
+    <result column="AZA125" jdbcType="VARCHAR" property="aza125" />
+    <result column="AZA126" jdbcType="VARCHAR" property="aza126" />
+    <result column="AZA129" jdbcType="VARCHAR" property="aza129" />
+    <result column="AZA130" jdbcType="VARCHAR" property="aza130" />
+    <result column="AZA127" jdbcType="VARCHAR" property="aza127" />
+    <result column="AZA128" jdbcType="VARCHAR" property="aza128" />
+    <result column="AZA105" jdbcType="VARCHAR" property="aza105" />
+    <result column="AZA106" jdbcType="VARCHAR" property="aza106" />
+    <result column="AZA131" jdbcType="VARCHAR" property="aza131" />
+    <result column="AZA132" jdbcType="VARCHAR" property="aza132" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from AZA_FILE
+    where AZA01 = #{aza01,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.AZA_FILE">
+    insert into AZA_FILE (AZA01, AZA02, AZA03, 
+      AZA04, AZA05, AZA06, 
+      AZA07, AZA08, AZA09, 
+      AZA10, AZA11, AZA12, 
+      AZA13, AZA14, AZA15, 
+      AZA16, AZA17, AZA18, 
+      AZA19, AZA20, AZA21, 
+      AZA22, AZA23, AZA24, 
+      AZA25, AZA26, AZA27, 
+      AZA28, AZA29, AZA30, 
+      AZA31, AZA32, AZA33, 
+      AZA34, AZA35, AZA36, 
+      AZA37, AZA38, AZA39, 
+      AZA40, AZAUSER, AZAGRUP, 
+      AZAMODU, AZADATE, AZA41, 
+      AZA42, AZA43, AZA44, 
+      AZA45, AZA46, AZA47, 
+      AZA48, AZA49, AZA50, 
+      AZA51, AZA52, AZA53, 
+      AZA54, AZA55, AZA56, 
+      AZA57, AZA58, AZA59, 
+      AZA60, AZA61, AZA62, 
+      AZA63, AZA64, AZA65, 
+      AZA66, AZA67, AZA68, 
+      AZA69, AZA70, AZA71, 
+      AZA72, AZA81, AZA82, 
+      AZA75, AZA76, AZA73, 
+      AZA74, AZA77, AZA83, 
+      AZA84, AZA85, AZA86, 
+      AZA78, AZA90, AZA91, 
+      AZA92, AZA93, AZA88, 
+      AZA89, AZA94, AZAORIG, 
+      AZAORIU, AZA95, AZA96, 
+      AZA100, AZA101, AZA102, 
+      AZA103, AZA104, AZA97, 
+      AZA98, AZA99, AZA107, 
+      AZA108, AZA123, AZA109, 
+      AZA121, AZA122, AZAUD01, 
+      AZAUD02, AZAUD03, AZAUD04, 
+      AZAUD05, AZAUD06, AZAUD07, 
+      AZAUD08, AZAUD09, AZAUD10, 
+      AZAUD11, AZAUD12, AZAUD13, 
+      AZAUD14, AZAUD15, AZA124, 
+      AZA125, AZA126, AZA129, 
+      AZA130, AZA127, AZA128, 
+      AZA105, AZA106, AZA131, 
+      AZA132)
+    values (#{aza01,jdbcType=VARCHAR}, #{aza02,jdbcType=VARCHAR}, #{aza03,jdbcType=VARCHAR}, 
+      #{aza04,jdbcType=VARCHAR}, #{aza05,jdbcType=VARCHAR}, #{aza06,jdbcType=VARCHAR}, 
+      #{aza07,jdbcType=VARCHAR}, #{aza08,jdbcType=VARCHAR}, #{aza09,jdbcType=VARCHAR}, 
+      #{aza10,jdbcType=VARCHAR}, #{aza11,jdbcType=VARCHAR}, #{aza12,jdbcType=VARCHAR}, 
+      #{aza13,jdbcType=VARCHAR}, #{aza14,jdbcType=VARCHAR}, #{aza15,jdbcType=VARCHAR}, 
+      #{aza16,jdbcType=VARCHAR}, #{aza17,jdbcType=VARCHAR}, #{aza18,jdbcType=VARCHAR}, 
+      #{aza19,jdbcType=VARCHAR}, #{aza20,jdbcType=VARCHAR}, #{aza21,jdbcType=VARCHAR}, 
+      #{aza22,jdbcType=VARCHAR}, #{aza23,jdbcType=VARCHAR}, #{aza24,jdbcType=VARCHAR}, 
+      #{aza25,jdbcType=VARCHAR}, #{aza26,jdbcType=VARCHAR}, #{aza27,jdbcType=VARCHAR}, 
+      #{aza28,jdbcType=VARCHAR}, #{aza29,jdbcType=VARCHAR}, #{aza30,jdbcType=VARCHAR}, 
+      #{aza31,jdbcType=VARCHAR}, #{aza32,jdbcType=VARCHAR}, #{aza33,jdbcType=DECIMAL}, 
+      #{aza34,jdbcType=DECIMAL}, #{aza35,jdbcType=VARCHAR}, #{aza36,jdbcType=VARCHAR}, 
+      #{aza37,jdbcType=DECIMAL}, #{aza38,jdbcType=DECIMAL}, #{aza39,jdbcType=VARCHAR}, 
+      #{aza40,jdbcType=VARCHAR}, #{azauser,jdbcType=VARCHAR}, #{azagrup,jdbcType=VARCHAR}, 
+      #{azamodu,jdbcType=VARCHAR}, #{azadate,jdbcType=DATE}, #{aza41,jdbcType=VARCHAR}, 
+      #{aza42,jdbcType=VARCHAR}, #{aza43,jdbcType=VARCHAR}, #{aza44,jdbcType=VARCHAR}, 
+      #{aza45,jdbcType=VARCHAR}, #{aza46,jdbcType=VARCHAR}, #{aza47,jdbcType=VARCHAR}, 
+      #{aza48,jdbcType=VARCHAR}, #{aza49,jdbcType=VARCHAR}, #{aza50,jdbcType=VARCHAR}, 
+      #{aza51,jdbcType=VARCHAR}, #{aza52,jdbcType=VARCHAR}, #{aza53,jdbcType=VARCHAR}, 
+      #{aza54,jdbcType=DECIMAL}, #{aza55,jdbcType=DECIMAL}, #{aza56,jdbcType=VARCHAR}, 
+      #{aza57,jdbcType=VARCHAR}, #{aza58,jdbcType=VARCHAR}, #{aza59,jdbcType=VARCHAR}, 
+      #{aza60,jdbcType=VARCHAR}, #{aza61,jdbcType=VARCHAR}, #{aza62,jdbcType=VARCHAR}, 
+      #{aza63,jdbcType=VARCHAR}, #{aza64,jdbcType=VARCHAR}, #{aza65,jdbcType=VARCHAR}, 
+      #{aza66,jdbcType=VARCHAR}, #{aza67,jdbcType=VARCHAR}, #{aza68,jdbcType=VARCHAR}, 
+      #{aza69,jdbcType=VARCHAR}, #{aza70,jdbcType=VARCHAR}, #{aza71,jdbcType=VARCHAR}, 
+      #{aza72,jdbcType=VARCHAR}, #{aza81,jdbcType=VARCHAR}, #{aza82,jdbcType=VARCHAR}, 
+      #{aza75,jdbcType=VARCHAR}, #{aza76,jdbcType=VARCHAR}, #{aza73,jdbcType=VARCHAR}, 
+      #{aza74,jdbcType=VARCHAR}, #{aza77,jdbcType=VARCHAR}, #{aza83,jdbcType=DECIMAL}, 
+      #{aza84,jdbcType=DECIMAL}, #{aza85,jdbcType=VARCHAR}, #{aza86,jdbcType=VARCHAR}, 
+      #{aza78,jdbcType=VARCHAR}, #{aza90,jdbcType=VARCHAR}, #{aza91,jdbcType=VARCHAR}, 
+      #{aza92,jdbcType=VARCHAR}, #{aza93,jdbcType=VARCHAR}, #{aza88,jdbcType=VARCHAR}, 
+      #{aza89,jdbcType=VARCHAR}, #{aza94,jdbcType=VARCHAR}, #{azaorig,jdbcType=VARCHAR}, 
+      #{azaoriu,jdbcType=VARCHAR}, #{aza95,jdbcType=VARCHAR}, #{aza96,jdbcType=VARCHAR}, 
+      #{aza100,jdbcType=DECIMAL}, #{aza101,jdbcType=VARCHAR}, #{aza102,jdbcType=VARCHAR}, 
+      #{aza103,jdbcType=VARCHAR}, #{aza104,jdbcType=VARCHAR}, #{aza97,jdbcType=VARCHAR}, 
+      #{aza98,jdbcType=DECIMAL}, #{aza99,jdbcType=VARCHAR}, #{aza107,jdbcType=VARCHAR}, 
+      #{aza108,jdbcType=VARCHAR}, #{aza123,jdbcType=VARCHAR}, #{aza109,jdbcType=VARCHAR}, 
+      #{aza121,jdbcType=VARCHAR}, #{aza122,jdbcType=VARCHAR}, #{azaud01,jdbcType=VARCHAR}, 
+      #{azaud02,jdbcType=VARCHAR}, #{azaud03,jdbcType=VARCHAR}, #{azaud04,jdbcType=VARCHAR}, 
+      #{azaud05,jdbcType=VARCHAR}, #{azaud06,jdbcType=VARCHAR}, #{azaud07,jdbcType=DECIMAL}, 
+      #{azaud08,jdbcType=DECIMAL}, #{azaud09,jdbcType=DECIMAL}, #{azaud10,jdbcType=DECIMAL}, 
+      #{azaud11,jdbcType=DECIMAL}, #{azaud12,jdbcType=DECIMAL}, #{azaud13,jdbcType=DATE}, 
+      #{azaud14,jdbcType=DATE}, #{azaud15,jdbcType=DATE}, #{aza124,jdbcType=VARCHAR}, 
+      #{aza125,jdbcType=VARCHAR}, #{aza126,jdbcType=VARCHAR}, #{aza129,jdbcType=VARCHAR}, 
+      #{aza130,jdbcType=VARCHAR}, #{aza127,jdbcType=VARCHAR}, #{aza128,jdbcType=VARCHAR}, 
+      #{aza105,jdbcType=VARCHAR}, #{aza106,jdbcType=VARCHAR}, #{aza131,jdbcType=VARCHAR}, 
+      #{aza132,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.AZA_FILE">
+    update AZA_FILE
+    set AZA02 = #{aza02,jdbcType=VARCHAR},
+      AZA03 = #{aza03,jdbcType=VARCHAR},
+      AZA04 = #{aza04,jdbcType=VARCHAR},
+      AZA05 = #{aza05,jdbcType=VARCHAR},
+      AZA06 = #{aza06,jdbcType=VARCHAR},
+      AZA07 = #{aza07,jdbcType=VARCHAR},
+      AZA08 = #{aza08,jdbcType=VARCHAR},
+      AZA09 = #{aza09,jdbcType=VARCHAR},
+      AZA10 = #{aza10,jdbcType=VARCHAR},
+      AZA11 = #{aza11,jdbcType=VARCHAR},
+      AZA12 = #{aza12,jdbcType=VARCHAR},
+      AZA13 = #{aza13,jdbcType=VARCHAR},
+      AZA14 = #{aza14,jdbcType=VARCHAR},
+      AZA15 = #{aza15,jdbcType=VARCHAR},
+      AZA16 = #{aza16,jdbcType=VARCHAR},
+      AZA17 = #{aza17,jdbcType=VARCHAR},
+      AZA18 = #{aza18,jdbcType=VARCHAR},
+      AZA19 = #{aza19,jdbcType=VARCHAR},
+      AZA20 = #{aza20,jdbcType=VARCHAR},
+      AZA21 = #{aza21,jdbcType=VARCHAR},
+      AZA22 = #{aza22,jdbcType=VARCHAR},
+      AZA23 = #{aza23,jdbcType=VARCHAR},
+      AZA24 = #{aza24,jdbcType=VARCHAR},
+      AZA25 = #{aza25,jdbcType=VARCHAR},
+      AZA26 = #{aza26,jdbcType=VARCHAR},
+      AZA27 = #{aza27,jdbcType=VARCHAR},
+      AZA28 = #{aza28,jdbcType=VARCHAR},
+      AZA29 = #{aza29,jdbcType=VARCHAR},
+      AZA30 = #{aza30,jdbcType=VARCHAR},
+      AZA31 = #{aza31,jdbcType=VARCHAR},
+      AZA32 = #{aza32,jdbcType=VARCHAR},
+      AZA33 = #{aza33,jdbcType=DECIMAL},
+      AZA34 = #{aza34,jdbcType=DECIMAL},
+      AZA35 = #{aza35,jdbcType=VARCHAR},
+      AZA36 = #{aza36,jdbcType=VARCHAR},
+      AZA37 = #{aza37,jdbcType=DECIMAL},
+      AZA38 = #{aza38,jdbcType=DECIMAL},
+      AZA39 = #{aza39,jdbcType=VARCHAR},
+      AZA40 = #{aza40,jdbcType=VARCHAR},
+      AZAUSER = #{azauser,jdbcType=VARCHAR},
+      AZAGRUP = #{azagrup,jdbcType=VARCHAR},
+      AZAMODU = #{azamodu,jdbcType=VARCHAR},
+      AZADATE = #{azadate,jdbcType=DATE},
+      AZA41 = #{aza41,jdbcType=VARCHAR},
+      AZA42 = #{aza42,jdbcType=VARCHAR},
+      AZA43 = #{aza43,jdbcType=VARCHAR},
+      AZA44 = #{aza44,jdbcType=VARCHAR},
+      AZA45 = #{aza45,jdbcType=VARCHAR},
+      AZA46 = #{aza46,jdbcType=VARCHAR},
+      AZA47 = #{aza47,jdbcType=VARCHAR},
+      AZA48 = #{aza48,jdbcType=VARCHAR},
+      AZA49 = #{aza49,jdbcType=VARCHAR},
+      AZA50 = #{aza50,jdbcType=VARCHAR},
+      AZA51 = #{aza51,jdbcType=VARCHAR},
+      AZA52 = #{aza52,jdbcType=VARCHAR},
+      AZA53 = #{aza53,jdbcType=VARCHAR},
+      AZA54 = #{aza54,jdbcType=DECIMAL},
+      AZA55 = #{aza55,jdbcType=DECIMAL},
+      AZA56 = #{aza56,jdbcType=VARCHAR},
+      AZA57 = #{aza57,jdbcType=VARCHAR},
+      AZA58 = #{aza58,jdbcType=VARCHAR},
+      AZA59 = #{aza59,jdbcType=VARCHAR},
+      AZA60 = #{aza60,jdbcType=VARCHAR},
+      AZA61 = #{aza61,jdbcType=VARCHAR},
+      AZA62 = #{aza62,jdbcType=VARCHAR},
+      AZA63 = #{aza63,jdbcType=VARCHAR},
+      AZA64 = #{aza64,jdbcType=VARCHAR},
+      AZA65 = #{aza65,jdbcType=VARCHAR},
+      AZA66 = #{aza66,jdbcType=VARCHAR},
+      AZA67 = #{aza67,jdbcType=VARCHAR},
+      AZA68 = #{aza68,jdbcType=VARCHAR},
+      AZA69 = #{aza69,jdbcType=VARCHAR},
+      AZA70 = #{aza70,jdbcType=VARCHAR},
+      AZA71 = #{aza71,jdbcType=VARCHAR},
+      AZA72 = #{aza72,jdbcType=VARCHAR},
+      AZA81 = #{aza81,jdbcType=VARCHAR},
+      AZA82 = #{aza82,jdbcType=VARCHAR},
+      AZA75 = #{aza75,jdbcType=VARCHAR},
+      AZA76 = #{aza76,jdbcType=VARCHAR},
+      AZA73 = #{aza73,jdbcType=VARCHAR},
+      AZA74 = #{aza74,jdbcType=VARCHAR},
+      AZA77 = #{aza77,jdbcType=VARCHAR},
+      AZA83 = #{aza83,jdbcType=DECIMAL},
+      AZA84 = #{aza84,jdbcType=DECIMAL},
+      AZA85 = #{aza85,jdbcType=VARCHAR},
+      AZA86 = #{aza86,jdbcType=VARCHAR},
+      AZA78 = #{aza78,jdbcType=VARCHAR},
+      AZA90 = #{aza90,jdbcType=VARCHAR},
+      AZA91 = #{aza91,jdbcType=VARCHAR},
+      AZA92 = #{aza92,jdbcType=VARCHAR},
+      AZA93 = #{aza93,jdbcType=VARCHAR},
+      AZA88 = #{aza88,jdbcType=VARCHAR},
+      AZA89 = #{aza89,jdbcType=VARCHAR},
+      AZA94 = #{aza94,jdbcType=VARCHAR},
+      AZAORIG = #{azaorig,jdbcType=VARCHAR},
+      AZAORIU = #{azaoriu,jdbcType=VARCHAR},
+      AZA95 = #{aza95,jdbcType=VARCHAR},
+      AZA96 = #{aza96,jdbcType=VARCHAR},
+      AZA100 = #{aza100,jdbcType=DECIMAL},
+      AZA101 = #{aza101,jdbcType=VARCHAR},
+      AZA102 = #{aza102,jdbcType=VARCHAR},
+      AZA103 = #{aza103,jdbcType=VARCHAR},
+      AZA104 = #{aza104,jdbcType=VARCHAR},
+      AZA97 = #{aza97,jdbcType=VARCHAR},
+      AZA98 = #{aza98,jdbcType=DECIMAL},
+      AZA99 = #{aza99,jdbcType=VARCHAR},
+      AZA107 = #{aza107,jdbcType=VARCHAR},
+      AZA108 = #{aza108,jdbcType=VARCHAR},
+      AZA123 = #{aza123,jdbcType=VARCHAR},
+      AZA109 = #{aza109,jdbcType=VARCHAR},
+      AZA121 = #{aza121,jdbcType=VARCHAR},
+      AZA122 = #{aza122,jdbcType=VARCHAR},
+      AZAUD01 = #{azaud01,jdbcType=VARCHAR},
+      AZAUD02 = #{azaud02,jdbcType=VARCHAR},
+      AZAUD03 = #{azaud03,jdbcType=VARCHAR},
+      AZAUD04 = #{azaud04,jdbcType=VARCHAR},
+      AZAUD05 = #{azaud05,jdbcType=VARCHAR},
+      AZAUD06 = #{azaud06,jdbcType=VARCHAR},
+      AZAUD07 = #{azaud07,jdbcType=DECIMAL},
+      AZAUD08 = #{azaud08,jdbcType=DECIMAL},
+      AZAUD09 = #{azaud09,jdbcType=DECIMAL},
+      AZAUD10 = #{azaud10,jdbcType=DECIMAL},
+      AZAUD11 = #{azaud11,jdbcType=DECIMAL},
+      AZAUD12 = #{azaud12,jdbcType=DECIMAL},
+      AZAUD13 = #{azaud13,jdbcType=DATE},
+      AZAUD14 = #{azaud14,jdbcType=DATE},
+      AZAUD15 = #{azaud15,jdbcType=DATE},
+      AZA124 = #{aza124,jdbcType=VARCHAR},
+      AZA125 = #{aza125,jdbcType=VARCHAR},
+      AZA126 = #{aza126,jdbcType=VARCHAR},
+      AZA129 = #{aza129,jdbcType=VARCHAR},
+      AZA130 = #{aza130,jdbcType=VARCHAR},
+      AZA127 = #{aza127,jdbcType=VARCHAR},
+      AZA128 = #{aza128,jdbcType=VARCHAR},
+      AZA105 = #{aza105,jdbcType=VARCHAR},
+      AZA106 = #{aza106,jdbcType=VARCHAR},
+      AZA131 = #{aza131,jdbcType=VARCHAR},
+      AZA132 = #{aza132,jdbcType=VARCHAR}
+    where AZA01 = #{aza01,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select AZA01, AZA02, AZA03, AZA04, AZA05, AZA06, AZA07, AZA08, AZA09, AZA10, AZA11, 
+    AZA12, AZA13, AZA14, AZA15, AZA16, AZA17, AZA18, AZA19, AZA20, AZA21, AZA22, AZA23, 
+    AZA24, AZA25, AZA26, AZA27, AZA28, AZA29, AZA30, AZA31, AZA32, AZA33, AZA34, AZA35, 
+    AZA36, AZA37, AZA38, AZA39, AZA40, AZAUSER, AZAGRUP, AZAMODU, AZADATE, AZA41, AZA42, 
+    AZA43, AZA44, AZA45, AZA46, AZA47, AZA48, AZA49, AZA50, AZA51, AZA52, AZA53, AZA54, 
+    AZA55, AZA56, AZA57, AZA58, AZA59, AZA60, AZA61, AZA62, AZA63, AZA64, AZA65, AZA66, 
+    AZA67, AZA68, AZA69, AZA70, AZA71, AZA72, AZA81, AZA82, AZA75, AZA76, AZA73, AZA74, 
+    AZA77, AZA83, AZA84, AZA85, AZA86, AZA78, AZA90, AZA91, AZA92, AZA93, AZA88, AZA89, 
+    AZA94, AZAORIG, AZAORIU, AZA95, AZA96, AZA100, AZA101, AZA102, AZA103, AZA104, AZA97, 
+    AZA98, AZA99, AZA107, AZA108, AZA123, AZA109, AZA121, AZA122, AZAUD01, AZAUD02, AZAUD03, 
+    AZAUD04, AZAUD05, AZAUD06, AZAUD07, AZAUD08, AZAUD09, AZAUD10, AZAUD11, AZAUD12, 
+    AZAUD13, AZAUD14, AZAUD15, AZA124, AZA125, AZA126, AZA129, AZA130, AZA127, AZA128, 
+    AZA105, AZA106, AZA131, AZA132
+    from AZA_FILE
+    where AZA01 = #{aza01,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select AZA01, AZA02, AZA03, AZA04, AZA05, AZA06, AZA07, AZA08, AZA09, AZA10, AZA11, 
+    AZA12, AZA13, AZA14, AZA15, AZA16, AZA17, AZA18, AZA19, AZA20, AZA21, AZA22, AZA23, 
+    AZA24, AZA25, AZA26, AZA27, AZA28, AZA29, AZA30, AZA31, AZA32, AZA33, AZA34, AZA35, 
+    AZA36, AZA37, AZA38, AZA39, AZA40, AZAUSER, AZAGRUP, AZAMODU, AZADATE, AZA41, AZA42, 
+    AZA43, AZA44, AZA45, AZA46, AZA47, AZA48, AZA49, AZA50, AZA51, AZA52, AZA53, AZA54, 
+    AZA55, AZA56, AZA57, AZA58, AZA59, AZA60, AZA61, AZA62, AZA63, AZA64, AZA65, AZA66, 
+    AZA67, AZA68, AZA69, AZA70, AZA71, AZA72, AZA81, AZA82, AZA75, AZA76, AZA73, AZA74, 
+    AZA77, AZA83, AZA84, AZA85, AZA86, AZA78, AZA90, AZA91, AZA92, AZA93, AZA88, AZA89, 
+    AZA94, AZAORIG, AZAORIU, AZA95, AZA96, AZA100, AZA101, AZA102, AZA103, AZA104, AZA97, 
+    AZA98, AZA99, AZA107, AZA108, AZA123, AZA109, AZA121, AZA122, AZAUD01, AZAUD02, AZAUD03, 
+    AZAUD04, AZAUD05, AZAUD06, AZAUD07, AZAUD08, AZAUD09, AZAUD10, AZAUD11, AZAUD12, 
+    AZAUD13, AZAUD14, AZAUD15, AZA124, AZA125, AZA126, AZA129, AZA130, AZA127, AZA128, 
+    AZA105, AZA106, AZA131, AZA132
+    from AZA_FILE
+  </select>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_IME_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_IME_FILE">
+    <id column="TC_IME01" jdbcType="VARCHAR" property="tcIme01" />
+    <id column="TC_IME02" jdbcType="VARCHAR" property="tcIme02" />
+    <id column="TC_IME03" jdbcType="VARCHAR" property="tcIme03" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from TC_IME_FILE
+    where TC_IME01 = #{tcIme01,jdbcType=VARCHAR}
+      and TC_IME02 = #{tcIme02,jdbcType=VARCHAR}
+      and TC_IME03 = #{tcIme03,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.TC_IME_FILE">
+    insert into TC_IME_FILE (TC_IME01, TC_IME02, TC_IME03
+      )
+    values (#{tcIme01,jdbcType=VARCHAR}, #{tcIme02,jdbcType=VARCHAR}, #{tcIme03,jdbcType=VARCHAR}
+      )
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select TC_IME01, TC_IME02, TC_IME03
+    from TC_IME_FILE
+  </select>
+</mapper>

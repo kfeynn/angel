@@ -1,0 +1,30 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: nacos-supplier-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848   #配置nacos 地址
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@192.168.0.64:1521:orcl
+    username: supplier
+    password: supplier
+    driver-class-name: oracle.jdbc.OracleDriver #oracle.jdbc.driver.OracleDriver
+
+mybatis:
+  mapperLocations: classpath:mapper/supplier/*.xml,classpath:mapper/*.xml   #放在resources下文件夹下时配置
+  type-aliases-package: com.grand.springcloud.entity.supplier
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+
+

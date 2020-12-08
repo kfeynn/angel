@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_BRF_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_BRF_FILE">
+    <id column="TC_BRF01" jdbcType="VARCHAR" property="tcBrf01" />
+    <id column="TC_BRF02" jdbcType="VARCHAR" property="tcBrf02" />
+    <id column="TC_BRF03" jdbcType="VARCHAR" property="tcBrf03" />
+    <result column="TC_BRF04" jdbcType="VARCHAR" property="tcBrf04" />
+    <result column="TC_BRF05" jdbcType="VARCHAR" property="tcBrf05" />
+    <result column="TC_BRF06" jdbcType="DECIMAL" property="tcBrf06" />
+    <result column="TC_BRFUD01" jdbcType="VARCHAR" property="tcBrfud01" />
+    <result column="TC_BRFUD02" jdbcType="VARCHAR" property="tcBrfud02" />
+    <result column="TC_BRFUD03" jdbcType="DECIMAL" property="tcBrfud03" />
+    <result column="TC_BRFUD04" jdbcType="DECIMAL" property="tcBrfud04" />
+    <result column="TC_BRFUD05" jdbcType="DATE" property="tcBrfud05" />
+    <result column="TC_BRFUD06" jdbcType="DATE" property="tcBrfud06" />
+    <result column="TC_BRFPLANT" jdbcType="VARCHAR" property="tcBrfplant" />
+    <result column="TC_BRFLEGAL" jdbcType="VARCHAR" property="tcBrflegal" />
+    <result column="TC_BRF07" jdbcType="VARCHAR" property="tcBrf07" />
+    <result column="TC_BRF08" jdbcType="VARCHAR" property="tcBrf08" />
+    <result column="TC_BRF09" jdbcType="DECIMAL" property="tcBrf09" />
+    <result column="TC_BRF10" jdbcType="DECIMAL" property="tcBrf10" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from TC_BRF_FILE
+    where TC_BRF01 = #{tcBrf01,jdbcType=VARCHAR}
+      and TC_BRF02 = #{tcBrf02,jdbcType=VARCHAR}
+      and TC_BRF03 = #{tcBrf03,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.TC_BRF_FILE">
+    insert into TC_BRF_FILE (TC_BRF01, TC_BRF02, TC_BRF03, 
+      TC_BRF04, TC_BRF05, TC_BRF06, 
+      TC_BRFUD01, TC_BRFUD02, TC_BRFUD03, 
+      TC_BRFUD04, TC_BRFUD05, TC_BRFUD06, 
+      TC_BRFPLANT, TC_BRFLEGAL, TC_BRF07, 
+      TC_BRF08, TC_BRF09, TC_BRF10
+      )
+    values (#{tcBrf01,jdbcType=VARCHAR}, #{tcBrf02,jdbcType=VARCHAR}, #{tcBrf03,jdbcType=VARCHAR}, 
+      #{tcBrf04,jdbcType=VARCHAR}, #{tcBrf05,jdbcType=VARCHAR}, #{tcBrf06,jdbcType=DECIMAL}, 
+      #{tcBrfud01,jdbcType=VARCHAR}, #{tcBrfud02,jdbcType=VARCHAR}, #{tcBrfud03,jdbcType=DECIMAL}, 
+      #{tcBrfud04,jdbcType=DECIMAL}, #{tcBrfud05,jdbcType=DATE}, #{tcBrfud06,jdbcType=DATE}, 
+      #{tcBrfplant,jdbcType=VARCHAR}, #{tcBrflegal,jdbcType=VARCHAR}, #{tcBrf07,jdbcType=VARCHAR}, 
+      #{tcBrf08,jdbcType=VARCHAR}, #{tcBrf09,jdbcType=DECIMAL}, #{tcBrf10,jdbcType=DECIMAL}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.TC_BRF_FILE">
+    update TC_BRF_FILE
+    set TC_BRF04 = #{tcBrf04,jdbcType=VARCHAR},
+      TC_BRF05 = #{tcBrf05,jdbcType=VARCHAR},
+      TC_BRF06 = #{tcBrf06,jdbcType=DECIMAL},
+      TC_BRFUD01 = #{tcBrfud01,jdbcType=VARCHAR},
+      TC_BRFUD02 = #{tcBrfud02,jdbcType=VARCHAR},
+      TC_BRFUD03 = #{tcBrfud03,jdbcType=DECIMAL},
+      TC_BRFUD04 = #{tcBrfud04,jdbcType=DECIMAL},
+      TC_BRFUD05 = #{tcBrfud05,jdbcType=DATE},
+      TC_BRFUD06 = #{tcBrfud06,jdbcType=DATE},
+      TC_BRFPLANT = #{tcBrfplant,jdbcType=VARCHAR},
+      TC_BRFLEGAL = #{tcBrflegal,jdbcType=VARCHAR},
+      TC_BRF07 = #{tcBrf07,jdbcType=VARCHAR},
+      TC_BRF08 = #{tcBrf08,jdbcType=VARCHAR},
+      TC_BRF09 = #{tcBrf09,jdbcType=DECIMAL},
+      TC_BRF10 = #{tcBrf10,jdbcType=DECIMAL}
+    where TC_BRF01 = #{tcBrf01,jdbcType=VARCHAR}
+      and TC_BRF02 = #{tcBrf02,jdbcType=VARCHAR}
+      and TC_BRF03 = #{tcBrf03,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select TC_BRF01, TC_BRF02, TC_BRF03, TC_BRF04, TC_BRF05, TC_BRF06, TC_BRFUD01, TC_BRFUD02, 
+    TC_BRFUD03, TC_BRFUD04, TC_BRFUD05, TC_BRFUD06, TC_BRFPLANT, TC_BRFLEGAL, TC_BRF07, 
+    TC_BRF08, TC_BRF09, TC_BRF10
+    from TC_BRF_FILE
+    where TC_BRF01 = #{tcBrf01,jdbcType=VARCHAR}
+      and TC_BRF02 = #{tcBrf02,jdbcType=VARCHAR}
+      and TC_BRF03 = #{tcBrf03,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select TC_BRF01, TC_BRF02, TC_BRF03, TC_BRF04, TC_BRF05, TC_BRF06, TC_BRFUD01, TC_BRFUD02, 
+    TC_BRFUD03, TC_BRFUD04, TC_BRFUD05, TC_BRFUD06, TC_BRFPLANT, TC_BRFLEGAL, TC_BRF07, 
+    TC_BRF08, TC_BRF09, TC_BRF10
+    from TC_BRF_FILE
+  </select>
+</mapper>

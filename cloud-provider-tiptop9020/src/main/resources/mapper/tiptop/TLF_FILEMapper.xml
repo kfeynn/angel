@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TLF_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TLF_FILE">
+    <result column="TLF01" jdbcType="VARCHAR" property="tlf01" />
+    <result column="TLF02" jdbcType="DECIMAL" property="tlf02" />
+    <result column="TLF020" jdbcType="VARCHAR" property="tlf020" />
+    <result column="TLF021" jdbcType="VARCHAR" property="tlf021" />
+    <result column="TLF022" jdbcType="VARCHAR" property="tlf022" />
+    <result column="TLF023" jdbcType="VARCHAR" property="tlf023" />
+    <result column="TLF024" jdbcType="DECIMAL" property="tlf024" />
+    <result column="TLF025" jdbcType="VARCHAR" property="tlf025" />
+    <result column="TLF026" jdbcType="VARCHAR" property="tlf026" />
+    <result column="TLF027" jdbcType="DECIMAL" property="tlf027" />
+    <result column="TLF03" jdbcType="DECIMAL" property="tlf03" />
+    <result column="TLF030" jdbcType="VARCHAR" property="tlf030" />
+    <result column="TLF031" jdbcType="VARCHAR" property="tlf031" />
+    <result column="TLF032" jdbcType="VARCHAR" property="tlf032" />
+    <result column="TLF033" jdbcType="VARCHAR" property="tlf033" />
+    <result column="TLF034" jdbcType="DECIMAL" property="tlf034" />
+    <result column="TLF035" jdbcType="VARCHAR" property="tlf035" />
+    <result column="TLF036" jdbcType="VARCHAR" property="tlf036" />
+    <result column="TLF037" jdbcType="DECIMAL" property="tlf037" />
+    <result column="TLF04" jdbcType="VARCHAR" property="tlf04" />
+    <result column="TLF05" jdbcType="VARCHAR" property="tlf05" />
+    <result column="TLF06" jdbcType="DATE" property="tlf06" />
+    <result column="TLF07" jdbcType="DATE" property="tlf07" />
+    <result column="TLF08" jdbcType="VARCHAR" property="tlf08" />
+    <result column="TLF09" jdbcType="VARCHAR" property="tlf09" />
+    <result column="TLF10" jdbcType="DECIMAL" property="tlf10" />
+    <result column="TLF11" jdbcType="VARCHAR" property="tlf11" />
+    <result column="TLF12" jdbcType="DECIMAL" property="tlf12" />
+    <result column="TLF13" jdbcType="VARCHAR" property="tlf13" />
+    <result column="TLF14" jdbcType="VARCHAR" property="tlf14" />
+    <result column="TLF15" jdbcType="VARCHAR" property="tlf15" />
+    <result column="TLF16" jdbcType="VARCHAR" property="tlf16" />
+    <result column="TLF17" jdbcType="VARCHAR" property="tlf17" />
+    <result column="TLF18" jdbcType="DECIMAL" property="tlf18" />
+    <result column="TLF19" jdbcType="VARCHAR" property="tlf19" />
+    <result column="TLF20" jdbcType="VARCHAR" property="tlf20" />
+    <result column="TLF21" jdbcType="DECIMAL" property="tlf21" />
+    <result column="TLF211" jdbcType="DATE" property="tlf211" />
+    <result column="TLF212" jdbcType="VARCHAR" property="tlf212" />
+    <result column="TLF2131" jdbcType="DECIMAL" property="tlf2131" />
+    <result column="TLF2132" jdbcType="DECIMAL" property="tlf2132" />
+    <result column="TLF214" jdbcType="DECIMAL" property="tlf214" />
+    <result column="TLF215" jdbcType="DECIMAL" property="tlf215" />
+    <result column="TLF2151" jdbcType="DECIMAL" property="tlf2151" />
+    <result column="TLF216" jdbcType="DECIMAL" property="tlf216" />
+    <result column="TLF2171" jdbcType="DECIMAL" property="tlf2171" />
+    <result column="TLF2172" jdbcType="DECIMAL" property="tlf2172" />
+    <result column="TLF219" jdbcType="DECIMAL" property="tlf219" />
+    <result column="TLF218" jdbcType="VARCHAR" property="tlf218" />
+    <result column="TLF220" jdbcType="VARCHAR" property="tlf220" />
+    <result column="TLF221" jdbcType="DECIMAL" property="tlf221" />
+    <result column="TLF222" jdbcType="DECIMAL" property="tlf222" />
+    <result column="TLF2231" jdbcType="DECIMAL" property="tlf2231" />
+    <result column="TLF2232" jdbcType="DECIMAL" property="tlf2232" />
+    <result column="TLF224" jdbcType="DECIMAL" property="tlf224" />
+    <result column="TLF225" jdbcType="DECIMAL" property="tlf225" />
+    <result column="TLF2251" jdbcType="DECIMAL" property="tlf2251" />
+    <result column="TLF226" jdbcType="DECIMAL" property="tlf226" />
+    <result column="TLF2271" jdbcType="DECIMAL" property="tlf2271" />
+    <result column="TLF2272" jdbcType="DECIMAL" property="tlf2272" />
+    <result column="TLF229" jdbcType="DECIMAL" property="tlf229" />
+    <result column="TLF230" jdbcType="DECIMAL" property="tlf230" />
+    <result column="TLF231" jdbcType="DECIMAL" property="tlf231" />
+    <result column="TLF60" jdbcType="DECIMAL" property="tlf60" />
+    <result column="TLF61" jdbcType="VARCHAR" property="tlf61" />
+    <result column="TLF62" jdbcType="VARCHAR" property="tlf62" />
+    <result column="TLF63" jdbcType="DECIMAL" property="tlf63" />
+    <result column="TLF64" jdbcType="VARCHAR" property="tlf64" />
+    <result column="TLF65" jdbcType="VARCHAR" property="tlf65" />
+    <result column="TLF66" jdbcType="VARCHAR" property="tlf66" />
+    <result column="TLF901" jdbcType="VARCHAR" property="tlf901" />
+    <result column="TLF902" jdbcType="VARCHAR" property="tlf902" />
+    <result column="TLF903" jdbcType="VARCHAR" property="tlf903" />
+    <result column="TLF904" jdbcType="VARCHAR" property="tlf904" />
+    <result column="TLF905" jdbcType="VARCHAR" property="tlf905" />
+    <result column="TLF906" jdbcType="DECIMAL" property="tlf906" />
+    <result column="TLF907" jdbcType="DECIMAL" property="tlf907" />
+    <result column="TLF908" jdbcType="VARCHAR" property="tlf908" />
+    <result column="TLF909" jdbcType="VARCHAR" property="tlf909" />
+    <result column="TLF910" jdbcType="VARCHAR" property="tlf910" />
+    <result column="TLF99" jdbcType="VARCHAR" property="tlf99" />
+    <result column="TLF930" jdbcType="VARCHAR" property="tlf930" />
+    <result column="TLF931" jdbcType="DECIMAL" property="tlf931" />
+    <result column="TLF151" jdbcType="VARCHAR" property="tlf151" />
+    <result column="TLF161" jdbcType="VARCHAR" property="tlf161" />
+    <result column="TLF2241" jdbcType="DECIMAL" property="tlf2241" />
+    <result column="TLF2242" jdbcType="DECIMAL" property="tlf2242" />
+    <result column="TLF2243" jdbcType="DECIMAL" property="tlf2243" />
+    <result column="TLFCOST" jdbcType="VARCHAR" property="tlfcost" />
+    <result column="TLF41" jdbcType="VARCHAR" property="tlf41" />
+    <result column="TLF42" jdbcType="VARCHAR" property="tlf42" />
+    <result column="TLF43" jdbcType="VARCHAR" property="tlf43" />
+    <result column="TLF211X" jdbcType="DATE" property="tlf211x" />
+    <result column="TLF212X" jdbcType="VARCHAR" property="tlf212x" />
+    <result column="TLF21X" jdbcType="DECIMAL" property="tlf21x" />
+    <result column="TLF221X" jdbcType="DECIMAL" property="tlf221x" />
+    <result column="TLF222X" jdbcType="DECIMAL" property="tlf222x" />
+    <result column="TLF2231X" jdbcType="DECIMAL" property="tlf2231x" />
+    <result column="TLF2232X" jdbcType="DECIMAL" property="tlf2232x" />
+    <result column="TLF2241X" jdbcType="DECIMAL" property="tlf2241x" />
+    <result column="TLF2242X" jdbcType="DECIMAL" property="tlf2242x" />
+    <result column="TLF2243X" jdbcType="DECIMAL" property="tlf2243x" />
+    <result column="TLF224X" jdbcType="DECIMAL" property="tlf224x" />
+    <result column="TLF65X" jdbcType="VARCHAR" property="tlf65x" />
+    <result column="TLFPLANT" jdbcType="VARCHAR" property="tlfplant" />
+    <result column="TLFLEGAL" jdbcType="VARCHAR" property="tlflegal" />
+    <result column="TLF27" jdbcType="VARCHAR" property="tlf27" />
+    <result column="TLF28" jdbcType="VARCHAR" property="tlf28" />
+    <result column="TLF012" jdbcType="VARCHAR" property="tlf012" />
+    <result column="TLF013" jdbcType="DECIMAL" property="tlf013" />
+  </resultMap>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.TLF_FILE">
+    insert into TLF_FILE (TLF01, TLF02, TLF020, 
+      TLF021, TLF022, TLF023, 
+      TLF024, TLF025, TLF026, 
+      TLF027, TLF03, TLF030, 
+      TLF031, TLF032, TLF033, 
+      TLF034, TLF035, TLF036, 
+      TLF037, TLF04, TLF05, 
+      TLF06, TLF07, TLF08, TLF09, 
+      TLF10, TLF11, TLF12, 
+      TLF13, TLF14, TLF15, 
+      TLF16, TLF17, TLF18, 
+      TLF19, TLF20, TLF21, 
+      TLF211, TLF212, TLF2131, 
+      TLF2132, TLF214, TLF215, 
+      TLF2151, TLF216, TLF2171, 
+      TLF2172, TLF219, TLF218, 
+      TLF220, TLF221, TLF222, 
+      TLF2231, TLF2232, TLF224, 
+      TLF225, TLF2251, TLF226, 
+      TLF2271, TLF2272, TLF229, 
+      TLF230, TLF231, TLF60, 
+      TLF61, TLF62, TLF63, 
+      TLF64, TLF65, TLF66, 
+      TLF901, TLF902, TLF903, 
+      TLF904, TLF905, TLF906, 
+      TLF907, TLF908, TLF909, 
+      TLF910, TLF99, TLF930, 
+      TLF931, TLF151, TLF161, 
+      TLF2241, TLF2242, TLF2243, 
+      TLFCOST, TLF41, TLF42, 
+      TLF43, TLF211X, TLF212X, 
+      TLF21X, TLF221X, TLF222X, 
+      TLF2231X, TLF2232X, TLF2241X, 
+      TLF2242X, TLF2243X, TLF224X, 
+      TLF65X, TLFPLANT, TLFLEGAL, 
+      TLF27, TLF28, TLF012, 
+      TLF013)
+    values (#{tlf01,jdbcType=VARCHAR}, #{tlf02,jdbcType=DECIMAL}, #{tlf020,jdbcType=VARCHAR}, 
+      #{tlf021,jdbcType=VARCHAR}, #{tlf022,jdbcType=VARCHAR}, #{tlf023,jdbcType=VARCHAR}, 
+      #{tlf024,jdbcType=DECIMAL}, #{tlf025,jdbcType=VARCHAR}, #{tlf026,jdbcType=VARCHAR}, 
+      #{tlf027,jdbcType=DECIMAL}, #{tlf03,jdbcType=DECIMAL}, #{tlf030,jdbcType=VARCHAR}, 
+      #{tlf031,jdbcType=VARCHAR}, #{tlf032,jdbcType=VARCHAR}, #{tlf033,jdbcType=VARCHAR}, 
+      #{tlf034,jdbcType=DECIMAL}, #{tlf035,jdbcType=VARCHAR}, #{tlf036,jdbcType=VARCHAR}, 
+      #{tlf037,jdbcType=DECIMAL}, #{tlf04,jdbcType=VARCHAR}, #{tlf05,jdbcType=VARCHAR}, 
+      #{tlf06,jdbcType=DATE}, #{tlf07,jdbcType=DATE}, #{tlf08,jdbcType=VARCHAR}, #{tlf09,jdbcType=VARCHAR}, 
+      #{tlf10,jdbcType=DECIMAL}, #{tlf11,jdbcType=VARCHAR}, #{tlf12,jdbcType=DECIMAL}, 
+      #{tlf13,jdbcType=VARCHAR}, #{tlf14,jdbcType=VARCHAR}, #{tlf15,jdbcType=VARCHAR}, 
+      #{tlf16,jdbcType=VARCHAR}, #{tlf17,jdbcType=VARCHAR}, #{tlf18,jdbcType=DECIMAL}, 
+      #{tlf19,jdbcType=VARCHAR}, #{tlf20,jdbcType=VARCHAR}, #{tlf21,jdbcType=DECIMAL}, 
+      #{tlf211,jdbcType=DATE}, #{tlf212,jdbcType=VARCHAR}, #{tlf2131,jdbcType=DECIMAL}, 
+      #{tlf2132,jdbcType=DECIMAL}, #{tlf214,jdbcType=DECIMAL}, #{tlf215,jdbcType=DECIMAL}, 
+      #{tlf2151,jdbcType=DECIMAL}, #{tlf216,jdbcType=DECIMAL}, #{tlf2171,jdbcType=DECIMAL}, 
+      #{tlf2172,jdbcType=DECIMAL}, #{tlf219,jdbcType=DECIMAL}, #{tlf218,jdbcType=VARCHAR}, 
+      #{tlf220,jdbcType=VARCHAR}, #{tlf221,jdbcType=DECIMAL}, #{tlf222,jdbcType=DECIMAL}, 
+      #{tlf2231,jdbcType=DECIMAL}, #{tlf2232,jdbcType=DECIMAL}, #{tlf224,jdbcType=DECIMAL}, 
+      #{tlf225,jdbcType=DECIMAL}, #{tlf2251,jdbcType=DECIMAL}, #{tlf226,jdbcType=DECIMAL}, 
+      #{tlf2271,jdbcType=DECIMAL}, #{tlf2272,jdbcType=DECIMAL}, #{tlf229,jdbcType=DECIMAL}, 
+      #{tlf230,jdbcType=DECIMAL}, #{tlf231,jdbcType=DECIMAL}, #{tlf60,jdbcType=DECIMAL}, 
+      #{tlf61,jdbcType=VARCHAR}, #{tlf62,jdbcType=VARCHAR}, #{tlf63,jdbcType=DECIMAL}, 
+      #{tlf64,jdbcType=VARCHAR}, #{tlf65,jdbcType=VARCHAR}, #{tlf66,jdbcType=VARCHAR}, 
+      #{tlf901,jdbcType=VARCHAR}, #{tlf902,jdbcType=VARCHAR}, #{tlf903,jdbcType=VARCHAR}, 
+      #{tlf904,jdbcType=VARCHAR}, #{tlf905,jdbcType=VARCHAR}, #{tlf906,jdbcType=DECIMAL}, 
+      #{tlf907,jdbcType=DECIMAL}, #{tlf908,jdbcType=VARCHAR}, #{tlf909,jdbcType=VARCHAR}, 
+      #{tlf910,jdbcType=VARCHAR}, #{tlf99,jdbcType=VARCHAR}, #{tlf930,jdbcType=VARCHAR}, 
+      #{tlf931,jdbcType=DECIMAL}, #{tlf151,jdbcType=VARCHAR}, #{tlf161,jdbcType=VARCHAR}, 
+      #{tlf2241,jdbcType=DECIMAL}, #{tlf2242,jdbcType=DECIMAL}, #{tlf2243,jdbcType=DECIMAL}, 
+      #{tlfcost,jdbcType=VARCHAR}, #{tlf41,jdbcType=VARCHAR}, #{tlf42,jdbcType=VARCHAR}, 
+      #{tlf43,jdbcType=VARCHAR}, #{tlf211x,jdbcType=DATE}, #{tlf212x,jdbcType=VARCHAR}, 
+      #{tlf21x,jdbcType=DECIMAL}, #{tlf221x,jdbcType=DECIMAL}, #{tlf222x,jdbcType=DECIMAL}, 
+      #{tlf2231x,jdbcType=DECIMAL}, #{tlf2232x,jdbcType=DECIMAL}, #{tlf2241x,jdbcType=DECIMAL}, 
+      #{tlf2242x,jdbcType=DECIMAL}, #{tlf2243x,jdbcType=DECIMAL}, #{tlf224x,jdbcType=DECIMAL}, 
+      #{tlf65x,jdbcType=VARCHAR}, #{tlfplant,jdbcType=VARCHAR}, #{tlflegal,jdbcType=VARCHAR}, 
+      #{tlf27,jdbcType=VARCHAR}, #{tlf28,jdbcType=VARCHAR}, #{tlf012,jdbcType=VARCHAR}, 
+      #{tlf013,jdbcType=DECIMAL})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select TLF01, TLF02, TLF020, TLF021, TLF022, TLF023, TLF024, TLF025, TLF026, TLF027, 
+    TLF03, TLF030, TLF031, TLF032, TLF033, TLF034, TLF035, TLF036, TLF037, TLF04, TLF05, 
+    TLF06, TLF07, TLF08, TLF09, TLF10, TLF11, TLF12, TLF13, TLF14, TLF15, TLF16, TLF17, 
+    TLF18, TLF19, TLF20, TLF21, TLF211, TLF212, TLF2131, TLF2132, TLF214, TLF215, TLF2151, 
+    TLF216, TLF2171, TLF2172, TLF219, TLF218, TLF220, TLF221, TLF222, TLF2231, TLF2232, 
+    TLF224, TLF225, TLF2251, TLF226, TLF2271, TLF2272, TLF229, TLF230, TLF231, TLF60, 
+    TLF61, TLF62, TLF63, TLF64, TLF65, TLF66, TLF901, TLF902, TLF903, TLF904, TLF905, 
+    TLF906, TLF907, TLF908, TLF909, TLF910, TLF99, TLF930, TLF931, TLF151, TLF161, TLF2241, 
+    TLF2242, TLF2243, TLFCOST, TLF41, TLF42, TLF43, TLF211X, TLF212X, TLF21X, TLF221X, 
+    TLF222X, TLF2231X, TLF2232X, TLF2241X, TLF2242X, TLF2243X, TLF224X, TLF65X, TLFPLANT, 
+    TLFLEGAL, TLF27, TLF28, TLF012, TLF013
+    from TLF_FILE
+  </select>
+</mapper>

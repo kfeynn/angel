@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.sqlserver.XpGridUserMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.sqlserver.XpGridUser">
+    <id column="UserID" jdbcType="INTEGER" property="userid" />
+    <result column="UserName" jdbcType="VARCHAR" property="username" />
+    <result column="UserCName" jdbcType="VARCHAR" property="usercname" />
+    <result column="Password" jdbcType="VARCHAR" property="password" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
+    <result column="Online" jdbcType="INTEGER" property="online" />
+    <result column="LastOnlineTime" jdbcType="INTEGER" property="lastonlinetime" />
+    <result column="AllOnlineTime" jdbcType="INTEGER" property="allonlinetime" />
+    <result column="LoginTimes" jdbcType="INTEGER" property="logintimes" />
+    <result column="CurrentLoginDateTime" jdbcType="TIMESTAMP" property="currentlogindatetime" />
+    <result column="LastOprtnDateTime" jdbcType="TIMESTAMP" property="lastoprtndatetime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from xpGrid_User
+    where UserID = #{userid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.sqlserver.XpGridUser">
+    insert into xpGrid_User (UserID, UserName, UserCName, 
+      Password, deleted, Online, 
+      LastOnlineTime, AllOnlineTime, LoginTimes, 
+      CurrentLoginDateTime, LastOprtnDateTime
+      )
+    values (#{userid,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{usercname,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{deleted,jdbcType=INTEGER}, #{online,jdbcType=INTEGER}, 
+      #{lastonlinetime,jdbcType=INTEGER}, #{allonlinetime,jdbcType=INTEGER}, #{logintimes,jdbcType=INTEGER}, 
+      #{currentlogindatetime,jdbcType=TIMESTAMP}, #{lastoprtndatetime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.sqlserver.XpGridUser">
+    update xpGrid_User
+    set UserName = #{username,jdbcType=VARCHAR},
+      UserCName = #{usercname,jdbcType=VARCHAR},
+      Password = #{password,jdbcType=VARCHAR},
+      deleted = #{deleted,jdbcType=INTEGER},
+      Online = #{online,jdbcType=INTEGER},
+      LastOnlineTime = #{lastonlinetime,jdbcType=INTEGER},
+      AllOnlineTime = #{allonlinetime,jdbcType=INTEGER},
+      LoginTimes = #{logintimes,jdbcType=INTEGER},
+      CurrentLoginDateTime = #{currentlogindatetime,jdbcType=TIMESTAMP},
+      LastOprtnDateTime = #{lastoprtndatetime,jdbcType=TIMESTAMP}
+    where UserID = #{userid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select UserID, UserName, UserCName, Password, deleted, Online, LastOnlineTime, AllOnlineTime, 
+    LoginTimes, CurrentLoginDateTime, LastOprtnDateTime
+    from xpGrid_User
+    where UserID = #{userid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select UserID, UserName, UserCName, Password, deleted, Online, LastOnlineTime, AllOnlineTime, 
+    LoginTimes, CurrentLoginDateTime, LastOprtnDateTime
+    from xpGrid_User
+  </select>
+</mapper>

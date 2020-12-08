@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.PMM_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.PMM_FILE">
+    <id column="PMM01" jdbcType="VARCHAR" property="pmm01" />
+    <result column="PMM02" jdbcType="VARCHAR" property="pmm02" />
+    <result column="PMM03" jdbcType="DECIMAL" property="pmm03" />
+    <result column="PMM04" jdbcType="DATE" property="pmm04" />
+    <result column="PMM05" jdbcType="VARCHAR" property="pmm05" />
+    <result column="PMM06" jdbcType="VARCHAR" property="pmm06" />
+    <result column="PMM07" jdbcType="VARCHAR" property="pmm07" />
+    <result column="PMM08" jdbcType="VARCHAR" property="pmm08" />
+    <result column="PMM09" jdbcType="VARCHAR" property="pmm09" />
+    <result column="PMM10" jdbcType="VARCHAR" property="pmm10" />
+    <result column="PMM11" jdbcType="VARCHAR" property="pmm11" />
+    <result column="PMM12" jdbcType="VARCHAR" property="pmm12" />
+    <result column="PMM13" jdbcType="VARCHAR" property="pmm13" />
+    <result column="PMM14" jdbcType="VARCHAR" property="pmm14" />
+    <result column="PMM15" jdbcType="VARCHAR" property="pmm15" />
+    <result column="PMM16" jdbcType="VARCHAR" property="pmm16" />
+    <result column="PMM17" jdbcType="VARCHAR" property="pmm17" />
+    <result column="PMM18" jdbcType="VARCHAR" property="pmm18" />
+    <result column="PMM20" jdbcType="VARCHAR" property="pmm20" />
+    <result column="PMM21" jdbcType="VARCHAR" property="pmm21" />
+    <result column="PMM22" jdbcType="VARCHAR" property="pmm22" />
+    <result column="PMM25" jdbcType="VARCHAR" property="pmm25" />
+    <result column="PMM26" jdbcType="VARCHAR" property="pmm26" />
+    <result column="PMM27" jdbcType="DATE" property="pmm27" />
+    <result column="PMM28" jdbcType="VARCHAR" property="pmm28" />
+    <result column="PMM29" jdbcType="VARCHAR" property="pmm29" />
+    <result column="PMM30" jdbcType="VARCHAR" property="pmm30" />
+    <result column="PMM31" jdbcType="DECIMAL" property="pmm31" />
+    <result column="PMM32" jdbcType="DECIMAL" property="pmm32" />
+    <result column="PMM40" jdbcType="DECIMAL" property="pmm40" />
+    <result column="PMM401" jdbcType="DECIMAL" property="pmm401" />
+    <result column="PMM41" jdbcType="VARCHAR" property="pmm41" />
+    <result column="PMM42" jdbcType="DECIMAL" property="pmm42" />
+    <result column="PMM43" jdbcType="DECIMAL" property="pmm43" />
+    <result column="PMM44" jdbcType="VARCHAR" property="pmm44" />
+    <result column="PMM45" jdbcType="VARCHAR" property="pmm45" />
+    <result column="PMM46" jdbcType="DECIMAL" property="pmm46" />
+    <result column="PMM47" jdbcType="DECIMAL" property="pmm47" />
+    <result column="PMM48" jdbcType="DECIMAL" property="pmm48" />
+    <result column="PMM49" jdbcType="VARCHAR" property="pmm49" />
+    <result column="PMM50" jdbcType="VARCHAR" property="pmm50" />
+    <result column="PMM99" jdbcType="VARCHAR" property="pmm99" />
+    <result column="PMM901" jdbcType="VARCHAR" property="pmm901" />
+    <result column="PMM902" jdbcType="VARCHAR" property="pmm902" />
+    <result column="PMM903" jdbcType="VARCHAR" property="pmm903" />
+    <result column="PMM904" jdbcType="VARCHAR" property="pmm904" />
+    <result column="PMM905" jdbcType="VARCHAR" property="pmm905" />
+    <result column="PMM906" jdbcType="VARCHAR" property="pmm906" />
+    <result column="PMM907" jdbcType="VARCHAR" property="pmm907" />
+    <result column="PMM908" jdbcType="DATE" property="pmm908" />
+    <result column="PMM909" jdbcType="VARCHAR" property="pmm909" />
+    <result column="PMM911" jdbcType="VARCHAR" property="pmm911" />
+    <result column="PMM912" jdbcType="VARCHAR" property="pmm912" />
+    <result column="PMM913" jdbcType="VARCHAR" property="pmm913" />
+    <result column="PMM914" jdbcType="VARCHAR" property="pmm914" />
+    <result column="PMM915" jdbcType="VARCHAR" property="pmm915" />
+    <result column="PMM916" jdbcType="VARCHAR" property="pmm916" />
+    <result column="PMMPRSW" jdbcType="VARCHAR" property="pmmprsw" />
+    <result column="PMMPRNO" jdbcType="DECIMAL" property="pmmprno" />
+    <result column="PMMPRDT" jdbcType="DATE" property="pmmprdt" />
+    <result column="PMMMKSG" jdbcType="VARCHAR" property="pmmmksg" />
+    <result column="PMMSIGN" jdbcType="VARCHAR" property="pmmsign" />
+    <result column="PMMDAYS" jdbcType="DECIMAL" property="pmmdays" />
+    <result column="PMMPRIT" jdbcType="DECIMAL" property="pmmprit" />
+    <result column="PMMSSEQ" jdbcType="DECIMAL" property="pmmsseq" />
+    <result column="PMMSMAX" jdbcType="DECIMAL" property="pmmsmax" />
+    <result column="PMMACTI" jdbcType="VARCHAR" property="pmmacti" />
+    <result column="PMMUSER" jdbcType="VARCHAR" property="pmmuser" />
+    <result column="PMMGRUP" jdbcType="VARCHAR" property="pmmgrup" />
+    <result column="PMMMODU" jdbcType="VARCHAR" property="pmmmodu" />
+    <result column="PMMDATE" jdbcType="DATE" property="pmmdate" />
+    <result column="PMM40T" jdbcType="DECIMAL" property="pmm40t" />
+    <result column="PMMUD01" jdbcType="VARCHAR" property="pmmud01" />
+    <result column="PMMUD02" jdbcType="VARCHAR" property="pmmud02" />
+    <result column="PMMUD03" jdbcType="VARCHAR" property="pmmud03" />
+    <result column="PMMUD04" jdbcType="VARCHAR" property="pmmud04" />
+    <result column="PMMUD05" jdbcType="VARCHAR" property="pmmud05" />
+    <result column="PMMUD06" jdbcType="VARCHAR" property="pmmud06" />
+    <result column="PMMUD07" jdbcType="DECIMAL" property="pmmud07" />
+    <result column="PMMUD08" jdbcType="VARCHAR" property="pmmud08" />
+    <result column="PMMUD09" jdbcType="DECIMAL" property="pmmud09" />
+    <result column="PMMUD10" jdbcType="DECIMAL" property="pmmud10" />
+    <result column="PMMUD11" jdbcType="DECIMAL" property="pmmud11" />
+    <result column="PMMUD12" jdbcType="DECIMAL" property="pmmud12" />
+    <result column="PMMUD13" jdbcType="DATE" property="pmmud13" />
+    <result column="PMMUD14" jdbcType="DATE" property="pmmud14" />
+    <result column="PMMUD15" jdbcType="DATE" property="pmmud15" />
+    <result column="PMM51" jdbcType="VARCHAR" property="pmm51" />
+    <result column="PMM52" jdbcType="VARCHAR" property="pmm52" />
+    <result column="PMM53" jdbcType="VARCHAR" property="pmm53" />
+    <result column="PMMCOND" jdbcType="DATE" property="pmmcond" />
+    <result column="PMMCONT" jdbcType="VARCHAR" property="pmmcont" />
+    <result column="PMMCONU" jdbcType="VARCHAR" property="pmmconu" />
+    <result column="PMMCRAT" jdbcType="DATE" property="pmmcrat" />
+    <result column="PMMPOS" jdbcType="VARCHAR" property="pmmpos" />
+    <result column="PMMPLANT" jdbcType="VARCHAR" property="pmmplant" />
+    <result column="PMMLEGAL" jdbcType="VARCHAR" property="pmmlegal" />
+    <result column="PMMORIU" jdbcType="VARCHAR" property="pmmoriu" />
+    <result column="PMMORIG" jdbcType="VARCHAR" property="pmmorig" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from S30.PMM_FILE
+    where PMM01 = #{pmm01,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.PMM_FILE">
+    insert into S30.PMM_FILE (PMM01, PMM02, PMM03, 
+      PMM04, PMM05, PMM06, PMM07, 
+      PMM08, PMM09, PMM10, 
+      PMM11, PMM12, PMM13, 
+      PMM14, PMM15, PMM16, 
+      PMM17, PMM18, PMM20, 
+      PMM21, PMM22, PMM25, 
+      PMM26, PMM27, PMM28, PMM29, 
+      PMM30, PMM31, PMM32, 
+      PMM40, PMM401, PMM41, 
+      PMM42, PMM43, PMM44, 
+      PMM45, PMM46, PMM47, 
+      PMM48, PMM49, PMM50, 
+      PMM99, PMM901, PMM902, 
+      PMM903, PMM904, PMM905, 
+      PMM906, PMM907, PMM908, 
+      PMM909, PMM911, PMM912, 
+      PMM913, PMM914, PMM915, 
+      PMM916, PMMPRSW, PMMPRNO, 
+      PMMPRDT, PMMMKSG, PMMSIGN, 
+      PMMDAYS, PMMPRIT, PMMSSEQ, 
+      PMMSMAX, PMMACTI, PMMUSER, 
+      PMMGRUP, PMMMODU, PMMDATE, 
+      PMM40T, PMMUD01, PMMUD02, 
+      PMMUD03, PMMUD04, PMMUD05, 
+      PMMUD06, PMMUD07, PMMUD08, 
+      PMMUD09, PMMUD10, PMMUD11, 
+      PMMUD12, PMMUD13, PMMUD14, 
+      PMMUD15, PMM51, PMM52, 
+      PMM53, PMMCOND, PMMCONT, 
+      PMMCONU, PMMCRAT, PMMPOS, 
+      PMMPLANT, PMMLEGAL, PMMORIU, 
+      PMMORIG)
+    values (#{pmm01,jdbcType=VARCHAR}, #{pmm02,jdbcType=VARCHAR}, #{pmm03,jdbcType=DECIMAL}, 
+      #{pmm04,jdbcType=DATE}, #{pmm05,jdbcType=VARCHAR}, #{pmm06,jdbcType=VARCHAR}, #{pmm07,jdbcType=VARCHAR}, 
+      #{pmm08,jdbcType=VARCHAR}, #{pmm09,jdbcType=VARCHAR}, #{pmm10,jdbcType=VARCHAR}, 
+      #{pmm11,jdbcType=VARCHAR}, #{pmm12,jdbcType=VARCHAR}, #{pmm13,jdbcType=VARCHAR}, 
+      #{pmm14,jdbcType=VARCHAR}, #{pmm15,jdbcType=VARCHAR}, #{pmm16,jdbcType=VARCHAR}, 
+      #{pmm17,jdbcType=VARCHAR}, #{pmm18,jdbcType=VARCHAR}, #{pmm20,jdbcType=VARCHAR}, 
+      #{pmm21,jdbcType=VARCHAR}, #{pmm22,jdbcType=VARCHAR}, #{pmm25,jdbcType=VARCHAR}, 
+      #{pmm26,jdbcType=VARCHAR}, #{pmm27,jdbcType=DATE}, #{pmm28,jdbcType=VARCHAR}, #{pmm29,jdbcType=VARCHAR}, 
+      #{pmm30,jdbcType=VARCHAR}, #{pmm31,jdbcType=DECIMAL}, #{pmm32,jdbcType=DECIMAL}, 
+      #{pmm40,jdbcType=DECIMAL}, #{pmm401,jdbcType=DECIMAL}, #{pmm41,jdbcType=VARCHAR}, 
+      #{pmm42,jdbcType=DECIMAL}, #{pmm43,jdbcType=DECIMAL}, #{pmm44,jdbcType=VARCHAR}, 
+      #{pmm45,jdbcType=VARCHAR}, #{pmm46,jdbcType=DECIMAL}, #{pmm47,jdbcType=DECIMAL}, 
+      #{pmm48,jdbcType=DECIMAL}, #{pmm49,jdbcType=VARCHAR}, #{pmm50,jdbcType=VARCHAR}, 
+      #{pmm99,jdbcType=VARCHAR}, #{pmm901,jdbcType=VARCHAR}, #{pmm902,jdbcType=VARCHAR}, 
+      #{pmm903,jdbcType=VARCHAR}, #{pmm904,jdbcType=VARCHAR}, #{pmm905,jdbcType=VARCHAR}, 
+      #{pmm906,jdbcType=VARCHAR}, #{pmm907,jdbcType=VARCHAR}, #{pmm908,jdbcType=DATE}, 
+      #{pmm909,jdbcType=VARCHAR}, #{pmm911,jdbcType=VARCHAR}, #{pmm912,jdbcType=VARCHAR}, 
+      #{pmm913,jdbcType=VARCHAR}, #{pmm914,jdbcType=VARCHAR}, #{pmm915,jdbcType=VARCHAR}, 
+      #{pmm916,jdbcType=VARCHAR}, #{pmmprsw,jdbcType=VARCHAR}, #{pmmprno,jdbcType=DECIMAL}, 
+      #{pmmprdt,jdbcType=DATE}, #{pmmmksg,jdbcType=VARCHAR}, #{pmmsign,jdbcType=VARCHAR}, 
+      #{pmmdays,jdbcType=DECIMAL}, #{pmmprit,jdbcType=DECIMAL}, #{pmmsseq,jdbcType=DECIMAL}, 
+      #{pmmsmax,jdbcType=DECIMAL}, #{pmmacti,jdbcType=VARCHAR}, #{pmmuser,jdbcType=VARCHAR}, 
+      #{pmmgrup,jdbcType=VARCHAR}, #{pmmmodu,jdbcType=VARCHAR}, #{pmmdate,jdbcType=DATE}, 
+      #{pmm40t,jdbcType=DECIMAL}, #{pmmud01,jdbcType=VARCHAR}, #{pmmud02,jdbcType=VARCHAR}, 
+      #{pmmud03,jdbcType=VARCHAR}, #{pmmud04,jdbcType=VARCHAR}, #{pmmud05,jdbcType=VARCHAR}, 
+      #{pmmud06,jdbcType=VARCHAR}, #{pmmud07,jdbcType=DECIMAL}, #{pmmud08,jdbcType=VARCHAR}, 
+      #{pmmud09,jdbcType=DECIMAL}, #{pmmud10,jdbcType=DECIMAL}, #{pmmud11,jdbcType=DECIMAL}, 
+      #{pmmud12,jdbcType=DECIMAL}, #{pmmud13,jdbcType=DATE}, #{pmmud14,jdbcType=DATE}, 
+      #{pmmud15,jdbcType=DATE}, #{pmm51,jdbcType=VARCHAR}, #{pmm52,jdbcType=VARCHAR}, 
+      #{pmm53,jdbcType=VARCHAR}, #{pmmcond,jdbcType=DATE}, #{pmmcont,jdbcType=VARCHAR}, 
+      #{pmmconu,jdbcType=VARCHAR}, #{pmmcrat,jdbcType=DATE}, #{pmmpos,jdbcType=VARCHAR}, 
+      #{pmmplant,jdbcType=VARCHAR}, #{pmmlegal,jdbcType=VARCHAR}, #{pmmoriu,jdbcType=VARCHAR}, 
+      #{pmmorig,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.PMM_FILE">
+    update S30.PMM_FILE
+    set PMM02 = #{pmm02,jdbcType=VARCHAR},
+      PMM03 = #{pmm03,jdbcType=DECIMAL},
+      PMM04 = #{pmm04,jdbcType=DATE},
+      PMM05 = #{pmm05,jdbcType=VARCHAR},
+      PMM06 = #{pmm06,jdbcType=VARCHAR},
+      PMM07 = #{pmm07,jdbcType=VARCHAR},
+      PMM08 = #{pmm08,jdbcType=VARCHAR},
+      PMM09 = #{pmm09,jdbcType=VARCHAR},
+      PMM10 = #{pmm10,jdbcType=VARCHAR},
+      PMM11 = #{pmm11,jdbcType=VARCHAR},
+      PMM12 = #{pmm12,jdbcType=VARCHAR},
+      PMM13 = #{pmm13,jdbcType=VARCHAR},
+      PMM14 = #{pmm14,jdbcType=VARCHAR},
+      PMM15 = #{pmm15,jdbcType=VARCHAR},
+      PMM16 = #{pmm16,jdbcType=VARCHAR},
+      PMM17 = #{pmm17,jdbcType=VARCHAR},
+      PMM18 = #{pmm18,jdbcType=VARCHAR},
+      PMM20 = #{pmm20,jdbcType=VARCHAR},
+      PMM21 = #{pmm21,jdbcType=VARCHAR},
+      PMM22 = #{pmm22,jdbcType=VARCHAR},
+      PMM25 = #{pmm25,jdbcType=VARCHAR},
+      PMM26 = #{pmm26,jdbcType=VARCHAR},
+      PMM27 = #{pmm27,jdbcType=DATE},
+      PMM28 = #{pmm28,jdbcType=VARCHAR},
+      PMM29 = #{pmm29,jdbcType=VARCHAR},
+      PMM30 = #{pmm30,jdbcType=VARCHAR},
+      PMM31 = #{pmm31,jdbcType=DECIMAL},
+      PMM32 = #{pmm32,jdbcType=DECIMAL},
+      PMM40 = #{pmm40,jdbcType=DECIMAL},
+      PMM401 = #{pmm401,jdbcType=DECIMAL},
+      PMM41 = #{pmm41,jdbcType=VARCHAR},
+      PMM42 = #{pmm42,jdbcType=DECIMAL},
+      PMM43 = #{pmm43,jdbcType=DECIMAL},
+      PMM44 = #{pmm44,jdbcType=VARCHAR},
+      PMM45 = #{pmm45,jdbcType=VARCHAR},
+      PMM46 = #{pmm46,jdbcType=DECIMAL},
+      PMM47 = #{pmm47,jdbcType=DECIMAL},
+      PMM48 = #{pmm48,jdbcType=DECIMAL},
+      PMM49 = #{pmm49,jdbcType=VARCHAR},
+      PMM50 = #{pmm50,jdbcType=VARCHAR},
+      PMM99 = #{pmm99,jdbcType=VARCHAR},
+      PMM901 = #{pmm901,jdbcType=VARCHAR},
+      PMM902 = #{pmm902,jdbcType=VARCHAR},
+      PMM903 = #{pmm903,jdbcType=VARCHAR},
+      PMM904 = #{pmm904,jdbcType=VARCHAR},
+      PMM905 = #{pmm905,jdbcType=VARCHAR},
+      PMM906 = #{pmm906,jdbcType=VARCHAR},
+      PMM907 = #{pmm907,jdbcType=VARCHAR},
+      PMM908 = #{pmm908,jdbcType=DATE},
+      PMM909 = #{pmm909,jdbcType=VARCHAR},
+      PMM911 = #{pmm911,jdbcType=VARCHAR},
+      PMM912 = #{pmm912,jdbcType=VARCHAR},
+      PMM913 = #{pmm913,jdbcType=VARCHAR},
+      PMM914 = #{pmm914,jdbcType=VARCHAR},
+      PMM915 = #{pmm915,jdbcType=VARCHAR},
+      PMM916 = #{pmm916,jdbcType=VARCHAR},
+      PMMPRSW = #{pmmprsw,jdbcType=VARCHAR},
+      PMMPRNO = #{pmmprno,jdbcType=DECIMAL},
+      PMMPRDT = #{pmmprdt,jdbcType=DATE},
+      PMMMKSG = #{pmmmksg,jdbcType=VARCHAR},
+      PMMSIGN = #{pmmsign,jdbcType=VARCHAR},
+      PMMDAYS = #{pmmdays,jdbcType=DECIMAL},
+      PMMPRIT = #{pmmprit,jdbcType=DECIMAL},
+      PMMSSEQ = #{pmmsseq,jdbcType=DECIMAL},
+      PMMSMAX = #{pmmsmax,jdbcType=DECIMAL},
+      PMMACTI = #{pmmacti,jdbcType=VARCHAR},
+      PMMUSER = #{pmmuser,jdbcType=VARCHAR},
+      PMMGRUP = #{pmmgrup,jdbcType=VARCHAR},
+      PMMMODU = #{pmmmodu,jdbcType=VARCHAR},
+      PMMDATE = #{pmmdate,jdbcType=DATE},
+      PMM40T = #{pmm40t,jdbcType=DECIMAL},
+      PMMUD01 = #{pmmud01,jdbcType=VARCHAR},
+      PMMUD02 = #{pmmud02,jdbcType=VARCHAR},
+      PMMUD03 = #{pmmud03,jdbcType=VARCHAR},
+      PMMUD04 = #{pmmud04,jdbcType=VARCHAR},
+      PMMUD05 = #{pmmud05,jdbcType=VARCHAR},
+      PMMUD06 = #{pmmud06,jdbcType=VARCHAR},
+      PMMUD07 = #{pmmud07,jdbcType=DECIMAL},
+      PMMUD08 = #{pmmud08,jdbcType=VARCHAR},
+      PMMUD09 = #{pmmud09,jdbcType=DECIMAL},
+      PMMUD10 = #{pmmud10,jdbcType=DECIMAL},
+      PMMUD11 = #{pmmud11,jdbcType=DECIMAL},
+      PMMUD12 = #{pmmud12,jdbcType=DECIMAL},
+      PMMUD13 = #{pmmud13,jdbcType=DATE},
+      PMMUD14 = #{pmmud14,jdbcType=DATE},
+      PMMUD15 = #{pmmud15,jdbcType=DATE},
+      PMM51 = #{pmm51,jdbcType=VARCHAR},
+      PMM52 = #{pmm52,jdbcType=VARCHAR},
+      PMM53 = #{pmm53,jdbcType=VARCHAR},
+      PMMCOND = #{pmmcond,jdbcType=DATE},
+      PMMCONT = #{pmmcont,jdbcType=VARCHAR},
+      PMMCONU = #{pmmconu,jdbcType=VARCHAR},
+      PMMCRAT = #{pmmcrat,jdbcType=DATE},
+      PMMPOS = #{pmmpos,jdbcType=VARCHAR},
+      PMMPLANT = #{pmmplant,jdbcType=VARCHAR},
+      PMMLEGAL = #{pmmlegal,jdbcType=VARCHAR},
+      PMMORIU = #{pmmoriu,jdbcType=VARCHAR},
+      PMMORIG = #{pmmorig,jdbcType=VARCHAR}
+    where PMM01 = #{pmm01,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select PMM01, PMM02, PMM03, PMM04, PMM05, PMM06, PMM07, PMM08, PMM09, PMM10, PMM11, 
+    PMM12, PMM13, PMM14, PMM15, PMM16, PMM17, PMM18, PMM20, PMM21, PMM22, PMM25, PMM26, 
+    PMM27, PMM28, PMM29, PMM30, PMM31, PMM32, PMM40, PMM401, PMM41, PMM42, PMM43, PMM44, 
+    PMM45, PMM46, PMM47, PMM48, PMM49, PMM50, PMM99, PMM901, PMM902, PMM903, PMM904, 
+    PMM905, PMM906, PMM907, PMM908, PMM909, PMM911, PMM912, PMM913, PMM914, PMM915, PMM916, 
+    PMMPRSW, PMMPRNO, PMMPRDT, PMMMKSG, PMMSIGN, PMMDAYS, PMMPRIT, PMMSSEQ, PMMSMAX, 
+    PMMACTI, PMMUSER, PMMGRUP, PMMMODU, PMMDATE, PMM40T, PMMUD01, PMMUD02, PMMUD03, PMMUD04, 
+    PMMUD05, PMMUD06, PMMUD07, PMMUD08, PMMUD09, PMMUD10, PMMUD11, PMMUD12, PMMUD13, 
+    PMMUD14, PMMUD15, PMM51, PMM52, PMM53, PMMCOND, PMMCONT, PMMCONU, PMMCRAT, PMMPOS, 
+    PMMPLANT, PMMLEGAL, PMMORIU, PMMORIG
+    from S30.PMM_FILE
+    where PMM01 = #{pmm01,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select PMM01, PMM02, PMM03, PMM04, PMM05, PMM06, PMM07, PMM08, PMM09, PMM10, PMM11, 
+    PMM12, PMM13, PMM14, PMM15, PMM16, PMM17, PMM18, PMM20, PMM21, PMM22, PMM25, PMM26, 
+    PMM27, PMM28, PMM29, PMM30, PMM31, PMM32, PMM40, PMM401, PMM41, PMM42, PMM43, PMM44, 
+    PMM45, PMM46, PMM47, PMM48, PMM49, PMM50, PMM99, PMM901, PMM902, PMM903, PMM904, 
+    PMM905, PMM906, PMM907, PMM908, PMM909, PMM911, PMM912, PMM913, PMM914, PMM915, PMM916, 
+    PMMPRSW, PMMPRNO, PMMPRDT, PMMMKSG, PMMSIGN, PMMDAYS, PMMPRIT, PMMSSEQ, PMMSMAX, 
+    PMMACTI, PMMUSER, PMMGRUP, PMMMODU, PMMDATE, PMM40T, PMMUD01, PMMUD02, PMMUD03, PMMUD04, 
+    PMMUD05, PMMUD06, PMMUD07, PMMUD08, PMMUD09, PMMUD10, PMMUD11, PMMUD12, PMMUD13, 
+    PMMUD14, PMMUD15, PMM51, PMM52, PMM53, PMMCOND, PMMCONT, PMMCONU, PMMCRAT, PMMPOS, 
+    PMMPLANT, PMMLEGAL, PMMORIU, PMMORIG
+    from S30.PMM_FILE
+  </select>
+</mapper>

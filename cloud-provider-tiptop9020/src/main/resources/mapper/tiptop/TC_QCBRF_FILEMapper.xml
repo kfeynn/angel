@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_QCBRF_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_QCBRF_FILE">
+    <id column="TC_QCBRF01" jdbcType="VARCHAR" property="tcQcbrf01" />
+    <id column="TC_QCBRF02" jdbcType="VARCHAR" property="tcQcbrf02" />
+    <id column="TC_QCBRF03" jdbcType="VARCHAR" property="tcQcbrf03" />
+    <result column="TC_QCBRF04" jdbcType="VARCHAR" property="tcQcbrf04" />
+    <result column="TC_QCBRF05" jdbcType="VARCHAR" property="tcQcbrf05" />
+    <result column="TC_QCBRF06" jdbcType="DECIMAL" property="tcQcbrf06" />
+    <result column="TC_QCBRFUD01" jdbcType="VARCHAR" property="tcQcbrfud01" />
+    <result column="TC_QCBRFUD02" jdbcType="VARCHAR" property="tcQcbrfud02" />
+    <result column="TC_QCBRFUD03" jdbcType="DECIMAL" property="tcQcbrfud03" />
+    <result column="TC_QCBRFUD04" jdbcType="DECIMAL" property="tcQcbrfud04" />
+    <result column="TC_QCBRFUD05" jdbcType="DATE" property="tcQcbrfud05" />
+    <result column="TC_QCBRFUD06" jdbcType="DATE" property="tcQcbrfud06" />
+    <result column="TC_QCBRFPLANT" jdbcType="VARCHAR" property="tcQcbrfplant" />
+    <result column="TC_QCBRFLEGAL" jdbcType="VARCHAR" property="tcQcbrflegal" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from TC_QCBRF_FILE
+    where TC_QCBRF01 = #{tcQcbrf01,jdbcType=VARCHAR}
+      and TC_QCBRF02 = #{tcQcbrf02,jdbcType=VARCHAR}
+      and TC_QCBRF03 = #{tcQcbrf03,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.TC_QCBRF_FILE">
+    insert into TC_QCBRF_FILE (TC_QCBRF01, TC_QCBRF02, TC_QCBRF03, 
+      TC_QCBRF04, TC_QCBRF05, TC_QCBRF06, 
+      TC_QCBRFUD01, TC_QCBRFUD02, TC_QCBRFUD03, 
+      TC_QCBRFUD04, TC_QCBRFUD05, TC_QCBRFUD06, 
+      TC_QCBRFPLANT, TC_QCBRFLEGAL)
+    values (#{tcQcbrf01,jdbcType=VARCHAR}, #{tcQcbrf02,jdbcType=VARCHAR}, #{tcQcbrf03,jdbcType=VARCHAR}, 
+      #{tcQcbrf04,jdbcType=VARCHAR}, #{tcQcbrf05,jdbcType=VARCHAR}, #{tcQcbrf06,jdbcType=DECIMAL}, 
+      #{tcQcbrfud01,jdbcType=VARCHAR}, #{tcQcbrfud02,jdbcType=VARCHAR}, #{tcQcbrfud03,jdbcType=DECIMAL}, 
+      #{tcQcbrfud04,jdbcType=DECIMAL}, #{tcQcbrfud05,jdbcType=DATE}, #{tcQcbrfud06,jdbcType=DATE}, 
+      #{tcQcbrfplant,jdbcType=VARCHAR}, #{tcQcbrflegal,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.TC_QCBRF_FILE">
+    update TC_QCBRF_FILE
+    set TC_QCBRF04 = #{tcQcbrf04,jdbcType=VARCHAR},
+      TC_QCBRF05 = #{tcQcbrf05,jdbcType=VARCHAR},
+      TC_QCBRF06 = #{tcQcbrf06,jdbcType=DECIMAL},
+      TC_QCBRFUD01 = #{tcQcbrfud01,jdbcType=VARCHAR},
+      TC_QCBRFUD02 = #{tcQcbrfud02,jdbcType=VARCHAR},
+      TC_QCBRFUD03 = #{tcQcbrfud03,jdbcType=DECIMAL},
+      TC_QCBRFUD04 = #{tcQcbrfud04,jdbcType=DECIMAL},
+      TC_QCBRFUD05 = #{tcQcbrfud05,jdbcType=DATE},
+      TC_QCBRFUD06 = #{tcQcbrfud06,jdbcType=DATE},
+      TC_QCBRFPLANT = #{tcQcbrfplant,jdbcType=VARCHAR},
+      TC_QCBRFLEGAL = #{tcQcbrflegal,jdbcType=VARCHAR}
+    where TC_QCBRF01 = #{tcQcbrf01,jdbcType=VARCHAR}
+      and TC_QCBRF02 = #{tcQcbrf02,jdbcType=VARCHAR}
+      and TC_QCBRF03 = #{tcQcbrf03,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select TC_QCBRF01, TC_QCBRF02, TC_QCBRF03, TC_QCBRF04, TC_QCBRF05, TC_QCBRF06, TC_QCBRFUD01, 
+    TC_QCBRFUD02, TC_QCBRFUD03, TC_QCBRFUD04, TC_QCBRFUD05, TC_QCBRFUD06, TC_QCBRFPLANT, 
+    TC_QCBRFLEGAL
+    from TC_QCBRF_FILE
+    where TC_QCBRF01 = #{tcQcbrf01,jdbcType=VARCHAR}
+      and TC_QCBRF02 = #{tcQcbrf02,jdbcType=VARCHAR}
+      and TC_QCBRF03 = #{tcQcbrf03,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select TC_QCBRF01, TC_QCBRF02, TC_QCBRF03, TC_QCBRF04, TC_QCBRF05, TC_QCBRF06, TC_QCBRFUD01, 
+    TC_QCBRFUD02, TC_QCBRFUD03, TC_QCBRFUD04, TC_QCBRFUD05, TC_QCBRFUD06, TC_QCBRFPLANT, 
+    TC_QCBRFLEGAL
+    from TC_QCBRF_FILE
+  </select>
+</mapper>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.RVBS_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.RVBS_FILE">
+    <id column="RVBS00" jdbcType="VARCHAR" property="rvbs00" />
+    <id column="RVBS01" jdbcType="VARCHAR" property="rvbs01" />
+    <id column="RVBS02" jdbcType="DECIMAL" property="rvbs02" />
+    <id column="RVBS022" jdbcType="DECIMAL" property="rvbs022" />
+    <id column="RVBS09" jdbcType="DECIMAL" property="rvbs09" />
+    <id column="RVBS13" jdbcType="DECIMAL" property="rvbs13" />
+    <result column="RVBS03" jdbcType="VARCHAR" property="rvbs03" />
+    <result column="RVBS04" jdbcType="VARCHAR" property="rvbs04" />
+    <result column="RVBS05" jdbcType="DATE" property="rvbs05" />
+    <result column="RVBS06" jdbcType="DECIMAL" property="rvbs06" />
+    <result column="RVBS07" jdbcType="VARCHAR" property="rvbs07" />
+    <result column="RVBS08" jdbcType="VARCHAR" property="rvbs08" />
+    <result column="RVBS021" jdbcType="VARCHAR" property="rvbs021" />
+    <result column="RVBS10" jdbcType="DECIMAL" property="rvbs10" />
+    <result column="RVBS11" jdbcType="DECIMAL" property="rvbs11" />
+    <result column="RVBS12" jdbcType="DECIMAL" property="rvbs12" />
+    <result column="RVBSPLANT" jdbcType="VARCHAR" property="rvbsplant" />
+    <result column="RVBSLEGAL" jdbcType="VARCHAR" property="rvbslegal" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from RVBS_FILE
+    where RVBS00 = #{rvbs00,jdbcType=VARCHAR}
+      and RVBS01 = #{rvbs01,jdbcType=VARCHAR}
+      and RVBS02 = #{rvbs02,jdbcType=DECIMAL}
+      and RVBS022 = #{rvbs022,jdbcType=DECIMAL}
+      and RVBS09 = #{rvbs09,jdbcType=DECIMAL}
+      and RVBS13 = #{rvbs13,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.RVBS_FILE">
+    insert into RVBS_FILE (RVBS00, RVBS01, RVBS02, 
+      RVBS022, RVBS09, RVBS13, 
+      RVBS03, RVBS04, RVBS05, 
+      RVBS06, RVBS07, RVBS08, 
+      RVBS021, RVBS10, RVBS11, 
+      RVBS12, RVBSPLANT, RVBSLEGAL
+      )
+    values (#{rvbs00,jdbcType=VARCHAR}, #{rvbs01,jdbcType=VARCHAR}, #{rvbs02,jdbcType=DECIMAL}, 
+      #{rvbs022,jdbcType=DECIMAL}, #{rvbs09,jdbcType=DECIMAL}, #{rvbs13,jdbcType=DECIMAL}, 
+      #{rvbs03,jdbcType=VARCHAR}, #{rvbs04,jdbcType=VARCHAR}, #{rvbs05,jdbcType=DATE}, 
+      #{rvbs06,jdbcType=DECIMAL}, #{rvbs07,jdbcType=VARCHAR}, #{rvbs08,jdbcType=VARCHAR}, 
+      #{rvbs021,jdbcType=VARCHAR}, #{rvbs10,jdbcType=DECIMAL}, #{rvbs11,jdbcType=DECIMAL}, 
+      #{rvbs12,jdbcType=DECIMAL}, #{rvbsplant,jdbcType=VARCHAR}, #{rvbslegal,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.RVBS_FILE">
+    update RVBS_FILE
+    set RVBS03 = #{rvbs03,jdbcType=VARCHAR},
+      RVBS04 = #{rvbs04,jdbcType=VARCHAR},
+      RVBS05 = #{rvbs05,jdbcType=DATE},
+      RVBS06 = #{rvbs06,jdbcType=DECIMAL},
+      RVBS07 = #{rvbs07,jdbcType=VARCHAR},
+      RVBS08 = #{rvbs08,jdbcType=VARCHAR},
+      RVBS021 = #{rvbs021,jdbcType=VARCHAR},
+      RVBS10 = #{rvbs10,jdbcType=DECIMAL},
+      RVBS11 = #{rvbs11,jdbcType=DECIMAL},
+      RVBS12 = #{rvbs12,jdbcType=DECIMAL},
+      RVBSPLANT = #{rvbsplant,jdbcType=VARCHAR},
+      RVBSLEGAL = #{rvbslegal,jdbcType=VARCHAR}
+    where RVBS00 = #{rvbs00,jdbcType=VARCHAR}
+      and RVBS01 = #{rvbs01,jdbcType=VARCHAR}
+      and RVBS02 = #{rvbs02,jdbcType=DECIMAL}
+      and RVBS022 = #{rvbs022,jdbcType=DECIMAL}
+      and RVBS09 = #{rvbs09,jdbcType=DECIMAL}
+      and RVBS13 = #{rvbs13,jdbcType=DECIMAL}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select RVBS00, RVBS01, RVBS02, RVBS022, RVBS09, RVBS13, RVBS03, RVBS04, RVBS05, RVBS06, 
+    RVBS07, RVBS08, RVBS021, RVBS10, RVBS11, RVBS12, RVBSPLANT, RVBSLEGAL
+    from RVBS_FILE
+    where RVBS00 = #{rvbs00,jdbcType=VARCHAR}
+      and RVBS01 = #{rvbs01,jdbcType=VARCHAR}
+      and RVBS02 = #{rvbs02,jdbcType=DECIMAL}
+      and RVBS022 = #{rvbs022,jdbcType=DECIMAL}
+      and RVBS09 = #{rvbs09,jdbcType=DECIMAL}
+      and RVBS13 = #{rvbs13,jdbcType=DECIMAL}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select RVBS00, RVBS01, RVBS02, RVBS022, RVBS09, RVBS13, RVBS03, RVBS04, RVBS05, RVBS06, 
+    RVBS07, RVBS08, RVBS021, RVBS10, RVBS11, RVBS12, RVBSPLANT, RVBSLEGAL
+    from RVBS_FILE
+  </select>
+</mapper>

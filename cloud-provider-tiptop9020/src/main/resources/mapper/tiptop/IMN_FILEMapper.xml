@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.IMN_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.IMN_FILE">
+    <id column="IMN01" jdbcType="VARCHAR" property="imn01" />
+    <id column="IMN02" jdbcType="DECIMAL" property="imn02" />
+    <result column="IMN03" jdbcType="VARCHAR" property="imn03" />
+    <result column="IMN041" jdbcType="VARCHAR" property="imn041" />
+    <result column="IMN04" jdbcType="VARCHAR" property="imn04" />
+    <result column="IMN05" jdbcType="VARCHAR" property="imn05" />
+    <result column="IMN06" jdbcType="VARCHAR" property="imn06" />
+    <result column="IMN07" jdbcType="VARCHAR" property="imn07" />
+    <result column="IMN08" jdbcType="VARCHAR" property="imn08" />
+    <result column="IMN09" jdbcType="VARCHAR" property="imn09" />
+    <result column="IMN091" jdbcType="DECIMAL" property="imn091" />
+    <result column="IMN092" jdbcType="DECIMAL" property="imn092" />
+    <result column="IMN10" jdbcType="DECIMAL" property="imn10" />
+    <result column="IMN11" jdbcType="DECIMAL" property="imn11" />
+    <result column="IMN12" jdbcType="VARCHAR" property="imn12" />
+    <result column="IMN13" jdbcType="VARCHAR" property="imn13" />
+    <result column="IMN14" jdbcType="DATE" property="imn14" />
+    <result column="IMN151" jdbcType="VARCHAR" property="imn151" />
+    <result column="IMN15" jdbcType="VARCHAR" property="imn15" />
+    <result column="IMN16" jdbcType="VARCHAR" property="imn16" />
+    <result column="IMN17" jdbcType="VARCHAR" property="imn17" />
+    <result column="IMN18" jdbcType="VARCHAR" property="imn18" />
+    <result column="IMN19" jdbcType="VARCHAR" property="imn19" />
+    <result column="IMN20" jdbcType="VARCHAR" property="imn20" />
+    <result column="IMN201" jdbcType="VARCHAR" property="imn201" />
+    <result column="IMN202" jdbcType="VARCHAR" property="imn202" />
+    <result column="IMN21" jdbcType="DECIMAL" property="imn21" />
+    <result column="IMN22" jdbcType="DECIMAL" property="imn22" />
+    <result column="IMN23" jdbcType="DECIMAL" property="imn23" />
+    <result column="IMN24" jdbcType="VARCHAR" property="imn24" />
+    <result column="IMN25" jdbcType="VARCHAR" property="imn25" />
+    <result column="IMN26" jdbcType="DATE" property="imn26" />
+    <result column="IMN27" jdbcType="VARCHAR" property="imn27" />
+    <result column="IMN28" jdbcType="VARCHAR" property="imn28" />
+    <result column="IMN30" jdbcType="VARCHAR" property="imn30" />
+    <result column="IMN31" jdbcType="DECIMAL" property="imn31" />
+    <result column="IMN32" jdbcType="DECIMAL" property="imn32" />
+    <result column="IMN33" jdbcType="VARCHAR" property="imn33" />
+    <result column="IMN34" jdbcType="DECIMAL" property="imn34" />
+    <result column="IMN35" jdbcType="DECIMAL" property="imn35" />
+    <result column="IMN40" jdbcType="VARCHAR" property="imn40" />
+    <result column="IMN41" jdbcType="DECIMAL" property="imn41" />
+    <result column="IMN42" jdbcType="DECIMAL" property="imn42" />
+    <result column="IMN43" jdbcType="VARCHAR" property="imn43" />
+    <result column="IMN44" jdbcType="DECIMAL" property="imn44" />
+    <result column="IMN45" jdbcType="DECIMAL" property="imn45" />
+    <result column="IMN51" jdbcType="DECIMAL" property="imn51" />
+    <result column="IMN52" jdbcType="DECIMAL" property="imn52" />
+    <result column="IMN29" jdbcType="VARCHAR" property="imn29" />
+    <result column="IMN9301" jdbcType="VARCHAR" property="imn9301" />
+    <result column="IMN9302" jdbcType="VARCHAR" property="imn9302" />
+    <result column="IMNUD01" jdbcType="VARCHAR" property="imnud01" />
+    <result column="IMNUD02" jdbcType="VARCHAR" property="imnud02" />
+    <result column="IMNUD03" jdbcType="VARCHAR" property="imnud03" />
+    <result column="IMNUD04" jdbcType="VARCHAR" property="imnud04" />
+    <result column="IMNUD05" jdbcType="VARCHAR" property="imnud05" />
+    <result column="IMNUD06" jdbcType="VARCHAR" property="imnud06" />
+    <result column="IMNUD07" jdbcType="DECIMAL" property="imnud07" />
+    <result column="IMNUD08" jdbcType="DECIMAL" property="imnud08" />
+    <result column="IMNUD09" jdbcType="DECIMAL" property="imnud09" />
+    <result column="IMNUD10" jdbcType="DECIMAL" property="imnud10" />
+    <result column="IMNUD11" jdbcType="DECIMAL" property="imnud11" />
+    <result column="IMNUD12" jdbcType="DECIMAL" property="imnud12" />
+    <result column="IMNUD13" jdbcType="DATE" property="imnud13" />
+    <result column="IMNUD14" jdbcType="DATE" property="imnud14" />
+    <result column="IMNUD15" jdbcType="DATE" property="imnud15" />
+    <result column="IMNPLANT" jdbcType="VARCHAR" property="imnplant" />
+    <result column="IMNLEGAL" jdbcType="VARCHAR" property="imnlegal" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from IMN_FILE
+    where IMN01 = #{imn01,jdbcType=VARCHAR}
+      and IMN02 = #{imn02,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.IMN_FILE">
+    insert into IMN_FILE (IMN01, IMN02, IMN03, 
+      IMN041, IMN04, IMN05, 
+      IMN06, IMN07, IMN08, 
+      IMN09, IMN091, IMN092, 
+      IMN10, IMN11, IMN12, 
+      IMN13, IMN14, IMN151, 
+      IMN15, IMN16, IMN17, 
+      IMN18, IMN19, IMN20, 
+      IMN201, IMN202, IMN21, 
+      IMN22, IMN23, IMN24, 
+      IMN25, IMN26, IMN27, IMN28, 
+      IMN30, IMN31, IMN32, 
+      IMN33, IMN34, IMN35, 
+      IMN40, IMN41, IMN42, 
+      IMN43, IMN44, IMN45, 
+      IMN51, IMN52, IMN29, 
+      IMN9301, IMN9302, IMNUD01, 
+      IMNUD02, IMNUD03, IMNUD04, 
+      IMNUD05, IMNUD06, IMNUD07, 
+      IMNUD08, IMNUD09, IMNUD10, 
+      IMNUD11, IMNUD12, IMNUD13, 
+      IMNUD14, IMNUD15, IMNPLANT, 
+      IMNLEGAL)
+    values (#{imn01,jdbcType=VARCHAR}, #{imn02,jdbcType=DECIMAL}, #{imn03,jdbcType=VARCHAR}, 
+      #{imn041,jdbcType=VARCHAR}, #{imn04,jdbcType=VARCHAR}, #{imn05,jdbcType=VARCHAR}, 
+      #{imn06,jdbcType=VARCHAR}, #{imn07,jdbcType=VARCHAR}, #{imn08,jdbcType=VARCHAR}, 
+      #{imn09,jdbcType=VARCHAR}, #{imn091,jdbcType=DECIMAL}, #{imn092,jdbcType=DECIMAL}, 
+      #{imn10,jdbcType=DECIMAL}, #{imn11,jdbcType=DECIMAL}, #{imn12,jdbcType=VARCHAR}, 
+      #{imn13,jdbcType=VARCHAR}, #{imn14,jdbcType=DATE}, #{imn151,jdbcType=VARCHAR}, 
+      #{imn15,jdbcType=VARCHAR}, #{imn16,jdbcType=VARCHAR}, #{imn17,jdbcType=VARCHAR}, 
+      #{imn18,jdbcType=VARCHAR}, #{imn19,jdbcType=VARCHAR}, #{imn20,jdbcType=VARCHAR}, 
+      #{imn201,jdbcType=VARCHAR}, #{imn202,jdbcType=VARCHAR}, #{imn21,jdbcType=DECIMAL}, 
+      #{imn22,jdbcType=DECIMAL}, #{imn23,jdbcType=DECIMAL}, #{imn24,jdbcType=VARCHAR}, 
+      #{imn25,jdbcType=VARCHAR}, #{imn26,jdbcType=DATE}, #{imn27,jdbcType=VARCHAR}, #{imn28,jdbcType=VARCHAR}, 
+      #{imn30,jdbcType=VARCHAR}, #{imn31,jdbcType=DECIMAL}, #{imn32,jdbcType=DECIMAL}, 
+      #{imn33,jdbcType=VARCHAR}, #{imn34,jdbcType=DECIMAL}, #{imn35,jdbcType=DECIMAL}, 
+      #{imn40,jdbcType=VARCHAR}, #{imn41,jdbcType=DECIMAL}, #{imn42,jdbcType=DECIMAL}, 
+      #{imn43,jdbcType=VARCHAR}, #{imn44,jdbcType=DECIMAL}, #{imn45,jdbcType=DECIMAL}, 
+      #{imn51,jdbcType=DECIMAL}, #{imn52,jdbcType=DECIMAL}, #{imn29,jdbcType=VARCHAR}, 
+      #{imn9301,jdbcType=VARCHAR}, #{imn9302,jdbcType=VARCHAR}, #{imnud01,jdbcType=VARCHAR}, 
+      #{imnud02,jdbcType=VARCHAR}, #{imnud03,jdbcType=VARCHAR}, #{imnud04,jdbcType=VARCHAR}, 
+      #{imnud05,jdbcType=VARCHAR}, #{imnud06,jdbcType=VARCHAR}, #{imnud07,jdbcType=DECIMAL}, 
+      #{imnud08,jdbcType=DECIMAL}, #{imnud09,jdbcType=DECIMAL}, #{imnud10,jdbcType=DECIMAL}, 
+      #{imnud11,jdbcType=DECIMAL}, #{imnud12,jdbcType=DECIMAL}, #{imnud13,jdbcType=DATE}, 
+      #{imnud14,jdbcType=DATE}, #{imnud15,jdbcType=DATE}, #{imnplant,jdbcType=VARCHAR}, 
+      #{imnlegal,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.IMN_FILE">
+    update IMN_FILE
+    set IMN03 = #{imn03,jdbcType=VARCHAR},
+      IMN041 = #{imn041,jdbcType=VARCHAR},
+      IMN04 = #{imn04,jdbcType=VARCHAR},
+      IMN05 = #{imn05,jdbcType=VARCHAR},
+      IMN06 = #{imn06,jdbcType=VARCHAR},
+      IMN07 = #{imn07,jdbcType=VARCHAR},
+      IMN08 = #{imn08,jdbcType=VARCHAR},
+      IMN09 = #{imn09,jdbcType=VARCHAR},
+      IMN091 = #{imn091,jdbcType=DECIMAL},
+      IMN092 = #{imn092,jdbcType=DECIMAL},
+      IMN10 = #{imn10,jdbcType=DECIMAL},
+      IMN11 = #{imn11,jdbcType=DECIMAL},
+      IMN12 = #{imn12,jdbcType=VARCHAR},
+      IMN13 = #{imn13,jdbcType=VARCHAR},
+      IMN14 = #{imn14,jdbcType=DATE},
+      IMN151 = #{imn151,jdbcType=VARCHAR},
+      IMN15 = #{imn15,jdbcType=VARCHAR},
+      IMN16 = #{imn16,jdbcType=VARCHAR},
+      IMN17 = #{imn17,jdbcType=VARCHAR},
+      IMN18 = #{imn18,jdbcType=VARCHAR},
+      IMN19 = #{imn19,jdbcType=VARCHAR},
+      IMN20 = #{imn20,jdbcType=VARCHAR},
+      IMN201 = #{imn201,jdbcType=VARCHAR},
+      IMN202 = #{imn202,jdbcType=VARCHAR},
+      IMN21 = #{imn21,jdbcType=DECIMAL},
+      IMN22 = #{imn22,jdbcType=DECIMAL},
+      IMN23 = #{imn23,jdbcType=DECIMAL},
+      IMN24 = #{imn24,jdbcType=VARCHAR},
+      IMN25 = #{imn25,jdbcType=VARCHAR},
+      IMN26 = #{imn26,jdbcType=DATE},
+      IMN27 = #{imn27,jdbcType=VARCHAR},
+      IMN28 = #{imn28,jdbcType=VARCHAR},
+      IMN30 = #{imn30,jdbcType=VARCHAR},
+      IMN31 = #{imn31,jdbcType=DECIMAL},
+      IMN32 = #{imn32,jdbcType=DECIMAL},
+      IMN33 = #{imn33,jdbcType=VARCHAR},
+      IMN34 = #{imn34,jdbcType=DECIMAL},
+      IMN35 = #{imn35,jdbcType=DECIMAL},
+      IMN40 = #{imn40,jdbcType=VARCHAR},
+      IMN41 = #{imn41,jdbcType=DECIMAL},
+      IMN42 = #{imn42,jdbcType=DECIMAL},
+      IMN43 = #{imn43,jdbcType=VARCHAR},
+      IMN44 = #{imn44,jdbcType=DECIMAL},
+      IMN45 = #{imn45,jdbcType=DECIMAL},
+      IMN51 = #{imn51,jdbcType=DECIMAL},
+      IMN52 = #{imn52,jdbcType=DECIMAL},
+      IMN29 = #{imn29,jdbcType=VARCHAR},
+      IMN9301 = #{imn9301,jdbcType=VARCHAR},
+      IMN9302 = #{imn9302,jdbcType=VARCHAR},
+      IMNUD01 = #{imnud01,jdbcType=VARCHAR},
+      IMNUD02 = #{imnud02,jdbcType=VARCHAR},
+      IMNUD03 = #{imnud03,jdbcType=VARCHAR},
+      IMNUD04 = #{imnud04,jdbcType=VARCHAR},
+      IMNUD05 = #{imnud05,jdbcType=VARCHAR},
+      IMNUD06 = #{imnud06,jdbcType=VARCHAR},
+      IMNUD07 = #{imnud07,jdbcType=DECIMAL},
+      IMNUD08 = #{imnud08,jdbcType=DECIMAL},
+      IMNUD09 = #{imnud09,jdbcType=DECIMAL},
+      IMNUD10 = #{imnud10,jdbcType=DECIMAL},
+      IMNUD11 = #{imnud11,jdbcType=DECIMAL},
+      IMNUD12 = #{imnud12,jdbcType=DECIMAL},
+      IMNUD13 = #{imnud13,jdbcType=DATE},
+      IMNUD14 = #{imnud14,jdbcType=DATE},
+      IMNUD15 = #{imnud15,jdbcType=DATE},
+      IMNPLANT = #{imnplant,jdbcType=VARCHAR},
+      IMNLEGAL = #{imnlegal,jdbcType=VARCHAR}
+    where IMN01 = #{imn01,jdbcType=VARCHAR}
+      and IMN02 = #{imn02,jdbcType=DECIMAL}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select IMN01, IMN02, IMN03, IMN041, IMN04, IMN05, IMN06, IMN07, IMN08, IMN09, IMN091, 
+    IMN092, IMN10, IMN11, IMN12, IMN13, IMN14, IMN151, IMN15, IMN16, IMN17, IMN18, IMN19, 
+    IMN20, IMN201, IMN202, IMN21, IMN22, IMN23, IMN24, IMN25, IMN26, IMN27, IMN28, IMN30, 
+    IMN31, IMN32, IMN33, IMN34, IMN35, IMN40, IMN41, IMN42, IMN43, IMN44, IMN45, IMN51, 
+    IMN52, IMN29, IMN9301, IMN9302, IMNUD01, IMNUD02, IMNUD03, IMNUD04, IMNUD05, IMNUD06, 
+    IMNUD07, IMNUD08, IMNUD09, IMNUD10, IMNUD11, IMNUD12, IMNUD13, IMNUD14, IMNUD15, 
+    IMNPLANT, IMNLEGAL
+    from IMN_FILE
+    where IMN01 = #{imn01,jdbcType=VARCHAR}
+      and IMN02 = #{imn02,jdbcType=DECIMAL}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select IMN01, IMN02, IMN03, IMN041, IMN04, IMN05, IMN06, IMN07, IMN08, IMN09, IMN091, 
+    IMN092, IMN10, IMN11, IMN12, IMN13, IMN14, IMN151, IMN15, IMN16, IMN17, IMN18, IMN19, 
+    IMN20, IMN201, IMN202, IMN21, IMN22, IMN23, IMN24, IMN25, IMN26, IMN27, IMN28, IMN30, 
+    IMN31, IMN32, IMN33, IMN34, IMN35, IMN40, IMN41, IMN42, IMN43, IMN44, IMN45, IMN51, 
+    IMN52, IMN29, IMN9301, IMN9302, IMNUD01, IMNUD02, IMNUD03, IMNUD04, IMNUD05, IMNUD06, 
+    IMNUD07, IMNUD08, IMNUD09, IMNUD10, IMNUD11, IMNUD12, IMNUD13, IMNUD14, IMNUD15, 
+    IMNPLANT, IMNLEGAL
+    from IMN_FILE
+  </select>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_QCBRF_FILEMapperPlus">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_QCBRF_FILE">
+    <id column="TC_QCBRF01" jdbcType="VARCHAR" property="tcQcbrf01" />
+    <id column="TC_QCBRF02" jdbcType="VARCHAR" property="tcQcbrf02" />
+    <id column="TC_QCBRF03" jdbcType="VARCHAR" property="tcQcbrf03" />
+    <result column="TC_QCBRF04" jdbcType="VARCHAR" property="tcQcbrf04" />
+    <result column="TC_QCBRF05" jdbcType="VARCHAR" property="tcQcbrf05" />
+    <result column="TC_QCBRF06" jdbcType="DECIMAL" property="tcQcbrf06" />
+    <result column="TC_QCBRFUD01" jdbcType="VARCHAR" property="tcQcbrfud01" />
+    <result column="TC_QCBRFUD02" jdbcType="VARCHAR" property="tcQcbrfud02" />
+    <result column="TC_QCBRFUD03" jdbcType="DECIMAL" property="tcQcbrfud03" />
+    <result column="TC_QCBRFUD04" jdbcType="DECIMAL" property="tcQcbrfud04" />
+    <result column="TC_QCBRFUD05" jdbcType="DATE" property="tcQcbrfud05" />
+    <result column="TC_QCBRFUD06" jdbcType="DATE" property="tcQcbrfud06" />
+    <result column="TC_QCBRFPLANT" jdbcType="VARCHAR" property="tcQcbrfplant" />
+    <result column="TC_QCBRFLEGAL" jdbcType="VARCHAR" property="tcQcbrflegal" />
+  </resultMap>
+
+  <select id="selectByQcBrf01" parameterType="map"  resultMap="BaseResultMap">
+    select TC_QCBRF01, TC_QCBRF02, TC_QCBRF03, TC_QCBRF04, TC_QCBRF05, TC_QCBRF06, TC_QCBRFUD01, TC_QCBRFUD02,
+    TC_QCBRFUD03, TC_QCBRFUD04, TC_QCBRFUD05, TC_QCBRFUD06, TC_QCBRFPLANT, TC_QCBRFLEGAL
+    from S30.TC_QCBRF_FILE
+    where TC_QCBRF01 = #{tcQcbrf01,jdbcType=VARCHAR}
+  </select>
+
+</mapper>

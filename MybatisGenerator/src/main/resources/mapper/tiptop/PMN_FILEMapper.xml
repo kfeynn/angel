@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.PMN_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.PMN_FILE">
+    <id column="PMN01" jdbcType="VARCHAR" property="pmn01" />
+    <id column="PMN02" jdbcType="DECIMAL" property="pmn02" />
+    <result column="PMN011" jdbcType="VARCHAR" property="pmn011" />
+    <result column="PMN03" jdbcType="VARCHAR" property="pmn03" />
+    <result column="PMN04" jdbcType="VARCHAR" property="pmn04" />
+    <result column="PMN041" jdbcType="VARCHAR" property="pmn041" />
+    <result column="PMN05" jdbcType="VARCHAR" property="pmn05" />
+    <result column="PMN06" jdbcType="VARCHAR" property="pmn06" />
+    <result column="PMN07" jdbcType="VARCHAR" property="pmn07" />
+    <result column="PMN08" jdbcType="VARCHAR" property="pmn08" />
+    <result column="PMN09" jdbcType="DECIMAL" property="pmn09" />
+    <result column="PMN10" jdbcType="VARCHAR" property="pmn10" />
+    <result column="PMN11" jdbcType="VARCHAR" property="pmn11" />
+    <result column="PMN121" jdbcType="DECIMAL" property="pmn121" />
+    <result column="PMN122" jdbcType="VARCHAR" property="pmn122" />
+    <result column="PMN123" jdbcType="VARCHAR" property="pmn123" />
+    <result column="PMN13" jdbcType="DECIMAL" property="pmn13" />
+    <result column="PMN14" jdbcType="VARCHAR" property="pmn14" />
+    <result column="PMN15" jdbcType="VARCHAR" property="pmn15" />
+    <result column="PMN16" jdbcType="VARCHAR" property="pmn16" />
+    <result column="PMN18" jdbcType="VARCHAR" property="pmn18" />
+    <result column="PMN20" jdbcType="DECIMAL" property="pmn20" />
+    <result column="PMN23" jdbcType="VARCHAR" property="pmn23" />
+    <result column="PMN24" jdbcType="VARCHAR" property="pmn24" />
+    <result column="PMN25" jdbcType="DECIMAL" property="pmn25" />
+    <result column="PMN30" jdbcType="DECIMAL" property="pmn30" />
+    <result column="PMN31" jdbcType="DECIMAL" property="pmn31" />
+    <result column="PMN31T" jdbcType="DECIMAL" property="pmn31t" />
+    <result column="PMN32" jdbcType="DECIMAL" property="pmn32" />
+    <result column="PMN33" jdbcType="DATE" property="pmn33" />
+    <result column="PMN34" jdbcType="DATE" property="pmn34" />
+    <result column="PMN35" jdbcType="DATE" property="pmn35" />
+    <result column="PMN36" jdbcType="DATE" property="pmn36" />
+    <result column="PMN37" jdbcType="DATE" property="pmn37" />
+    <result column="PMN38" jdbcType="VARCHAR" property="pmn38" />
+    <result column="PMN40" jdbcType="VARCHAR" property="pmn40" />
+    <result column="PMN41" jdbcType="VARCHAR" property="pmn41" />
+    <result column="PMN42" jdbcType="VARCHAR" property="pmn42" />
+    <result column="PMN43" jdbcType="DECIMAL" property="pmn43" />
+    <result column="PMN431" jdbcType="DECIMAL" property="pmn431" />
+    <result column="PMN44" jdbcType="DECIMAL" property="pmn44" />
+    <result column="PMN45" jdbcType="DECIMAL" property="pmn45" />
+    <result column="PMN46" jdbcType="DECIMAL" property="pmn46" />
+    <result column="PMN50" jdbcType="DECIMAL" property="pmn50" />
+    <result column="PMN51" jdbcType="DECIMAL" property="pmn51" />
+    <result column="PMN52" jdbcType="VARCHAR" property="pmn52" />
+    <result column="PMN53" jdbcType="DECIMAL" property="pmn53" />
+    <result column="PMN54" jdbcType="VARCHAR" property="pmn54" />
+    <result column="PMN55" jdbcType="DECIMAL" property="pmn55" />
+    <result column="PMN56" jdbcType="VARCHAR" property="pmn56" />
+    <result column="PMN57" jdbcType="DECIMAL" property="pmn57" />
+    <result column="PMN58" jdbcType="DECIMAL" property="pmn58" />
+    <result column="PMN59" jdbcType="VARCHAR" property="pmn59" />
+    <result column="PMN60" jdbcType="DECIMAL" property="pmn60" />
+    <result column="PMN61" jdbcType="VARCHAR" property="pmn61" />
+    <result column="PMN62" jdbcType="DECIMAL" property="pmn62" />
+    <result column="PMN63" jdbcType="VARCHAR" property="pmn63" />
+    <result column="PMN64" jdbcType="VARCHAR" property="pmn64" />
+    <result column="PMN65" jdbcType="VARCHAR" property="pmn65" />
+    <result column="PMN66" jdbcType="VARCHAR" property="pmn66" />
+    <result column="PMN67" jdbcType="VARCHAR" property="pmn67" />
+    <result column="PMN68" jdbcType="VARCHAR" property="pmn68" />
+    <result column="PMN69" jdbcType="DECIMAL" property="pmn69" />
+    <result column="PMN70" jdbcType="DECIMAL" property="pmn70" />
+    <result column="PMN71" jdbcType="VARCHAR" property="pmn71" />
+    <result column="PMN80" jdbcType="VARCHAR" property="pmn80" />
+    <result column="PMN81" jdbcType="DECIMAL" property="pmn81" />
+    <result column="PMN82" jdbcType="DECIMAL" property="pmn82" />
+    <result column="PMN83" jdbcType="VARCHAR" property="pmn83" />
+    <result column="PMN84" jdbcType="DECIMAL" property="pmn84" />
+    <result column="PMN85" jdbcType="DECIMAL" property="pmn85" />
+    <result column="PMN86" jdbcType="VARCHAR" property="pmn86" />
+    <result column="PMN87" jdbcType="DECIMAL" property="pmn87" />
+    <result column="PMN88" jdbcType="DECIMAL" property="pmn88" />
+    <result column="PMN88T" jdbcType="DECIMAL" property="pmn88t" />
+    <result column="PMN930" jdbcType="VARCHAR" property="pmn930" />
+    <result column="PMN401" jdbcType="VARCHAR" property="pmn401" />
+    <result column="PMN90" jdbcType="DECIMAL" property="pmn90" />
+    <result column="PMN94" jdbcType="VARCHAR" property="pmn94" />
+    <result column="PMN95" jdbcType="DECIMAL" property="pmn95" />
+    <result column="PMN96" jdbcType="VARCHAR" property="pmn96" />
+    <result column="PMN97" jdbcType="VARCHAR" property="pmn97" />
+    <result column="PMN98" jdbcType="VARCHAR" property="pmn98" />
+    <result column="PMN91" jdbcType="VARCHAR" property="pmn91" />
+    <result column="PMNUD01" jdbcType="VARCHAR" property="pmnud01" />
+    <result column="PMNUD02" jdbcType="VARCHAR" property="pmnud02" />
+    <result column="PMNUD03" jdbcType="VARCHAR" property="pmnud03" />
+    <result column="PMNUD04" jdbcType="VARCHAR" property="pmnud04" />
+    <result column="PMNUD05" jdbcType="VARCHAR" property="pmnud05" />
+    <result column="PMNUD06" jdbcType="VARCHAR" property="pmnud06" />
+    <result column="PMNUD07" jdbcType="DECIMAL" property="pmnud07" />
+    <result column="PMNUD08" jdbcType="DECIMAL" property="pmnud08" />
+    <result column="PMNUD09" jdbcType="DECIMAL" property="pmnud09" />
+    <result column="PMNUD10" jdbcType="DECIMAL" property="pmnud10" />
+    <result column="PMNUD11" jdbcType="DECIMAL" property="pmnud11" />
+    <result column="PMNUD12" jdbcType="DECIMAL" property="pmnud12" />
+    <result column="PMNUD13" jdbcType="DATE" property="pmnud13" />
+    <result column="PMNUD14" jdbcType="DATE" property="pmnud14" />
+    <result column="PMNUD15" jdbcType="DATE" property="pmnud15" />
+    <result column="PMN89" jdbcType="VARCHAR" property="pmn89" />
+    <result column="PMN72" jdbcType="VARCHAR" property="pmn72" />
+    <result column="PMN73" jdbcType="VARCHAR" property="pmn73" />
+    <result column="PMN74" jdbcType="VARCHAR" property="pmn74" />
+    <result column="PMN75" jdbcType="VARCHAR" property="pmn75" />
+    <result column="PMN76" jdbcType="DECIMAL" property="pmn76" />
+    <result column="PMN77" jdbcType="VARCHAR" property="pmn77" />
+    <result column="PMNPLANT" jdbcType="VARCHAR" property="pmnplant" />
+    <result column="PMNLEGAL" jdbcType="VARCHAR" property="pmnlegal" />
+    <result column="PMN012" jdbcType="VARCHAR" property="pmn012" />
+    <result column="PMN919" jdbcType="VARCHAR" property="pmn919" />
+    <result column="PMN99" jdbcType="VARCHAR" property="pmn99" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from S30.PMN_FILE
+    where PMN01 = #{pmn01,jdbcType=VARCHAR}
+      and PMN02 = #{pmn02,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.PMN_FILE">
+    insert into S30.PMN_FILE (PMN01, PMN02, PMN011, 
+      PMN03, PMN04, PMN041, 
+      PMN05, PMN06, PMN07, 
+      PMN08, PMN09, PMN10, 
+      PMN11, PMN121, PMN122, 
+      PMN123, PMN13, PMN14, 
+      PMN15, PMN16, PMN18, 
+      PMN20, PMN23, PMN24, 
+      PMN25, PMN30, PMN31, 
+      PMN31T, PMN32, PMN33, 
+      PMN34, PMN35, PMN36, PMN37, 
+      PMN38, PMN40, PMN41, 
+      PMN42, PMN43, PMN431, 
+      PMN44, PMN45, PMN46, 
+      PMN50, PMN51, PMN52, 
+      PMN53, PMN54, PMN55, 
+      PMN56, PMN57, PMN58, 
+      PMN59, PMN60, PMN61, 
+      PMN62, PMN63, PMN64, 
+      PMN65, PMN66, PMN67, 
+      PMN68, PMN69, PMN70, 
+      PMN71, PMN80, PMN81, 
+      PMN82, PMN83, PMN84, 
+      PMN85, PMN86, PMN87, 
+      PMN88, PMN88T, PMN930, 
+      PMN401, PMN90, PMN94, 
+      PMN95, PMN96, PMN97, 
+      PMN98, PMN91, PMNUD01, 
+      PMNUD02, PMNUD03, PMNUD04, 
+      PMNUD05, PMNUD06, PMNUD07, 
+      PMNUD08, PMNUD09, PMNUD10, 
+      PMNUD11, PMNUD12, PMNUD13, 
+      PMNUD14, PMNUD15, PMN89, 
+      PMN72, PMN73, PMN74, 
+      PMN75, PMN76, PMN77, 
+      PMNPLANT, PMNLEGAL, PMN012, 
+      PMN919, PMN99)
+    values (#{pmn01,jdbcType=VARCHAR}, #{pmn02,jdbcType=DECIMAL}, #{pmn011,jdbcType=VARCHAR}, 
+      #{pmn03,jdbcType=VARCHAR}, #{pmn04,jdbcType=VARCHAR}, #{pmn041,jdbcType=VARCHAR}, 
+      #{pmn05,jdbcType=VARCHAR}, #{pmn06,jdbcType=VARCHAR}, #{pmn07,jdbcType=VARCHAR}, 
+      #{pmn08,jdbcType=VARCHAR}, #{pmn09,jdbcType=DECIMAL}, #{pmn10,jdbcType=VARCHAR}, 
+      #{pmn11,jdbcType=VARCHAR}, #{pmn121,jdbcType=DECIMAL}, #{pmn122,jdbcType=VARCHAR}, 
+      #{pmn123,jdbcType=VARCHAR}, #{pmn13,jdbcType=DECIMAL}, #{pmn14,jdbcType=VARCHAR}, 
+      #{pmn15,jdbcType=VARCHAR}, #{pmn16,jdbcType=VARCHAR}, #{pmn18,jdbcType=VARCHAR}, 
+      #{pmn20,jdbcType=DECIMAL}, #{pmn23,jdbcType=VARCHAR}, #{pmn24,jdbcType=VARCHAR}, 
+      #{pmn25,jdbcType=DECIMAL}, #{pmn30,jdbcType=DECIMAL}, #{pmn31,jdbcType=DECIMAL}, 
+      #{pmn31t,jdbcType=DECIMAL}, #{pmn32,jdbcType=DECIMAL}, #{pmn33,jdbcType=DATE}, 
+      #{pmn34,jdbcType=DATE}, #{pmn35,jdbcType=DATE}, #{pmn36,jdbcType=DATE}, #{pmn37,jdbcType=DATE}, 
+      #{pmn38,jdbcType=VARCHAR}, #{pmn40,jdbcType=VARCHAR}, #{pmn41,jdbcType=VARCHAR}, 
+      #{pmn42,jdbcType=VARCHAR}, #{pmn43,jdbcType=DECIMAL}, #{pmn431,jdbcType=DECIMAL}, 
+      #{pmn44,jdbcType=DECIMAL}, #{pmn45,jdbcType=DECIMAL}, #{pmn46,jdbcType=DECIMAL}, 
+      #{pmn50,jdbcType=DECIMAL}, #{pmn51,jdbcType=DECIMAL}, #{pmn52,jdbcType=VARCHAR}, 
+      #{pmn53,jdbcType=DECIMAL}, #{pmn54,jdbcType=VARCHAR}, #{pmn55,jdbcType=DECIMAL}, 
+      #{pmn56,jdbcType=VARCHAR}, #{pmn57,jdbcType=DECIMAL}, #{pmn58,jdbcType=DECIMAL}, 
+      #{pmn59,jdbcType=VARCHAR}, #{pmn60,jdbcType=DECIMAL}, #{pmn61,jdbcType=VARCHAR}, 
+      #{pmn62,jdbcType=DECIMAL}, #{pmn63,jdbcType=VARCHAR}, #{pmn64,jdbcType=VARCHAR}, 
+      #{pmn65,jdbcType=VARCHAR}, #{pmn66,jdbcType=VARCHAR}, #{pmn67,jdbcType=VARCHAR}, 
+      #{pmn68,jdbcType=VARCHAR}, #{pmn69,jdbcType=DECIMAL}, #{pmn70,jdbcType=DECIMAL}, 
+      #{pmn71,jdbcType=VARCHAR}, #{pmn80,jdbcType=VARCHAR}, #{pmn81,jdbcType=DECIMAL}, 
+      #{pmn82,jdbcType=DECIMAL}, #{pmn83,jdbcType=VARCHAR}, #{pmn84,jdbcType=DECIMAL}, 
+      #{pmn85,jdbcType=DECIMAL}, #{pmn86,jdbcType=VARCHAR}, #{pmn87,jdbcType=DECIMAL}, 
+      #{pmn88,jdbcType=DECIMAL}, #{pmn88t,jdbcType=DECIMAL}, #{pmn930,jdbcType=VARCHAR}, 
+      #{pmn401,jdbcType=VARCHAR}, #{pmn90,jdbcType=DECIMAL}, #{pmn94,jdbcType=VARCHAR}, 
+      #{pmn95,jdbcType=DECIMAL}, #{pmn96,jdbcType=VARCHAR}, #{pmn97,jdbcType=VARCHAR}, 
+      #{pmn98,jdbcType=VARCHAR}, #{pmn91,jdbcType=VARCHAR}, #{pmnud01,jdbcType=VARCHAR}, 
+      #{pmnud02,jdbcType=VARCHAR}, #{pmnud03,jdbcType=VARCHAR}, #{pmnud04,jdbcType=VARCHAR}, 
+      #{pmnud05,jdbcType=VARCHAR}, #{pmnud06,jdbcType=VARCHAR}, #{pmnud07,jdbcType=DECIMAL}, 
+      #{pmnud08,jdbcType=DECIMAL}, #{pmnud09,jdbcType=DECIMAL}, #{pmnud10,jdbcType=DECIMAL}, 
+      #{pmnud11,jdbcType=DECIMAL}, #{pmnud12,jdbcType=DECIMAL}, #{pmnud13,jdbcType=DATE}, 
+      #{pmnud14,jdbcType=DATE}, #{pmnud15,jdbcType=DATE}, #{pmn89,jdbcType=VARCHAR}, 
+      #{pmn72,jdbcType=VARCHAR}, #{pmn73,jdbcType=VARCHAR}, #{pmn74,jdbcType=VARCHAR}, 
+      #{pmn75,jdbcType=VARCHAR}, #{pmn76,jdbcType=DECIMAL}, #{pmn77,jdbcType=VARCHAR}, 
+      #{pmnplant,jdbcType=VARCHAR}, #{pmnlegal,jdbcType=VARCHAR}, #{pmn012,jdbcType=VARCHAR}, 
+      #{pmn919,jdbcType=VARCHAR}, #{pmn99,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.PMN_FILE">
+    update S30.PMN_FILE
+    set PMN011 = #{pmn011,jdbcType=VARCHAR},
+      PMN03 = #{pmn03,jdbcType=VARCHAR},
+      PMN04 = #{pmn04,jdbcType=VARCHAR},
+      PMN041 = #{pmn041,jdbcType=VARCHAR},
+      PMN05 = #{pmn05,jdbcType=VARCHAR},
+      PMN06 = #{pmn06,jdbcType=VARCHAR},
+      PMN07 = #{pmn07,jdbcType=VARCHAR},
+      PMN08 = #{pmn08,jdbcType=VARCHAR},
+      PMN09 = #{pmn09,jdbcType=DECIMAL},
+      PMN10 = #{pmn10,jdbcType=VARCHAR},
+      PMN11 = #{pmn11,jdbcType=VARCHAR},
+      PMN121 = #{pmn121,jdbcType=DECIMAL},
+      PMN122 = #{pmn122,jdbcType=VARCHAR},
+      PMN123 = #{pmn123,jdbcType=VARCHAR},
+      PMN13 = #{pmn13,jdbcType=DECIMAL},
+      PMN14 = #{pmn14,jdbcType=VARCHAR},
+      PMN15 = #{pmn15,jdbcType=VARCHAR},
+      PMN16 = #{pmn16,jdbcType=VARCHAR},
+      PMN18 = #{pmn18,jdbcType=VARCHAR},
+      PMN20 = #{pmn20,jdbcType=DECIMAL},
+      PMN23 = #{pmn23,jdbcType=VARCHAR},
+      PMN24 = #{pmn24,jdbcType=VARCHAR},
+      PMN25 = #{pmn25,jdbcType=DECIMAL},
+      PMN30 = #{pmn30,jdbcType=DECIMAL},
+      PMN31 = #{pmn31,jdbcType=DECIMAL},
+      PMN31T = #{pmn31t,jdbcType=DECIMAL},
+      PMN32 = #{pmn32,jdbcType=DECIMAL},
+      PMN33 = #{pmn33,jdbcType=DATE},
+      PMN34 = #{pmn34,jdbcType=DATE},
+      PMN35 = #{pmn35,jdbcType=DATE},
+      PMN36 = #{pmn36,jdbcType=DATE},
+      PMN37 = #{pmn37,jdbcType=DATE},
+      PMN38 = #{pmn38,jdbcType=VARCHAR},
+      PMN40 = #{pmn40,jdbcType=VARCHAR},
+      PMN41 = #{pmn41,jdbcType=VARCHAR},
+      PMN42 = #{pmn42,jdbcType=VARCHAR},
+      PMN43 = #{pmn43,jdbcType=DECIMAL},
+      PMN431 = #{pmn431,jdbcType=DECIMAL},
+      PMN44 = #{pmn44,jdbcType=DECIMAL},
+      PMN45 = #{pmn45,jdbcType=DECIMAL},
+      PMN46 = #{pmn46,jdbcType=DECIMAL},
+      PMN50 = #{pmn50,jdbcType=DECIMAL},
+      PMN51 = #{pmn51,jdbcType=DECIMAL},
+      PMN52 = #{pmn52,jdbcType=VARCHAR},
+      PMN53 = #{pmn53,jdbcType=DECIMAL},
+      PMN54 = #{pmn54,jdbcType=VARCHAR},
+      PMN55 = #{pmn55,jdbcType=DECIMAL},
+      PMN56 = #{pmn56,jdbcType=VARCHAR},
+      PMN57 = #{pmn57,jdbcType=DECIMAL},
+      PMN58 = #{pmn58,jdbcType=DECIMAL},
+      PMN59 = #{pmn59,jdbcType=VARCHAR},
+      PMN60 = #{pmn60,jdbcType=DECIMAL},
+      PMN61 = #{pmn61,jdbcType=VARCHAR},
+      PMN62 = #{pmn62,jdbcType=DECIMAL},
+      PMN63 = #{pmn63,jdbcType=VARCHAR},
+      PMN64 = #{pmn64,jdbcType=VARCHAR},
+      PMN65 = #{pmn65,jdbcType=VARCHAR},
+      PMN66 = #{pmn66,jdbcType=VARCHAR},
+      PMN67 = #{pmn67,jdbcType=VARCHAR},
+      PMN68 = #{pmn68,jdbcType=VARCHAR},
+      PMN69 = #{pmn69,jdbcType=DECIMAL},
+      PMN70 = #{pmn70,jdbcType=DECIMAL},
+      PMN71 = #{pmn71,jdbcType=VARCHAR},
+      PMN80 = #{pmn80,jdbcType=VARCHAR},
+      PMN81 = #{pmn81,jdbcType=DECIMAL},
+      PMN82 = #{pmn82,jdbcType=DECIMAL},
+      PMN83 = #{pmn83,jdbcType=VARCHAR},
+      PMN84 = #{pmn84,jdbcType=DECIMAL},
+      PMN85 = #{pmn85,jdbcType=DECIMAL},
+      PMN86 = #{pmn86,jdbcType=VARCHAR},
+      PMN87 = #{pmn87,jdbcType=DECIMAL},
+      PMN88 = #{pmn88,jdbcType=DECIMAL},
+      PMN88T = #{pmn88t,jdbcType=DECIMAL},
+      PMN930 = #{pmn930,jdbcType=VARCHAR},
+      PMN401 = #{pmn401,jdbcType=VARCHAR},
+      PMN90 = #{pmn90,jdbcType=DECIMAL},
+      PMN94 = #{pmn94,jdbcType=VARCHAR},
+      PMN95 = #{pmn95,jdbcType=DECIMAL},
+      PMN96 = #{pmn96,jdbcType=VARCHAR},
+      PMN97 = #{pmn97,jdbcType=VARCHAR},
+      PMN98 = #{pmn98,jdbcType=VARCHAR},
+      PMN91 = #{pmn91,jdbcType=VARCHAR},
+      PMNUD01 = #{pmnud01,jdbcType=VARCHAR},
+      PMNUD02 = #{pmnud02,jdbcType=VARCHAR},
+      PMNUD03 = #{pmnud03,jdbcType=VARCHAR},
+      PMNUD04 = #{pmnud04,jdbcType=VARCHAR},
+      PMNUD05 = #{pmnud05,jdbcType=VARCHAR},
+      PMNUD06 = #{pmnud06,jdbcType=VARCHAR},
+      PMNUD07 = #{pmnud07,jdbcType=DECIMAL},
+      PMNUD08 = #{pmnud08,jdbcType=DECIMAL},
+      PMNUD09 = #{pmnud09,jdbcType=DECIMAL},
+      PMNUD10 = #{pmnud10,jdbcType=DECIMAL},
+      PMNUD11 = #{pmnud11,jdbcType=DECIMAL},
+      PMNUD12 = #{pmnud12,jdbcType=DECIMAL},
+      PMNUD13 = #{pmnud13,jdbcType=DATE},
+      PMNUD14 = #{pmnud14,jdbcType=DATE},
+      PMNUD15 = #{pmnud15,jdbcType=DATE},
+      PMN89 = #{pmn89,jdbcType=VARCHAR},
+      PMN72 = #{pmn72,jdbcType=VARCHAR},
+      PMN73 = #{pmn73,jdbcType=VARCHAR},
+      PMN74 = #{pmn74,jdbcType=VARCHAR},
+      PMN75 = #{pmn75,jdbcType=VARCHAR},
+      PMN76 = #{pmn76,jdbcType=DECIMAL},
+      PMN77 = #{pmn77,jdbcType=VARCHAR},
+      PMNPLANT = #{pmnplant,jdbcType=VARCHAR},
+      PMNLEGAL = #{pmnlegal,jdbcType=VARCHAR},
+      PMN012 = #{pmn012,jdbcType=VARCHAR},
+      PMN919 = #{pmn919,jdbcType=VARCHAR},
+      PMN99 = #{pmn99,jdbcType=VARCHAR}
+    where PMN01 = #{pmn01,jdbcType=VARCHAR}
+      and PMN02 = #{pmn02,jdbcType=DECIMAL}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select PMN01, PMN02, PMN011, PMN03, PMN04, PMN041, PMN05, PMN06, PMN07, PMN08, PMN09, 
+    PMN10, PMN11, PMN121, PMN122, PMN123, PMN13, PMN14, PMN15, PMN16, PMN18, PMN20, PMN23, 
+    PMN24, PMN25, PMN30, PMN31, PMN31T, PMN32, PMN33, PMN34, PMN35, PMN36, PMN37, PMN38, 
+    PMN40, PMN41, PMN42, PMN43, PMN431, PMN44, PMN45, PMN46, PMN50, PMN51, PMN52, PMN53, 
+    PMN54, PMN55, PMN56, PMN57, PMN58, PMN59, PMN60, PMN61, PMN62, PMN63, PMN64, PMN65, 
+    PMN66, PMN67, PMN68, PMN69, PMN70, PMN71, PMN80, PMN81, PMN82, PMN83, PMN84, PMN85, 
+    PMN86, PMN87, PMN88, PMN88T, PMN930, PMN401, PMN90, PMN94, PMN95, PMN96, PMN97, PMN98, 
+    PMN91, PMNUD01, PMNUD02, PMNUD03, PMNUD04, PMNUD05, PMNUD06, PMNUD07, PMNUD08, PMNUD09, 
+    PMNUD10, PMNUD11, PMNUD12, PMNUD13, PMNUD14, PMNUD15, PMN89, PMN72, PMN73, PMN74, 
+    PMN75, PMN76, PMN77, PMNPLANT, PMNLEGAL, PMN012, PMN919, PMN99
+    from S30.PMN_FILE
+    where PMN01 = #{pmn01,jdbcType=VARCHAR}
+      and PMN02 = #{pmn02,jdbcType=DECIMAL}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select PMN01, PMN02, PMN011, PMN03, PMN04, PMN041, PMN05, PMN06, PMN07, PMN08, PMN09, 
+    PMN10, PMN11, PMN121, PMN122, PMN123, PMN13, PMN14, PMN15, PMN16, PMN18, PMN20, PMN23, 
+    PMN24, PMN25, PMN30, PMN31, PMN31T, PMN32, PMN33, PMN34, PMN35, PMN36, PMN37, PMN38, 
+    PMN40, PMN41, PMN42, PMN43, PMN431, PMN44, PMN45, PMN46, PMN50, PMN51, PMN52, PMN53, 
+    PMN54, PMN55, PMN56, PMN57, PMN58, PMN59, PMN60, PMN61, PMN62, PMN63, PMN64, PMN65, 
+    PMN66, PMN67, PMN68, PMN69, PMN70, PMN71, PMN80, PMN81, PMN82, PMN83, PMN84, PMN85, 
+    PMN86, PMN87, PMN88, PMN88T, PMN930, PMN401, PMN90, PMN94, PMN95, PMN96, PMN97, PMN98, 
+    PMN91, PMNUD01, PMNUD02, PMNUD03, PMNUD04, PMNUD05, PMNUD06, PMNUD07, PMNUD08, PMNUD09, 
+    PMNUD10, PMNUD11, PMNUD12, PMNUD13, PMNUD14, PMNUD15, PMN89, PMN72, PMN73, PMN74, 
+    PMN75, PMN76, PMN77, PMNPLANT, PMNLEGAL, PMN012, PMN919, PMN99
+    from S30.PMN_FILE
+  </select>
+</mapper>

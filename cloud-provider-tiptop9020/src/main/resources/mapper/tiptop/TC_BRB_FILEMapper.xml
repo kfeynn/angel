@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_BRB_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_BRB_FILE">
+    <id column="TC_BRB01" jdbcType="VARCHAR" property="tcBrb01" />
+    <id column="TC_BRB03" jdbcType="VARCHAR" property="tcBrb03" />
+    <id column="TC_BRB08" jdbcType="DATE" property="tcBrb08" />
+    <result column="TC_BRB02" jdbcType="VARCHAR" property="tcBrb02" />
+    <result column="TC_BRB06" jdbcType="VARCHAR" property="tcBrb06" />
+    <result column="TC_BRB07" jdbcType="VARCHAR" property="tcBrb07" />
+    <result column="TC_BRB09" jdbcType="VARCHAR" property="tcBrb09" />
+    <result column="TC_BRB10" jdbcType="VARCHAR" property="tcBrb10" />
+    <result column="TC_BRB11" jdbcType="DECIMAL" property="tcBrb11" />
+    <result column="TC_BRB12" jdbcType="DECIMAL" property="tcBrb12" />
+    <result column="TC_BRB13" jdbcType="DECIMAL" property="tcBrb13" />
+    <result column="TC_BRB14" jdbcType="VARCHAR" property="tcBrb14" />
+    <result column="TC_BRB15" jdbcType="VARCHAR" property="tcBrb15" />
+    <result column="TC_BRB17" jdbcType="DECIMAL" property="tcBrb17" />
+    <result column="TC_BRB18" jdbcType="DECIMAL" property="tcBrb18" />
+    <result column="TC_BRB19" jdbcType="DECIMAL" property="tcBrb19" />
+    <result column="TC_BRB20" jdbcType="DECIMAL" property="tcBrb20" />
+    <result column="TC_BRB21" jdbcType="VARCHAR" property="tcBrb21" />
+    <result column="TC_BRB22" jdbcType="VARCHAR" property="tcBrb22" />
+    <result column="TC_BRB23" jdbcType="VARCHAR" property="tcBrb23" />
+    <result column="TC_BRB24" jdbcType="VARCHAR" property="tcBrb24" />
+    <result column="TC_BRB25" jdbcType="VARCHAR" property="tcBrb25" />
+    <result column="TC_BRBPLANT" jdbcType="VARCHAR" property="tcBrbplant" />
+    <result column="TC_BRBLEGAL" jdbcType="VARCHAR" property="tcBrblegal" />
+    <result column="TC_BRB26" jdbcType="VARCHAR" property="tcBrb26" />
+    <result column="TC_BRB27" jdbcType="DATE" property="tcBrb27" />
+    <result column="TC_BRB28" jdbcType="VARCHAR" property="tcBrb28" />
+    <result column="TC_BRB29" jdbcType="VARCHAR" property="tcBrb29" />
+    <result column="TC_BRB30" jdbcType="VARCHAR" property="tcBrb30" />
+    <result column="TC_BRB31" jdbcType="DATE" property="tcBrb31" />
+    <result column="TC_BRB32" jdbcType="VARCHAR" property="tcBrb32" />
+    <result column="TC_BRB33" jdbcType="VARCHAR" property="tcBrb33" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from TC_BRB_FILE
+    where TC_BRB01 = #{tcBrb01,jdbcType=VARCHAR}
+      and TC_BRB03 = #{tcBrb03,jdbcType=VARCHAR}
+      and TC_BRB08 = #{tcBrb08,jdbcType=DATE}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.TC_BRB_FILE">
+    insert into TC_BRB_FILE (TC_BRB01, TC_BRB03, TC_BRB08, 
+      TC_BRB02, TC_BRB06, TC_BRB07, 
+      TC_BRB09, TC_BRB10, TC_BRB11, 
+      TC_BRB12, TC_BRB13, TC_BRB14, 
+      TC_BRB15, TC_BRB17, TC_BRB18, 
+      TC_BRB19, TC_BRB20, TC_BRB21, 
+      TC_BRB22, TC_BRB23, TC_BRB24, 
+      TC_BRB25, TC_BRBPLANT, TC_BRBLEGAL, 
+      TC_BRB26, TC_BRB27, TC_BRB28, 
+      TC_BRB29, TC_BRB30, TC_BRB31, 
+      TC_BRB32, TC_BRB33)
+    values (#{tcBrb01,jdbcType=VARCHAR}, #{tcBrb03,jdbcType=VARCHAR}, #{tcBrb08,jdbcType=DATE}, 
+      #{tcBrb02,jdbcType=VARCHAR}, #{tcBrb06,jdbcType=VARCHAR}, #{tcBrb07,jdbcType=VARCHAR}, 
+      #{tcBrb09,jdbcType=VARCHAR}, #{tcBrb10,jdbcType=VARCHAR}, #{tcBrb11,jdbcType=DECIMAL}, 
+      #{tcBrb12,jdbcType=DECIMAL}, #{tcBrb13,jdbcType=DECIMAL}, #{tcBrb14,jdbcType=VARCHAR}, 
+      #{tcBrb15,jdbcType=VARCHAR}, #{tcBrb17,jdbcType=DECIMAL}, #{tcBrb18,jdbcType=DECIMAL}, 
+      #{tcBrb19,jdbcType=DECIMAL}, #{tcBrb20,jdbcType=DECIMAL}, #{tcBrb21,jdbcType=VARCHAR}, 
+      #{tcBrb22,jdbcType=VARCHAR}, #{tcBrb23,jdbcType=VARCHAR}, #{tcBrb24,jdbcType=VARCHAR}, 
+      #{tcBrb25,jdbcType=VARCHAR}, #{tcBrbplant,jdbcType=VARCHAR}, #{tcBrblegal,jdbcType=VARCHAR}, 
+      #{tcBrb26,jdbcType=VARCHAR}, #{tcBrb27,jdbcType=DATE}, #{tcBrb28,jdbcType=VARCHAR}, 
+      #{tcBrb29,jdbcType=VARCHAR}, #{tcBrb30,jdbcType=VARCHAR}, #{tcBrb31,jdbcType=DATE}, 
+      #{tcBrb32,jdbcType=VARCHAR}, #{tcBrb33,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.TC_BRB_FILE">
+    update TC_BRB_FILE
+    set TC_BRB02 = #{tcBrb02,jdbcType=VARCHAR},
+      TC_BRB06 = #{tcBrb06,jdbcType=VARCHAR},
+      TC_BRB07 = #{tcBrb07,jdbcType=VARCHAR},
+      TC_BRB09 = #{tcBrb09,jdbcType=VARCHAR},
+      TC_BRB10 = #{tcBrb10,jdbcType=VARCHAR},
+      TC_BRB11 = #{tcBrb11,jdbcType=DECIMAL},
+      TC_BRB12 = #{tcBrb12,jdbcType=DECIMAL},
+      TC_BRB13 = #{tcBrb13,jdbcType=DECIMAL},
+      TC_BRB14 = #{tcBrb14,jdbcType=VARCHAR},
+      TC_BRB15 = #{tcBrb15,jdbcType=VARCHAR},
+      TC_BRB17 = #{tcBrb17,jdbcType=DECIMAL},
+      TC_BRB18 = #{tcBrb18,jdbcType=DECIMAL},
+      TC_BRB19 = #{tcBrb19,jdbcType=DECIMAL},
+      TC_BRB20 = #{tcBrb20,jdbcType=DECIMAL},
+      TC_BRB21 = #{tcBrb21,jdbcType=VARCHAR},
+      TC_BRB22 = #{tcBrb22,jdbcType=VARCHAR},
+      TC_BRB23 = #{tcBrb23,jdbcType=VARCHAR},
+      TC_BRB24 = #{tcBrb24,jdbcType=VARCHAR},
+      TC_BRB25 = #{tcBrb25,jdbcType=VARCHAR},
+      TC_BRBPLANT = #{tcBrbplant,jdbcType=VARCHAR},
+      TC_BRBLEGAL = #{tcBrblegal,jdbcType=VARCHAR},
+      TC_BRB26 = #{tcBrb26,jdbcType=VARCHAR},
+      TC_BRB27 = #{tcBrb27,jdbcType=DATE},
+      TC_BRB28 = #{tcBrb28,jdbcType=VARCHAR},
+      TC_BRB29 = #{tcBrb29,jdbcType=VARCHAR},
+      TC_BRB30 = #{tcBrb30,jdbcType=VARCHAR},
+      TC_BRB31 = #{tcBrb31,jdbcType=DATE},
+      TC_BRB32 = #{tcBrb32,jdbcType=VARCHAR},
+      TC_BRB33 = #{tcBrb33,jdbcType=VARCHAR}
+    where TC_BRB01 = #{tcBrb01,jdbcType=VARCHAR}
+      and TC_BRB03 = #{tcBrb03,jdbcType=VARCHAR}
+      and TC_BRB08 = #{tcBrb08,jdbcType=DATE}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select TC_BRB01, TC_BRB03, TC_BRB08, TC_BRB02, TC_BRB06, TC_BRB07, TC_BRB09, TC_BRB10, 
+    TC_BRB11, TC_BRB12, TC_BRB13, TC_BRB14, TC_BRB15, TC_BRB17, TC_BRB18, TC_BRB19, TC_BRB20, 
+    TC_BRB21, TC_BRB22, TC_BRB23, TC_BRB24, TC_BRB25, TC_BRBPLANT, TC_BRBLEGAL, TC_BRB26, 
+    TC_BRB27, TC_BRB28, TC_BRB29, TC_BRB30, TC_BRB31, TC_BRB32, TC_BRB33
+    from TC_BRB_FILE
+    where TC_BRB01 = #{tcBrb01,jdbcType=VARCHAR}
+      and TC_BRB03 = #{tcBrb03,jdbcType=VARCHAR}
+      and TC_BRB08 = #{tcBrb08,jdbcType=DATE}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select TC_BRB01, TC_BRB03, TC_BRB08, TC_BRB02, TC_BRB06, TC_BRB07, TC_BRB09, TC_BRB10, 
+    TC_BRB11, TC_BRB12, TC_BRB13, TC_BRB14, TC_BRB15, TC_BRB17, TC_BRB18, TC_BRB19, TC_BRB20, 
+    TC_BRB21, TC_BRB22, TC_BRB23, TC_BRB24, TC_BRB25, TC_BRBPLANT, TC_BRBLEGAL, TC_BRB26, 
+    TC_BRB27, TC_BRB28, TC_BRB29, TC_BRB30, TC_BRB31, TC_BRB32, TC_BRB33
+    from TC_BRB_FILE
+  </select>
+</mapper>

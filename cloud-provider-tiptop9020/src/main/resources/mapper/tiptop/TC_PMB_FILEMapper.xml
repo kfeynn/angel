@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.TC_PMB_FILEMapper">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.TC_PMB_FILE">
+    <id column="TC_PMB01" jdbcType="VARCHAR" property="tcPmb01" />
+    <id column="TC_PMB02" jdbcType="DECIMAL" property="tcPmb02" />
+    <result column="TC_PMB03" jdbcType="DATE" property="tcPmb03" />
+    <result column="TC_PMB04" jdbcType="DATE" property="tcPmb04" />
+    <result column="TC_PMB05" jdbcType="DATE" property="tcPmb05" />
+    <result column="TC_PMB06" jdbcType="DATE" property="tcPmb06" />
+    <result column="TC_PMB07" jdbcType="DATE" property="tcPmb07" />
+    <result column="TC_PMB08" jdbcType="VARCHAR" property="tcPmb08" />
+    <result column="TC_PMB09" jdbcType="VARCHAR" property="tcPmb09" />
+    <result column="TC_PMB10" jdbcType="VARCHAR" property="tcPmb10" />
+    <result column="TC_PMB11" jdbcType="VARCHAR" property="tcPmb11" />
+    <result column="TC_PMB12" jdbcType="VARCHAR" property="tcPmb12" />
+    <result column="TC_PMB13" jdbcType="VARCHAR" property="tcPmb13" />
+    <result column="TC_PMB14" jdbcType="VARCHAR" property="tcPmb14" />
+    <result column="TC_PMB15" jdbcType="VARCHAR" property="tcPmb15" />
+    <result column="TC_PMB16" jdbcType="DECIMAL" property="tcPmb16" />
+    <result column="TC_PMB17" jdbcType="DECIMAL" property="tcPmb17" />
+    <result column="TC_PMB18" jdbcType="DECIMAL" property="tcPmb18" />
+    <result column="TC_PMB19" jdbcType="DECIMAL" property="tcPmb19" />
+    <result column="TC_PMB20" jdbcType="DECIMAL" property="tcPmb20" />
+    <result column="TC_PMBPLANT" jdbcType="VARCHAR" property="tcPmbplant" />
+    <result column="TC_PMBLEGAL" jdbcType="VARCHAR" property="tcPmblegal" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from TC_PMB_FILE
+    where TC_PMB01 = #{tcPmb01,jdbcType=VARCHAR}
+      and TC_PMB02 = #{tcPmb02,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.grand.springcloud.entity.tiptop.TC_PMB_FILE">
+    insert into TC_PMB_FILE (TC_PMB01, TC_PMB02, TC_PMB03, 
+      TC_PMB04, TC_PMB05, TC_PMB06, TC_PMB07, 
+      TC_PMB08, TC_PMB09, TC_PMB10, 
+      TC_PMB11, TC_PMB12, TC_PMB13, 
+      TC_PMB14, TC_PMB15, TC_PMB16, 
+      TC_PMB17, TC_PMB18, TC_PMB19, 
+      TC_PMB20, TC_PMBPLANT, TC_PMBLEGAL
+      )
+    values (#{tcPmb01,jdbcType=VARCHAR}, #{tcPmb02,jdbcType=DECIMAL}, #{tcPmb03,jdbcType=DATE}, 
+      #{tcPmb04,jdbcType=DATE}, #{tcPmb05,jdbcType=DATE}, #{tcPmb06,jdbcType=DATE}, #{tcPmb07,jdbcType=DATE}, 
+      #{tcPmb08,jdbcType=VARCHAR}, #{tcPmb09,jdbcType=VARCHAR}, #{tcPmb10,jdbcType=VARCHAR}, 
+      #{tcPmb11,jdbcType=VARCHAR}, #{tcPmb12,jdbcType=VARCHAR}, #{tcPmb13,jdbcType=VARCHAR}, 
+      #{tcPmb14,jdbcType=VARCHAR}, #{tcPmb15,jdbcType=VARCHAR}, #{tcPmb16,jdbcType=DECIMAL}, 
+      #{tcPmb17,jdbcType=DECIMAL}, #{tcPmb18,jdbcType=DECIMAL}, #{tcPmb19,jdbcType=DECIMAL}, 
+      #{tcPmb20,jdbcType=DECIMAL}, #{tcPmbplant,jdbcType=VARCHAR}, #{tcPmblegal,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.grand.springcloud.entity.tiptop.TC_PMB_FILE">
+    update TC_PMB_FILE
+    set TC_PMB03 = #{tcPmb03,jdbcType=DATE},
+      TC_PMB04 = #{tcPmb04,jdbcType=DATE},
+      TC_PMB05 = #{tcPmb05,jdbcType=DATE},
+      TC_PMB06 = #{tcPmb06,jdbcType=DATE},
+      TC_PMB07 = #{tcPmb07,jdbcType=DATE},
+      TC_PMB08 = #{tcPmb08,jdbcType=VARCHAR},
+      TC_PMB09 = #{tcPmb09,jdbcType=VARCHAR},
+      TC_PMB10 = #{tcPmb10,jdbcType=VARCHAR},
+      TC_PMB11 = #{tcPmb11,jdbcType=VARCHAR},
+      TC_PMB12 = #{tcPmb12,jdbcType=VARCHAR},
+      TC_PMB13 = #{tcPmb13,jdbcType=VARCHAR},
+      TC_PMB14 = #{tcPmb14,jdbcType=VARCHAR},
+      TC_PMB15 = #{tcPmb15,jdbcType=VARCHAR},
+      TC_PMB16 = #{tcPmb16,jdbcType=DECIMAL},
+      TC_PMB17 = #{tcPmb17,jdbcType=DECIMAL},
+      TC_PMB18 = #{tcPmb18,jdbcType=DECIMAL},
+      TC_PMB19 = #{tcPmb19,jdbcType=DECIMAL},
+      TC_PMB20 = #{tcPmb20,jdbcType=DECIMAL},
+      TC_PMBPLANT = #{tcPmbplant,jdbcType=VARCHAR},
+      TC_PMBLEGAL = #{tcPmblegal,jdbcType=VARCHAR}
+    where TC_PMB01 = #{tcPmb01,jdbcType=VARCHAR}
+      and TC_PMB02 = #{tcPmb02,jdbcType=DECIMAL}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select TC_PMB01, TC_PMB02, TC_PMB03, TC_PMB04, TC_PMB05, TC_PMB06, TC_PMB07, TC_PMB08, 
+    TC_PMB09, TC_PMB10, TC_PMB11, TC_PMB12, TC_PMB13, TC_PMB14, TC_PMB15, TC_PMB16, TC_PMB17, 
+    TC_PMB18, TC_PMB19, TC_PMB20, TC_PMBPLANT, TC_PMBLEGAL
+    from TC_PMB_FILE
+    where TC_PMB01 = #{tcPmb01,jdbcType=VARCHAR}
+      and TC_PMB02 = #{tcPmb02,jdbcType=DECIMAL}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select TC_PMB01, TC_PMB02, TC_PMB03, TC_PMB04, TC_PMB05, TC_PMB06, TC_PMB07, TC_PMB08, 
+    TC_PMB09, TC_PMB10, TC_PMB11, TC_PMB12, TC_PMB13, TC_PMB14, TC_PMB15, TC_PMB16, TC_PMB17, 
+    TC_PMB18, TC_PMB19, TC_PMB20, TC_PMBPLANT, TC_PMBLEGAL
+    from TC_PMB_FILE
+  </select>
+</mapper>

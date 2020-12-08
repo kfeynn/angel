@@ -1,0 +1,31 @@
+server:
+  port: 9020
+
+spring:
+  application:
+    name: nacos-tiptop-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848   #配置nacos 地址
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@192.168.0.79:1521:topprod
+    username: S30
+    password: S30
+    driver-class-name: oracle.jdbc.OracleDriver  #oracle.jdbc.OracleDriver oracle.jdbc.driver.OracleDriver
+
+mybatis:
+  mapperLocations: classpath:mapper/tiptop/*.xml,classpath:mapper/*.xml   #放在resources下文件夹下时配置
+  type-aliases-package: com.grand.springcloud.entity.tiptop
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+config:
+  leadTime: 7
+  jitLeadTime: 3
+

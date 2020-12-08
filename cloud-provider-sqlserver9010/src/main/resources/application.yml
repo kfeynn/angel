@@ -1,0 +1,31 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: nacos-sqlserver-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848   #配置nacos 地址
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:sqlserver://192.168.0.63:1433;DatabaseName=MyTiptop
+    username: sa
+    password: '*/123456'
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+mybatis:
+#  mapperLocations: classpath:mapper/*.xml
+  mapperLocations: classpath:mapper/sqlserver/*.xml,classpath:mapper/*.xml    #放在resources下文件夹下时配置
+  type-aliases-package: com.grand.springcloud.entity.sqlserver
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+
+

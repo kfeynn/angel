@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grand.springcloud.mapper.tiptop.RVBS_FILEMapperPlus">
+  <resultMap id="BaseResultMap" type="com.grand.springcloud.entity.tiptop.RVBS_FILE">
+    <id column="RVBS00" jdbcType="VARCHAR" property="rvbs00" />
+    <id column="RVBS01" jdbcType="VARCHAR" property="rvbs01" />
+    <id column="RVBS02" jdbcType="DECIMAL" property="rvbs02" />
+    <id column="RVBS022" jdbcType="DECIMAL" property="rvbs022" />
+    <id column="RVBS09" jdbcType="DECIMAL" property="rvbs09" />
+    <id column="RVBS13" jdbcType="DECIMAL" property="rvbs13" />
+    <result column="RVBS03" jdbcType="VARCHAR" property="rvbs03" />
+    <result column="RVBS04" jdbcType="VARCHAR" property="rvbs04" />
+    <result column="RVBS05" jdbcType="DATE" property="rvbs05" />
+    <result column="RVBS06" jdbcType="DECIMAL" property="rvbs06" />
+    <result column="RVBS07" jdbcType="VARCHAR" property="rvbs07" />
+    <result column="RVBS08" jdbcType="VARCHAR" property="rvbs08" />
+    <result column="RVBS021" jdbcType="VARCHAR" property="rvbs021" />
+    <result column="RVBS10" jdbcType="DECIMAL" property="rvbs10" />
+    <result column="RVBS11" jdbcType="DECIMAL" property="rvbs11" />
+    <result column="RVBS12" jdbcType="DECIMAL" property="rvbs12" />
+    <result column="RVBSPLANT" jdbcType="VARCHAR" property="rvbsplant" />
+    <result column="RVBSLEGAL" jdbcType="VARCHAR" property="rvbslegal" />
+  </resultMap>
+
+   <select id="selectByRvbs01"  parameterType="map"   resultMap="BaseResultMap">
+    select RVBS00, RVBS01, RVBS02, RVBS022, RVBS09, RVBS13, RVBS03, RVBS04, RVBS05, RVBS06, 
+    RVBS07, RVBS08, RVBS021, RVBS10, RVBS11, RVBS12, RVBSPLANT, RVBSLEGAL
+    from S30.RVBS_FILE
+    where RVBS01 = #{rvbs01,jdbcType=VARCHAR}
+  </select>
+</mapper>
